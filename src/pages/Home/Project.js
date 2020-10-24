@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-boostrap'
+import { Card } from 'react-bootstrap'
 import { ListGroup } from 'react-bootstrap'
 import { ListGroupItem } from 'react-bootstrap'
 
@@ -13,7 +13,7 @@ const Project = props => {
     return (
         <>
             <Card style={{width: 'auto', background: '#f4f4f4' }}>
-                <img src="" style={{width: '100%'}} />
+                <img src="" style={{width: '100%'}} alt="background" />
                 <Card.Img varient='top' src="" />
                 <Card.body>
                     <Card.Title>{props.title}</Card.Title>
@@ -33,7 +33,7 @@ const Project = props => {
         </>
     )
 
-    /* return (
+    return (
         <div>
             <h1>{props.title}</h1>
             <p>{props.description}</p>
@@ -48,7 +48,7 @@ const Project = props => {
                 })}
             </ol>
         </div>
-    ) */
+    ) 
 }
 
 export default Project;
