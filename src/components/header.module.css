@@ -22,7 +22,7 @@
 .logoContainer{
     flex: 1;
     height: 100%;
-    border: lightcoral 5px solid;
+    /*border: lightcoral 5px solid;
     /* color: #333333;
     font-size: 20px;
     font-weight: 400;
@@ -40,7 +40,7 @@
 }
 .logoMainText{
     /* height: 100%; */
-    border: 5px solid khaki;
+    /*border: 5px solid khaki;*/
     font-weight: 500;
     text-shadow: 1px 1px #222222;
 }
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
 }
 .navLink{
@@ -61,9 +61,9 @@
     text-decoration: none;
 }
 .navLink:hover{
-    background-color: #222222;
-    color: aliceblue;
-    font-size: 16px;
+    background-color: rgb(184, 221, 253);    
+    /*color: aliceblue;*/
+    /*font-size: 16px;*/
     transition: all ease 0.1s;
 }
 .navLinkSelected{
