@@ -8,32 +8,37 @@ import { ListGroupItem } from 'react-bootstrap'
  * @param {*} props the title, description, and list of members of a project 
  */
 
-const Project = props => {
-    
-    return (
-        <>
-            <Card style={{width: 'auto', background: '#f4f4f4' }}>
-                <img src="" style={{width: '100%'}} alt="background" />
-                <Card.Img varient='top' src="" />
-                <Card.body>
-                    <Card.Title>{props.title}</Card.Title>
-                    <Card.Text>{props.description}</Card.Text>
-                    <Card.Title>Members</Card.Title>
+class Project extends React.Component {
+    constructor(props) {
+        super(props)
+    }
 
-                    {/* maps through the list of members and creates an li element for each one */}
-                    <ListGroup variant='flush'>
-                        {props.members.map(member => {
-                            return (
-                                <ListGroupItem>{member}</ListGroupItem>
-                            )
-                        })}
-                    </ListGroup>
-                </Card.body>
-            </Card>
-        </>
-    )
+    render() {
+        return (
+            <>
+                <Card style={{width: 'auto', background: '#f4f4f4' }}>
+                    <img src="" style={{width: '100%'}} alt="background" />
+                    <Card.Img varient='top' src="" />
+                    <Card.body>
+                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Text>{this.props.description}</Card.Text>
+                        <Card.Title>Members</Card.Title>
 
-    return (
+                        {/* maps through the list of members and creates an li element for each one */}
+                        <ListGroup variant='flush'>
+                            {this.props.members.map(member => {
+                                return (
+                                    <ListGroupItem>{member}</ListGroupItem>
+                                )
+                            })}
+                        </ListGroup>
+                    </Card.body>
+                </Card>
+            </>
+        );
+    }
+
+    /* return (
         <div>
             <h1>{props.title}</h1>
             <p>{props.description}</p>
@@ -48,7 +53,7 @@ const Project = props => {
                 })}
             </ol>
         </div>
-    ) 
+    ) */ 
 }
 
 export default Project;
