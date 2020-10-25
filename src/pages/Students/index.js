@@ -1,11 +1,16 @@
 import React from 'react';
-const Students = () => {
-    return (
-        <div>
-            <h1>
-                Students
-            </h1>
-        </div>
-    )
+class Students extends React.Component{
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        return (
+            <div>
+                <h1>
+                    Students
+                </h1>
+            </div>
+        )
+    }
 }
 export default Students;
