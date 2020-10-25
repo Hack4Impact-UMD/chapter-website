@@ -14,7 +14,7 @@ class Project extends React.Component {
     render() {
         return (
             <>
-                <Card style={{width: '20rem', background: '#f4f4f4' }}>
+                <Card style={{width: 'auto', background: '#f4f4f4' }}>
                     <Card.Img varient='top' src={this.props.title_img} />
                     <Card.Body>
                         <Card.Subtitle className="mb-2 text-muted">{this.props.date}</Card.Subtitle>
@@ -37,23 +37,7 @@ class Project extends React.Component {
             </>
         )
     }
-
-    /* return (
-        <div>
-            <h1>{props.title}</h1>
-            <p>{props.description}</p>
-            <h2>Members</h2>
-            <ol>
-                {// maps through the list of members and creates an li element for each one
-                }
-                {props.members.map(member => {
-                    return (
-                        <li>{member}</li>
-                    )
-                })}
-            </ol>
-        </div>
-    ) */ 
+   
 }
 
 export default Project;

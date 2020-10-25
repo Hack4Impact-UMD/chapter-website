@@ -6,7 +6,7 @@ class Nonprofits extends React.Component{
     render() {
         return (
             <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'white'}} >
-            <h1 style={{color: "blueviolet", alignSelf: 'center'}}>Nonprofit Organizations</h1>
+            <h1>Nonprofit Organizations</h1>
             </div>
         )
     }
