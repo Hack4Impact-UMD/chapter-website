@@ -36,9 +36,10 @@ const Header = () => {
     return (
         <div className={classes.container}>
             <div className={classes.logoContainer}>
-                <NavLink to="/" className={classes.logoLink}><span><img className={classes.logoImg} src="../../favicon.PNG" alt="Hack4Impact Logo" />
+                <NavLink to="/" className={classes.logoLink}>
+                <img className={classes.logoImg} src="../../favicon.PNG" alt="Hack4Impact Logo" />
                     <span className={classes.logoMainText}>Hack4Impact</span>
-                umd</span></NavLink>
+                umd</NavLink>
             </div>
             <nav className={classes.navContainer}>
                 <ul className={classes.navLinks}>
