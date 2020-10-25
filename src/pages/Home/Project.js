@@ -9,18 +9,13 @@ import { ListGroupItem } from 'react-bootstrap'
  */
 
 class Project extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (
             <>
                 <Card style={{width: 'auto', background: '#f4f4f4' }}>
-                    <img src="" style={{width: '100%'}} alt="background" />
-                    <Card.Img varient='top' src="" />
-                    <Card.body>
-                        <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Img varient='top' src={this.props.title_img} />
+                    <Card.Body>
                         <Card.Text>{this.props.description}</Card.Text>
                         <Card.Title>Members</Card.Title>
 
@@ -32,10 +27,10 @@ class Project extends React.Component {
                                 )
                             })}
                         </ListGroup>
-                    </Card.body>
+                    </Card.Body>
                 </Card>
             </>
-        );
+        )
     }
 
     /* return (

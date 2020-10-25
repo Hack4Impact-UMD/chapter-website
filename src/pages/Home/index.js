@@ -6,13 +6,13 @@ import Project from './Project'
  */
 const projs = [
     {
-        title: 'EcoDistrict Project',
+        title_img: './ecodistrict.PNG',
         description: 'This project team is developing a website for the EcoDistricts VA, Hampton Roads community. The website gives residents access to jobs/opportunities, surveys/focus groups, and tools such as Healthy Home & Energy Efficiency Tool to help community members support each other.', 
         members: ['Simin Li (PM)', 'Rajashow Parajuli (Tech Lead)', 'Shania Kamara', 'Jessica Le', 'Yashas Lokesh', 'Sammy Munta']
     }, 
 
     {
-        title: 'Women in Science, Engineering, and the Environment (WISE-E) program',
+        title_img: './wise-e.PNG',
         description: 'This project team is working to create a website home for the Women in Science, Engineering, and the Environment (WISE-E) program. This initiative aims to connect women interested in science to resources and larger networks and promote their participation in these fields.', 
         members: ['Lydia Hu (PM)', 'Jason Maa (Tech Lead)', 'Shivanee Arun', 'Elizabeth Chen', 'Nate Mekonnen', 'Daneil Nguyen']
     }
@@ -32,7 +32,7 @@ const Home = () => {
             {projs.map(proj => {
                 return (
                     <Project 
-                        title = {proj.title}
+                        title_img = {proj.title_img}
                         description = {proj.description}
                         members = {proj.members}
                     />
