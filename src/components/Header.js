@@ -25,15 +25,7 @@ const navItems = [
     }
 ]
 
-const Header = () => {
-
-    // const [click, setClick] = React.useState(false);
-    // const handleClick = () => {
-    //     setClick(!click);
-    //     console.log(click);
-    // }
-
-    return (
+const Header = () => (
         <div className={classes.container}>
             <div className={classes.logoContainer}>
                 <NavLink to="/" className={classes.logoLink}><span><img className={classes.logoImg} src="../../favicon.PNG" alt="Hack4Impact Logo" />
@@ -42,11 +34,11 @@ const Header = () => {
             </div>
             <nav className={classes.navContainer}>
                 <ul className={classes.navLinks}>
-                    {/* {navItems.map( navItem => (<li key={navItem.name}><a href={navItem.href} onClick={handleClick} className={`${classes.navLink} ${click ? classes.navLinkSelected : classes.navLink}`}>{navItem.name}</a></li>))} */}
-                    {navItems.map( navItem => (<li key={navItem.name} className={classes.navLinksItems}><NavLink to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected}>{navItem.name}</NavLink></li>))}
+                    {/* navItem.name , used as key, expected to be unique */}
+                    {navItems.map( navItem => (<li key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected}>{navItem.name}</NavLink></li>))}
                 </ul>
             </nav>
         </div>
     )
-}
+
 export default Header;
