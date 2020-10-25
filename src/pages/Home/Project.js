@@ -9,17 +9,21 @@ import { ListGroupItem } from 'react-bootstrap'
  */
 
 class Project extends React.Component {
+ 
 
     render() {
         return (
             <>
-                <Card style={{width: 'auto', background: '#f4f4f4' }}>
+                <Card style={{width: '20rem', background: '#f4f4f4' }}>
                     <Card.Img varient='top' src={this.props.title_img} />
                     <Card.Body>
+                        <Card.Subtitle className="mb-2 text-muted">{this.props.date}</Card.Subtitle>
                         <Card.Text>{this.props.description}</Card.Text>
-                        <Card.Title>Members</Card.Title>
+                        
+                        {/*<Card.Title>Members</Card.Title>*/}
 
                         {/* maps through the list of members and creates an li element for each one */}
+                        {/*
                         <ListGroup variant='flush'>
                             {this.props.members.map(member => {
                                 return (
@@ -27,6 +31,7 @@ class Project extends React.Component {
                                 )
                             })}
                         </ListGroup>
+                        */}
                     </Card.Body>
                 </Card>
             </>
