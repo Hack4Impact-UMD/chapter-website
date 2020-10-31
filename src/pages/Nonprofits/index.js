@@ -1,11 +1,14 @@
 import React from 'react';
-const Nonprofits = () => {
-    return (
-        <div>
-            <h1>
-                Nonprofits
-            </h1>
-        </div>
-    )
+class Nonprofits extends React.Component{
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        return (
+            <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'white'}} >
+            <h1>Nonprofit Organizations</h1>
+            </div>
+        )
+    }
 }
 export default Nonprofits;
