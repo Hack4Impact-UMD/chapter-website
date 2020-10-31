@@ -13,24 +13,16 @@
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    /* align-items: baseline; */
     position: sticky;
     top: 0;
     bottom: 100%;
 }
 
 .logoContainer{
-    /* flex: 1; */
     height: 100%;
     position: relative;
     bottom: 0.4px;
-    /* padding: 12px 0px; */
 }
-/* .logoImgContainer{
-    /* flex: 1; 
-    height: 8vh;
-    /* padding: 8px 0px; 
-} */
 .logoLink{
     color: #333333;
     font-size: 20px;
@@ -47,7 +39,6 @@
 }
 
 .navContainer{
-    /* flex: 1; */
     width: 40%;
 }
 .navLinks{
@@ -61,7 +52,7 @@
 .navLink{
     color: #333333;
     text-decoration: none;
-    padding: 6px 4px;/* added padding to the links. makes the active and hover boxes appear bigger*/
+    padding: 6px 4px;
 }
 .navLink:hover{
     background-color: rgb(184, 221, 253);
