@@ -1,8 +1,7 @@
 import React from 'react';
 import {FAQ} from "../Nonprofits/FAQ";
-import {Accordion, Card, Button} from "react-bootstrap";
+import './index.css'
 
-import '../Nonprofits/index.css'
 const Nonprofits = () => {
     return (
         <div>
