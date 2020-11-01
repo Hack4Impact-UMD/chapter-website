@@ -1,8 +1,8 @@
-.card-img {
+.card_img {
     width: 100%;
 }
 
-.card-deck {
+.card_deck {
     display: flex;
     flex-direction: 'row';
     justify-content: space-around;
