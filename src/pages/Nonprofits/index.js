@@ -1,7 +1,8 @@
 import React from 'react';
-import {FAQ} from "../Nonprofits/FAQ";
+import {Button} from "react-bootstrap";
+//import {FAQ} from "../Nonprofits/FAQ";
 import './index.css'
-import Link from "next/link"
+//import Link from "next/link"
 
 const Nonprofits = () => {
     return (
@@ -20,7 +21,7 @@ const Nonprofits = () => {
                      contacting us! Our goal is to help your organization by providing 
                      software solutions.</p>
 
-                    <button onclick='https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform' >Apply Now</button>
+                    <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform" >Apply Now</Button>
                 </div>
             </div>
 
@@ -64,14 +65,15 @@ const Nonprofits = () => {
                     </li>
                 </ul>
             </div>
+         
 
-
+ {/*
             <FAQ>
                <question ask="What types of projects do you undertake?">
                   Most of the projects we undertake are web applications. Common examples
                   of problems we tackle include volunteer tracking forms, member directories,
-                  and data tracking softwares. Check out our <Link href="/projects"><a>projects
-                  page</a></Link> to see some of our previous work, and feel free to contact
+                  and data tracking softwares. Check out our <a href="/projects"><a>projects
+                  page</a></a> to see some of our previous work, and feel free to contact
                   us with any project ideas!
                </question>
                <question ask="How much does this cost?">
@@ -100,6 +102,7 @@ const Nonprofits = () => {
                   attempt to correct these issues, but cannot guarantee that we will be able to.
                </question>
             </FAQ>
+            */}
         </div>
     )
 }
