@@ -1,7 +1,8 @@
 import React from 'react';
 import TimelineItem from './TimelineItem';
 import Events from "./Events.js";
-import FAQItem from "./FAQItem.js";
+import FAQItem from "../../components/FAQItem.js";
+import faq_styles from "../../components/FAQItem.module.css";
 import classes from './styles.module.css';
 
 const timelineItems = [
@@ -60,7 +61,7 @@ class Students extends React.Component{
                 </div>
                 <div className={classes.topBigCircle}></div>
                 <div className={classes.cta}>
-                    <button className={classes.ctaButton}>Apply Now</button>
+                    <a className={classes.ctaButton} href = "https://forms.gle/1FrM2JdU1boC4KMz7" target="_blank">Apply Now</a>
                 </div>
 
             <div>
@@ -69,7 +70,7 @@ class Students extends React.Component{
                     <Events/>
                     <br/>
                     <h1>Frequently Asked Questions</h1>
-                    <div class="faq-list">
+                    <div className = {faq_styles.faq_list}>
                         <FAQItem question = "What types of roles can students have?" answer = {FAQAnswers[0]} />
                         <FAQItem question = "How much of a time commitment is Hack4Impact?" answer = {FAQAnswers[1]} />
                     </div>
