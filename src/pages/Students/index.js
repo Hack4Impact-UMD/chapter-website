@@ -41,44 +41,41 @@ class Students extends React.Component{
     }
     render() {
         return (
-            <div>
-                <div className={classes.studentContainer}>
-                    <div className={classes.centerContainer}>
-                    {/* <span className={classes.centerContainerHead}><h1>Students</h1></span> */}
-                    <div className={classes.centerContainerText}>
-                        <p className={classes.head1}>Students</p>
-                        <p>We strive to both prepare students for socially consious roles in tech   while creating a supportive community. Here are some fun events we hold   for our members and our application information.</p>
-                    </div>
-                    </div>
-                    <p className={`${classes.head2} ${classes.timelineHead}`}>Application Process</p>
-                    <div className={classes.timelineContainer}>
-                        {timelineItems.map((item, i) => {
-                            return (
-                                <TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />
-                            );
-                            }
-                        )}
-                    </div>
-                    <div className={classes.topBigCircle}></div>
-                    <div className={classes.cta}>
-                        <button className={classes.ctaButton}>Apply Now</button>
-                    </div>
-                    
+            <div className={classes.studentContainer}>
+                <div className={classes.centerContainer}>
+                {/* <span className={classes.centerContainerHead}><h1>Students</h1></span> */}
+                <div className={classes.centerContainerText}>
+                    <p className={classes.head1}>Students</p>
+                    <p>We strive to both prepare students for socially consious roles in tech   while creating a supportive community. Here are some fun events we hold   for our members and our application information.</p>
+                </div>
+                </div>
+                <p className={`${classes.head2} ${classes.timelineHead}`}>Application Process</p>
+                <div className={classes.timelineContainer}>
+                    {timelineItems.map((item, i) => {
+                        return (
+                            <TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />
+                        );
+                        }
+                    )}
+                </div>
+                <div className={classes.topBigCircle}></div>
+                <div className={classes.cta}>
+                    <button className={classes.ctaButton}>Apply Now</button>
                 </div>
 
-                <div>
-                    <section style={{zIndex:2}}>
-                        <br/>
-                        <Events/>
-                        <br/>
-                        <h1>Frequently Asked Questions</h1>
-                        <div class="faq-list">
-                            <FAQItem question = "What types of roles can students have?" answer = {FAQAnswers[0]} />
-                            <FAQItem question = "How much of a time commitment is Hack4Impact?" answer = {FAQAnswers[1]} />
-                        </div>
-                    </section>
-                </div>
+            <div>
+                <section style={{zIndex:2}}>
+                    <br/>
+                    <Events/>
+                    <br/>
+                    <h1>Frequently Asked Questions</h1>
+                    <div class="faq-list">
+                        <FAQItem question = "What types of roles can students have?" answer = {FAQAnswers[0]} />
+                        <FAQItem question = "How much of a time commitment is Hack4Impact?" answer = {FAQAnswers[1]} />
+                    </div>
+                </section>
             </div>
+        </div>
         )
     }
 }
