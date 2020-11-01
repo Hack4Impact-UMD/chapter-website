@@ -10,10 +10,10 @@ import style from "../../App.css"
 // Also, this is connected to a map function that provides everyone who does not yet have their pic uploaded with a placeholder image
 const allMembers = [
     ['Abbie Tran',          'UMD Website Team (PM)',            'UMD Chapter Co-Founder',               'abbietran.jpg'],
-    ['Lydia Hu',            'WISEE Team (PM)',                  'UMD Chapter Co-Founder',               ''],
+    ['Lydia Hu',            'WISEE Team (PM)',                  'UMD Chapter Co-Founder',               'lydiahu.png'],
     ['Simin Li',            'ECODistricts Team (PM)',           'UMD Chapter Co-Founder',               'siminli.PNG'],
     ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      ''],
-    ['Jason Maa',           'WISEE Team (Tech Lead)',           'Software Engineer',                    ''],
+    ['Jason Maa',           'WISEE Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
     ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    ''],
     
     ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
@@ -29,11 +29,11 @@ const allMembers = [
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
     ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    ''],
 
-    ['Daniel Nguyen',       'WISEE Team',                       'Software Engineer',                    ''],
-    ['Shivanee Arun',       'WISEE Team',                       'Software Engineer',                    ''],
-    ['Nate Mekonnen',       'WISEE Team',                       'Software Engineer',                    ''],
+    ['Daneil Nguyen',       'WISEE Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
+    ['Shivanee Arun',       'WISEE Team',                       'Software Engineer',                    'arunshivanee.jpg'],
+    ['Nate Mekonnen',       'WISEE Team',                       'Software Engineer',                    'natnaelmekonnen.jpg'],
     ['Maria Mao',           'WISEE Team',                       'Software Engineer; UI/UX Designer',    ''],
-    ['Elizabeth Chen',      'WISEE Team',                       'UI/UX Designer',                       ''],
+    ['Elizabeth Chen',      'WISEE Team',                       'UI/UX Designer',                       'elizabethchen.png'],
 
     ['Sammy Munta',         'ECODistricts Team',                'UI/UX Designer',                       ''],
     ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    ''],
@@ -70,15 +70,12 @@ class About extends React.Component{
                         <h1>Our Members</h1>
                         <div class="member-grid">
                             {allMembers.map(element => 
-                            <div class="member-grid-item" style={{backgroundImage: `url(${images[element[3]]})`}}>
-                                <p><b>{element[0]}</b><br/> 
-                                {element[1]}<br/>
-                                {element[2]}</p>
-                            </div>
-                            
-                            )
-                                
-                            } 
+                                <div class="member-grid-item" style={{backgroundImage: `url(${images[element[3]]})`}}>
+                                    <p><b>{element[0]}</b><br/> 
+                                    {element[1]}<br/>
+                                    {element[2]}</p>
+                                </div>
+                            )} 
                         </div>
                 </div>
             </section>
