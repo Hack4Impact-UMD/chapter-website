@@ -39,14 +39,6 @@ const ctItem = [
     }
 ]
 
-const fbk = [
-    {
-        name: "Facebook",
-        to: "https://www.facebook.com/hack4impactumd/"
-    }
-]
-
-
 const Footer = () => {
     return (
       <div className="Footer" style={{backgroundColor:"#64ab8a", minHeight:250, paddingTop:40}}>
@@ -67,7 +59,7 @@ const Footer = () => {
                 <ul className={classes.navLinks}>
                     {abtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                     {sdtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 200}}>{navItem.name}</NavLink></div>))}
-                    {fbk.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 95}}>{navItem.name}</NavLink></div>))}
+                    <a className="footer-link" href="https://www.facebook.com/hack4impactumd" style={{color: 'black', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 100}}>Facebook</a>
                 </ul>
             </nav>
 
@@ -75,6 +67,7 @@ const Footer = () => {
                 <ul className={classes.navLinks}>
                     {pjtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                     {nptItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 173}}>{navItem.name}</NavLink></div>))}
+
                 </ul>
             </nav>
 
@@ -83,6 +76,7 @@ const Footer = () => {
                     {ctItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                 </ul>
             </nav>
+
 
             <div>
                
