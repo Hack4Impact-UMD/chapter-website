@@ -13,9 +13,8 @@ const projectCardInfo = [
         surveys/focus groups, and tools such as Healthy Home & \
         Energy Efficiency Tool to help community members support \
         each other.', 
-        members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
-        Shivanee Arun, Elizabeth Chen, Maria Mao, Nate Mekonnen, \
-        Daneil Nguyen',
+        members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
+        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
         github: '' //???
     }, 
 
@@ -27,8 +26,9 @@ const projectCardInfo = [
         (WISE-E) program. This initiative aims to connect women interested \
         in science to resources and larger networks and promote their \
         participation in these fields.', 
-        members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
-        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta',
+        members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
+        Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
+        Daneil Nguyen',
         github: 'https://github.com/Hack4Impact-UMD/WISE-E'
     }
 ]

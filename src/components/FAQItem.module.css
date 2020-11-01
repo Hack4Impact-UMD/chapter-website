@@ -6,14 +6,20 @@
     background-color: black;
     border-radius: 10px;
     max-width: auto;
-    transition: all ease 1000ms;
+    transition-duration: "1s";
+/*     transition: all ease 1000ms;
+    transition-duration: "1s";
+ */}
+
+.faq-question:hover {
+    cursor: pointer;
 }
 
 .faq_answer {
     overflow: hidden;
     max-height: 0px;
-    transition: all ease 1000ms;
-}
+/*     transition: all ease 1000ms;
+ */}
 
 .faq_answer_selected {
     max-height: 1000px;
@@ -22,13 +28,3 @@
 .faq_item {
     padding: 1em;
 }
-/*
-.faq-item p {
-    display: none;
-}
-
-.faq-item.selected p {
-    max-height: 1000px;
-    display: block;
-}
-*/
