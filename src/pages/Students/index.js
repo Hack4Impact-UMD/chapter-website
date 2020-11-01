@@ -1,5 +1,7 @@
 import React from 'react';
 import TimelineItem from './TimelineItem';
+import Events from "./Events.js";
+import FAQItem from "./FAQItem.js";
 import classes from './styles.module.css';
 
 const timelineItems = [
@@ -19,6 +21,19 @@ const timelineItems = [
         description: "We will email you when we have reached a decision on your application. Unfortunately, we are not able to accept every student who applies. The number of students in our club is determined by the number of nonprofit projects we take on for the year. However, we are taking on more and more projects and growing the number of students and positions every year."
     }
 ];
+
+const FAQAnswers = [
+    "We recruit for software developers, product managers, and designers. On each nonprofit " +
+    "project team, we have around 4-5 developers, 1-2 product managers, and 1-2 designers. If there " +
+    "is a role that we don't currently offer and that interests you, let us know! We want our members " +
+    "to be passionate about their work and are always looking to make our project teams stronger.",
+
+    "Monthly GBMs for tech + social good talks, ethical software discussions, project demos, and more fun (1 hour per month)\n" + 
+    "Weekly meetings with your project team (1 hour per week)\n" +
+    "Work on the projects in your own time (2 to 3 hours)\n" +
+    "Placed on project teams with nonprofit OR bootcamp team, depending on experience\n" +
+    "Leadership roles, such as executive directors, project managers, and tech leads will spend more time, up to 10 hours a week."
+]
 class Students extends React.Component{
 
     constructor(props) {
@@ -26,29 +41,43 @@ class Students extends React.Component{
     }
     render() {
         return (
-            <div className={classes.studentContainer}>
-                <div className={classes.centerContainer}>
-                {/* <span className={classes.centerContainerHead}><h1>Students</h1></span> */}
-                <div className={classes.centerContainerText}>
-                    <p className={classes.head1}>Students</p>
-                    <p>We strive to both prepare students for socially consious roles in tech   while creating a supportive community. Here are some fun events we hold   for our members and our application information.</p>
+            <div>
+                <div className={classes.studentContainer}>
+                    <div className={classes.centerContainer}>
+                    {/* <span className={classes.centerContainerHead}><h1>Students</h1></span> */}
+                    <div className={classes.centerContainerText}>
+                        <p className={classes.head1}>Students</p>
+                        <p>We strive to both prepare students for socially consious roles in tech   while creating a supportive community. Here are some fun events we hold   for our members and our application information.</p>
+                    </div>
+                    </div>
+                    <p className={`${classes.head2} ${classes.timelineHead}`}>Application Process</p>
+                    <div className={classes.timelineContainer}>
+                        {timelineItems.map((item, i) => {
+                            return (
+                                <TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />
+                            );
+                            }
+                        )}
+                    </div>
+                    <div className={classes.topBigCircle}></div>
+                    <div className={classes.cta}>
+                        <button className={classes.ctaButton}>Apply Now</button>
+                    </div>
+                    
                 </div>
-                </div>
-                <p className={`${classes.head2} ${classes.timelineHead}`}>Application Process</p>
-                <div className={classes.timelineContainer}>
-                    {timelineItems.map((item, i) => {
-                        return (
 
-                            <TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />
-                        );
-                        }
-                    )}
+                <div>
+                    <section style={{zIndex:2}}>
+                        <br/>
+                        <Events/>
+                        <br/>
+                        <h1>Frequently Asked Questions</h1>
+                        <div class="faq-list">
+                            <FAQItem question = "What types of roles can students have?" answer = {FAQAnswers[0]} />
+                            <FAQItem question = "How much of a time commitment is Hack4Impact?" answer = {FAQAnswers[1]} />
+                        </div>
+                    </section>
                 </div>
-                <div className={classes.topBigCircle}></div>
-                <div className={classes.cta}>
-                    <button className={classes.ctaButton}>Apply Now</button>
-                </div>
-                
             </div>
         )
     }
