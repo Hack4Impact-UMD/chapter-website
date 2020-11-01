@@ -1,0 +1,34 @@
+.faq-list {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    max-width: auto;
+    transition: all ease 1000ms;
+}
+
+.faq-answer {
+    overflow: hidden;
+    max-height: 0px;
+    transition: all ease 1000ms;
+}
+
+.faq-answer.selected {
+    max-height: 1000px;
+}
+
+.faq-item {
+    padding: 1em;
+}
+/*
+.faq-item p {
+    display: none;
+}
+
+.faq-item.selected p {
+    max-height: 1000px;
+    display: block;
+}
+*/

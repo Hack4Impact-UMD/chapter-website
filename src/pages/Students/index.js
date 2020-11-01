@@ -1,5 +1,6 @@
 import React from 'react';
 import Events from "./Events.js";
+import FAQItem from "./FAQItem.js";
 import TimelineItem from '../../components/TimelineItem';
 import classes from './styles.module.css';
 
@@ -45,7 +46,16 @@ class Students extends React.Component{
                         {timelineItems.map((item, i) => (<TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />))}
                     </div>
                     <div className={classes.topBigCircle}></div>
-                    <Events/>
+                    <section style={{zIndex:2}}>
+                        <br/>
+                        <Events/>
+                        <br/>
+                        <h1>Frequently Asked Questions</h1>
+                        <div class="faq-list">
+                            <FAQItem question = "Question 1" answer = "Answer 1" />
+                            <FAQItem question = "Question 2" answer = "Answer 2" />
+                        </div>
+                    </section>
                 </div>
             </section>
         )

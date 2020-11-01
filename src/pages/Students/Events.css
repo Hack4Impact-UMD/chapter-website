@@ -1,6 +1,5 @@
 .card-img {
-    width: 30em;
-    height: 30em;
+    width: 100%;
 }
 
 .card-deck {
@@ -11,8 +10,16 @@
 }
 
 .card {
-    width: '30rem';
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background-color: white;
+    width: 20em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardText {
+    background-color: white;
+    width: 20em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .75em;
 }
 
 h3 {
