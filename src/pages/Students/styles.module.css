@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.head1, .head2{
+    margin-bottom: .5em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.head1{
+    font-size: 2.5em;
+}
+.head2{
+    font-size: 2em;
+}
+p{
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+.studentContainer{
+    background: linear-gradient(180deg, #EB5050 2.68%, #DDAE52 87.27%);
+    height: 2000px;
+}
+.topBigCircle{
+    width: 0px;
+    border: 567px solid rgba(250, 208, 61, 0.35);
+    border-radius: 567px;
+    position: absolute;
+    left: -567px;
+}
+.centerContainer{
+    color: #ffffff;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-around;
+    /* align-content: space-around; */
+    /* max-width: 40%; */
+    /* padding: 0 30%;
+    padding-top: 8%; */
+}
+.centerContainerText{
+    margin-top: 6%;
+    text-align: center;
+    max-width: 40%;/* //TODO increase to about 60%-80% in smaller devices */
+}
