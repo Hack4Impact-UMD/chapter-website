@@ -11,7 +11,7 @@ const FAQItem = (props) => {
 
     const Question = () => (
         <section class="faq-item">
-            <h2 onClick={toggleSelected}>{props.question}</h2>
+            <h2 onClick={toggleSelected} class='faq-question'>{props.question}</h2>
             <p class={selected ? "faq-answer selected" : "faq-answer"}>{props.answer}</p>
         </section>
     );

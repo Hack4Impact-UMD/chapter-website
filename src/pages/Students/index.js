@@ -64,7 +64,7 @@ class Students extends React.Component{
                 </div>
 
             <div>
-                <section style={{zIndex:2}}>
+                <section style={{zIndex:2, paddingBottom:"3em"}}>
                     <br/>
                     <Events/>
                     <br/>
