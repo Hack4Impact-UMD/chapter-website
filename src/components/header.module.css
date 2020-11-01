@@ -16,6 +16,7 @@
     position: sticky;
     top: 0;
     bottom: 100%;
+    z-index: 500;
 }
 
 .logoContainer{
