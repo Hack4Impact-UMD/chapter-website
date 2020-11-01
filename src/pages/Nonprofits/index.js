@@ -1,6 +1,7 @@
 import React from 'react';
 import {FAQ} from "../Nonprofits/FAQ";
 import './index.css'
+import Link from "next/link"
 
 const Nonprofits = () => {
     return (
@@ -19,7 +20,7 @@ const Nonprofits = () => {
                      contacting us! Our goal is to help your organization by providing 
                      software solutions.</p>
 
-                    <button>Apply Now</button>
+                    <button onclick='https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform' >Apply Now</button>
                 </div>
             </div>
 
@@ -69,8 +70,8 @@ const Nonprofits = () => {
                <question ask="What types of projects do you undertake?">
                   Most of the projects we undertake are web applications. Common examples
                   of problems we tackle include volunteer tracking forms, member directories,
-                  and data tracking softwares. Check out our ______projects______
-                  to see some of our previous work, and feel free to contact
+                  and data tracking softwares. Check out our <Link href="/projects"><a>projects
+                  page</a></Link> to see some of our previous work, and feel free to contact
                   us with any project ideas!
                </question>
                <question ask="How much does this cost?">
