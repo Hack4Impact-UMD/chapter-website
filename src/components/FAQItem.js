@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FAQItem.css"
+import styles from "./FAQItem.module.css"
 
 const FAQItem = (props) => {
     const [selected, setSelected] = useState(false);
@@ -10,9 +10,9 @@ const FAQItem = (props) => {
 /*  class={selected ? "faq-item selected" : "faq-item"} */
 
     const Question = () => (
-        <section class="faq-item">
-            <h2 onClick={toggleSelected} class='faq-question'>{props.question}</h2>
-            <p class={selected ? "faq-answer selected" : "faq-answer"}>{props.answer}</p>
+        <section className = {styles.faq_item}>
+            <h2 onClick={toggleSelected}>{props.question}</h2>
+            <p className={selected ? styles.faq_answer_selected : styles.faq_answer}>{props.answer}</p>
         </section>
     );
 

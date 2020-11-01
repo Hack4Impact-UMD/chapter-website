@@ -1,4 +1,4 @@
-.faq-list {
+.faq_list {
     position: relative;
     margin: auto;
     width: 50%;
@@ -15,16 +15,16 @@
     cursor: pointer;
 }
 
-.faq-answer {
+.faq_answer {
     overflow: hidden;
     max-height: 0px;
 /*     transition: all ease 1000ms;
  */}
 
-.faq-answer.selected {
+.faq_answer_selected {
     max-height: 1000px;
 }
 
-.faq-item {
+.faq_item {
     padding: 1em;
 }
