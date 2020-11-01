@@ -9,6 +9,7 @@
     "build": "^0.1.4",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
