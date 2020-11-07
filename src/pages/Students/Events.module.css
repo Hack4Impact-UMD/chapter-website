@@ -1,0 +1,27 @@
+.card_img {
+    width: 100%;
+}
+
+.card_deck {
+    display: flex;
+    flex-direction: 'row';
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 20em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardText {
+    background-color: white;
+    width: 20em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .75em;
+}
+
+h3 {
+    font-family: inherit;
+}
