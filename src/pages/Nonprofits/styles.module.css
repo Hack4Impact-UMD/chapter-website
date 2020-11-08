@@ -1,3 +1,4 @@
+
 .flex-container > div {
     display: flex;
     flex-direction: column;
@@ -10,9 +11,24 @@
   
 .flex-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     border: 5px  white; /* change to color of background */
+}
+
+p, h1, h2, h3, h4 {
+    color: black;
+}
+
+.button {
+    position: absolute;
+    width: 260px;
+    height: 68px;
+    left: 92px;
+    top: 816px;
+
+    background: #3C7ABA;
+    border-radius: 10px;
 }
