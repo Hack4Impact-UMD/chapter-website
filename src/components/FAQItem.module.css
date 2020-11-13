@@ -11,7 +11,7 @@
     transition-duration: "1s";
  */}
 
-.faq-question:hover {
+.faq_question:hover {
     cursor: pointer;
 }
 
