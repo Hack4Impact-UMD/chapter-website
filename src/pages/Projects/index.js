@@ -5,14 +5,14 @@ import ProjectCard from './Project.js';
 
 const projectCardInfo = [
     {
-        name: 'Ecodistrict', 
+        name: 'Hampton Roads, VA Ecodistrict', 
         image: './ecod.png',
         description: 'This project team is developing a \
-        website for the EcoDistricts VA, Hampton Roads community. \
+        website for the EcoDistrict community in  Hampton Roads, VA. \
         The website gives residents access to jobs/opportunities, \
         surveys/focus groups, and tools such as Healthy Home & \
         Energy Efficiency Tool to help community members support \
-        each other.', 
+        each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
         github: '' //???
@@ -23,9 +23,10 @@ const projectCardInfo = [
         image: './women.png',
         description: 'This project team is working to create a website \
         home for the Women in Science, Engineering, and the Environment \
-        (WISE-E) program. This initiative aims to connect women interested \
+        (WISE-E) program. The initiative aims to connect women interested \
         in science to resources and larger networks and promote their \
-        participation in these fields.', 
+        participation in these fields. This was made in partnership with the Center for Sustainable Communities-Atlanta.\
+        and IEEE', 
         members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
         Daneil Nguyen',
