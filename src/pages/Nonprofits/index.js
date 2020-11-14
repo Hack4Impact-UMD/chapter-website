@@ -1,33 +1,8 @@
 import React from 'react';
-import {Button} from "react-bootstrap";
-import './styles.module.css'
-import TimelineItem from '../../components/TimelineItem.js';
+import './styles.module.css';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
-import classes from '../Students/styles.module.css'
-
-const timelineItems = [
-    {
-        head: "Initial Contact",
-        timePeriod: "Early July",
-        description: "Reach out to our team to get started in our application process! We are interested in hearing about your organization and potential projects you may have in mind."
-    },
-    {
-        head: "Informational Interview",
-        timePeriod: "Late July to Early August",
-        description: "We will reach out to you to schedule an interview to discuss your project idea. We want to learn more about the problem, potential users, and additional factors that relate to your product."
-    },
-    {
-        head: "Project Selections",
-        timePeriod: "September",
-        description: "The Hack4Impact board of directors will consider the feasibility of your project and how well it suits our teams and timeline. We want to ensure we are the right people to tackle your problem."
-    },
-    {
-        head: "Response",
-        timePeriod: "Late September",
-        description: "We will let you know if we have chosen to take on your project. If we do not select it on one year, we highly encourage you to apply again. Since we are also a nonprofit organization, we face many similar resource limitations as you, but are constantly growing in size and funds."
-    },
-];
+import Timeline from './Timeline';
 
 
 const FAQAnswers = [
@@ -59,11 +34,10 @@ const FAQAnswers = [
     "attempt to correct these issues, but cannot guarantee that we will be able to.",
 ]
 
-
 const Nonprofits = () => {
     return (
-        <div>
-            
+        <div class = 'NPO-section'>
+        
             <div class = 'flex-container'>
                 <div class = 'intro-section'>
                     <h1>Nonprofits</h1>
@@ -72,23 +46,12 @@ const Nonprofits = () => {
                     and web development skills to help nonprofits.</p>
                     <p>If you are interested in any technology development for your 
                     organization, please let us know by filling out the application or
-                     contacting us! Our goal is to help your organization by providing 
-                     software solutions.</p>
-
-                    <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</Button>
+                    contacting us! Our goal is to help your organization by providing 
+                    software solutions.</p>
+                    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a></button>
                 </div>
             
-                <div class = 'timeline-section'>
-                    <p className={`${classes.head2} ${classes.timelineHead}`}>Application Process</p>
-                    <div className={classes.timelineContainer}>
-                        {timelineItems.map((item, i) => {
-                            return (
-                                <TimelineItem head={item.head} timePeriod={item.timePeriod} description={item.description} />
-                            );
-                            }
-                        )}
-                    </div>
-                </div>
+                <Timeline/>
 
                 <div class = 'FAQ-section'>
                     <h1>Frequently Asked Questions</h1>
