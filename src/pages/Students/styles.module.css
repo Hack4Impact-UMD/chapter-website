@@ -27,6 +27,7 @@ p{
 
 .studentContainer{
     background: linear-gradient(180deg, #EB5050 2.68%, #DDAE52 87.27%);
+    background-size: cover;
 }
 
 .topBigCircle{

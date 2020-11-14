@@ -6,16 +6,13 @@ import styles from './Events.module.css';
 const EventCard = (props) => (
     <section style={{zIndex:1}}>
         <Card className={styles.card}>
-            <Card.Body>
+            <Card.Body className = {styles.cardText}>
                 <img className ={styles.card_img} src={props.imgUrl} alt={props.imgAlt}/>
-            </Card.Body>
-            <div className = {styles.cardText}>
                 <Card.Title><h3>{props.title}</h3></Card.Title>
-                <br/>
                 <Card.Text>
                     {props.text}
                 </Card.Text>
-            </div>
+            </Card.Body>
         </Card>
     </section>
 );
