@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
-import styles from "./projectDetails.module.css";
-import ProjectCard from './Project.js';
+import styles from "../../components/projectDetails.module.css";
+import ProjectCard from '../../components/Project.js';
 
 const projectCardInfo = [
     {
