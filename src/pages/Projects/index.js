@@ -15,7 +15,7 @@ const projectCardInfo = [
         each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
-        github: '' //???
+        github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads'
     }, 
 
     {
