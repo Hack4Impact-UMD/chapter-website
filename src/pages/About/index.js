@@ -12,7 +12,7 @@ const allMembers = [
     ['Abbie Tran',          'UMD Website Team (PM)',            'UMD Chapter Co-Founder',               'abbietran.jpg'],
     ['Lydia Hu',            'WISEE Team (PM)',                  'UMD Chapter Co-Founder',               'lydiahu.png'],
     ['Simin Li',            'ECODistricts Team (PM)',           'UMD Chapter Co-Founder',               'siminli.PNG'],
-    ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      ''],
+    ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      'alishavarma.png'],
     ['Jason Maa',           'WISEE Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
     ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    ''],
     
@@ -36,10 +36,10 @@ const allMembers = [
     ['Elizabeth Chen',      'WISEE Team',                       'UI/UX Designer',                       'elizabethchen.png'],
 
     ['Sammy Munta',         'ECODistricts Team',                'UI/UX Designer',                       ''],
-    ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    ''],
+    ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    'jessicale.jpg'],
     ['Shania Kamara',       'ECODistricts Team',                'Software Engineer',                    ''],
     ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    ''],
-    ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       '']
+    ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg']
 ].map(element => element[3] == '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
