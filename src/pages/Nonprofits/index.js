@@ -58,7 +58,7 @@ const Nonprofits = () => {
             </div>
 
             <div className = {classes.FAQSection}>
-                <h1>Frequently Asked Questions</h1>
+                <h2>Frequently Asked Questions</h2>
                     <div className = {faq_styles.faq_list}>
                         <FAQItem question = "What types of projects do you undertake?" answer = {FAQAnswers[0]} />
                         <FAQItem question = "How much does this cost?" answer = {FAQAnswers[1]} />

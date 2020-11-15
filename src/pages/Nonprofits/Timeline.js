@@ -27,8 +27,8 @@ const timelineData = [
 const TimelineItem = ({ data }) => (
     <div className={classes.timelineItem}>
         <div className={classes.timelineItemContent}>
-            <p>{data.head}</p>
-            <p>{data.timePeriod}</p>
+            <h4>{data.head}</h4>
+            <h5>{data.timePeriod}</h5>
             <p>{data.description}</p>
             
             <span className={classes.circle} />

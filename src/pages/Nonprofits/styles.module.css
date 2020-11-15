@@ -15,6 +15,11 @@
 .timelineSection > h2 {
     margin-left: 10%;
 }
+
+.FAQSection > h2 {
+    margin-left: 25%
+}
+
 .button {
     width: 260px;
     height: 68px;
