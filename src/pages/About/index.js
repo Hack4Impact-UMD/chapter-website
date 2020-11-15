@@ -61,7 +61,7 @@ class About extends React.Component{
 
         return (
             <section id={styles.aboutcontent} style = {{marginTop: '3em', marginBottom: '3em', marginLeft: '18em', marginRight: '18em'}}>
-                <div style={{marginBottom: '3em'}}>
+                <div style={{marginBottom: '3em', color: 'white'}}>
                     <h1>What is Hack4Impact-UMD?</h1>
                     <p style={{marginLeft: '5em', marginRight: '5em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
                 </div>
