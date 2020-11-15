@@ -23,7 +23,7 @@ class ProjectCard extends React.Component {
     let githubIcon = <></>;
     if (this.props.github !== undefined) {
         githubIcon = 
-        <a style={{marginRight: '5px'}} href={this.props.github}>
+        <a style={{marginRight: '5px'}} href={this.props.github} target={'_blank'} title={'Github Link'}>
             <FaGithub  style={{width: '30px', height: '30px', color: 'black'}} />
         </a>;
     }
