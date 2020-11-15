@@ -1,7 +1,8 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons'
 import { NavLink } from 'react-router-dom';
 import classes from './header.module.css';
+
+
 
 const abtItem = [
     {
@@ -41,8 +42,9 @@ const ctItem = [
 
 const Footer = () => {
     return (
-      <div className="Footer" style={{backgroundColor:"#64ab8a", minHeight:250, paddingTop:40}}>
+      <div className="Footer" style={{backgroundColor:"#64ab8a", minHeight: 250, bottom:0, left:0, paddingTop:40, marginTop:15}}>
         <div className={classes.logoContainer} >
+           
             <div style={{marginBottom: 15}}>
             <NavLink to="/" className={classes.logoLink} style={{fontWeight: 'bold'}}>
             
@@ -59,7 +61,7 @@ const Footer = () => {
                 <ul className={classes.navLinks}>
                     {abtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                     {sdtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 200}}>{navItem.name}</NavLink></div>))}
-                    <a className="footer-link" href="https://www.facebook.com/hack4impactumd" style={{color: 'black', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 100}}>Facebook</a>
+                    <a className="footer-link" href="https://www.facebook.com/hack4impactumd" target="_blank" style={{color: 'black', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 100}}>Facebook</a>
                 </ul>
             </nav>
 
@@ -67,11 +69,11 @@ const Footer = () => {
                 <ul className={classes.navLinks}>
                     {pjtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                     {nptItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 173}}>{navItem.name}</NavLink></div>))}
-
+                    <a className="footer-link" href="https://github.com/Hack4Impact-UMD" target="_blank" style={{color: 'black', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 80}}>Github</a>
                 </ul>
             </nav>
 
-            <nav className={classes.navContainer} style={{marginTop: 15, marginBottom: 10}}>
+            <nav className={classes.navContainer} style={{marginTop: 15}}>
                 <ul className={classes.navLinks}>
                     {ctItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
                 </ul>
@@ -81,7 +83,7 @@ const Footer = () => {
             <div>
                
             </div>
-            
+           
         </div>
         
     </div>
