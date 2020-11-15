@@ -71,6 +71,17 @@ TODO -- Add bottom ring
 }
 
 
+.timelineContainer::before{
+    content: "";
+    /* display: inline-block; */
+    position: absolute;
+    margin-top: 15px;
+    left: 18.35%;
+    width: 0px;
+    height: 66%;
+    border: 1px solid black;
+    z-index: 5;
+}
 .timelineContainer{
     width: 100%;
     color: #ffffff;
