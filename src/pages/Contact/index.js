@@ -21,20 +21,20 @@ class ContactUs extends React.Component{
             <div>
                 <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Contact Us</h1>
-                    <div style={{margin: '10px'}} >
+                    <div style={{margin: '30px'}} >
                         <Container>
                             <Row style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
                                 <Col sm= {12} md={8} lg={6} xl={6}>
                                     If you have any questions about how to get involved or what we do, 
                                     send us a message below. You can also connect with us via email at umd@hack4impact.org,
-                                     <a href="https://www.facebook.com/hack4impactumd" target="_blank" rel="noopener noreferrer" >Facebook!</a>, or 
-                                     <a href="https://www.instagram.com/hack4impactumd" target="_blank" rel="noopener noreferrer"> Instagram</a>
+                                     <a href="https://www.facebook.com/hack4impactumd" target="_blank" rel="noopener noreferrer" >Facebook</a>, or 
+                                     <a href="https://www.instagram.com/hack4impactumd" target="_blank" rel="noopener noreferrer"> Instagram!</a>
                                 </Col>
                             </Row>
                         </Container>
                     </div>  
                     
-                    <Row style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <Row style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 10}}>
                         <Col sm={11} md={8} lg={8} xl={7}>
                             <Card>
                                 <Card.Body>
