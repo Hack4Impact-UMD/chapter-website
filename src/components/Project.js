@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from "react-bootstrap";
 import styles from "./projectDetails.module.css";
-import {FaGithub} from "react-icons/fa";
+import {FaGithub, FaInfoCircle} from "react-icons/fa";
 
 class ProjectCard extends React.Component {
     constructor(props) {
@@ -23,14 +23,22 @@ class ProjectCard extends React.Component {
                     </Card.Text>
 
                     <Card.Text style={{marginBottom: '.3rem'}}>
+                        <b>Tech Stack: </b>
+                        {this.props.techstack}
+                    </Card.Text>
+
+                    <Card.Text style={{marginBottom: '.3rem'}}>
                         <b>Team Members: </b>
                         {this.props.members}
                     </Card.Text>
 
                     <div style={{margin: '10px'}}/>
                     <div style={{alignContent: 'center', alignItems: 'center', textAlign: 'center'}}> 
-                        <a style={{marginRight: '5px'}} href={this.props.github}>
+                        <a style={{marginRight: '10px'}} href={this.props.github} target={'_blank'} title={"Github Link"}>
                             <FaGithub  style={{width: '30px', height: '30px', color: 'black'}} />
+                        </a>
+                        <a style={{marginRight: '10px'}} href={this.props.nonprofit} target={'_blank'} title={this.props.linktitle}>
+                            <FaInfoCircle  style={{width: '30px', height: '30px', color: 'black'}} />
                         </a>
                     </div>
                     
