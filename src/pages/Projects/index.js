@@ -29,8 +29,8 @@ const projectCardInfo = [
         home for the Women in Science, Engineering, and the Environment \
         (WISE-E) program. The initiative aims to connect women interested \
         in science to resources and larger networks and promote their \
-        participation in these fields. This was made in partnership with the Center for Sustainable Communities-Atlanta.\
-        and IEEE', 
+        participation in these fields. This was made in partnership with the Center for Sustainable Communities-Atlanta\
+        and IEEE.', 
         techstack: 'MongoDB, React, Node, Material-UI, AWS',
         members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
