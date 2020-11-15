@@ -4,7 +4,7 @@ import classes from './Timeline.module.css';
 const timelineData = [
     {
         head: "Initial Contact",
-        timePeriod: "Early July",
+        timePeriod: "Late June to Early July",
         description: "Reach out to our team to get started in our application process! We are interested in hearing about your organization and potential projects you may have in mind."
     },
     {
@@ -14,12 +14,12 @@ const timelineData = [
     },
     {
         head: "Project Selections",
-        timePeriod: "September",
+        timePeriod: "Early August",
         description: "The Hack4Impact board of directors will consider the feasibility of your project and how well it suits our teams and timeline. We want to ensure we are the right people to tackle your problem."
     },
     {
         head: "Response",
-        timePeriod: "Late September",
+        timePeriod: "Mid August",
         description: "We will let you know if we have chosen to take on your project. If we do not select it on one year, we highly encourage you to apply again. Since we are also a nonprofit organization, we face many similar resource limitations as you, but are constantly growing in size and funds."
     },
 ];

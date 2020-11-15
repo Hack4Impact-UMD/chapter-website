@@ -4,7 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import styles from "./App.css";
+import "./App.css";
 import Nonprofits from "./pages/Nonprofits/index";
 import Projects from "./pages/Projects/index";
 import Students from "./pages/Students/index";
