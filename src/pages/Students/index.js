@@ -11,17 +11,19 @@ const newMemberApplicationHyperlink = str.link("https://forms.gle/1FrM2JdU1boC4K
 const timelineItems = [
     {
         head: "Written Application",
-        timePeriod: "Weeks -2 to 2 of the semester",
-        description: "We accept written applications at the start of each semester. Written Applications via the 'apply' button below are open from two weeks before the start of the semester to the first two weeks of the semester.  If you want to chat with us in person or have any questions, you can come see us at the First or Second Look Fairs or send us an email."
+        timePeriod: "Weeks -2 to 2 of the fall semester and Weeks 1 - 2 of January",
+        description: "We accept written applications at the start of the fall semester and a few weeks before the start of the spring semester.\
+         Written Applications via the 'apply' button below are open from three weeks before the start of the semester to the first two weeks of the semester.\
+         If you want to chat with us in person or have any questions, you can come see us at the First or Second Look Fairs or send us an email."
     },
     {
         head: "Interview",
-        timePeriod: "Weeks 1 to 3 of the semester",
+        timePeriod: "Weeks 1 to 3 of the Fall Semester and Weeks 2 - 3 of January",
         description: "We will reach out to schedule an interview if your interests and skills match what we are looking for. Don't stress about your interview! We want to get to know you and why you're passionate about joining H4I and our mission. If you are applying for a developer position, we may ask technical questions, but we encourage everyone to apply regardless of experience level."
     },
     {
         head: "Notified of Decision",
-        timePeriod: "Weeks 2 to 3 of the semester",
+        timePeriod: "Weeks 2 to 3 of the Fall Semester and Weeks 3 - 4 of January",
         description: "We will email you when we have reached a decision on your application. Unfortunately, we are not able to accept every student who applies. The number of students in our club is determined by the number of nonprofit projects we take on for the year. However, we are taking on more and more projects and growing the number of students and positions every year."
     }
 ];
