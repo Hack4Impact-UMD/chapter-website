@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.module.css';
+import classes from './styles.module.css';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import Timeline from './Timeline';
@@ -38,8 +38,8 @@ const Nonprofits = () => {
     return (
         <div class = 'NPO-section'>
         
-            <div class = 'flex-container'>
-                <div class = 'intro-section'>
+            <div className = {classes.flexContainer}>
+                <div className = {classes.introSection}>
                     <h1>Nonprofits</h1>
                     <p>At Hack4Impact, we understand that nonprofit organizations 
                     are a valuable asset to our community. We want to use our software 
@@ -48,22 +48,26 @@ const Nonprofits = () => {
                     organization, please let us know by filling out the application or
                     contacting us! Our goal is to help your organization by providing 
                     software solutions.</p>
-                    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a></button>
                 </div>
-            
-                <Timeline/>
-
-                <div class = 'FAQ-section'>
-                    <h1>Frequently Asked Questions</h1>
-                        <div className = {faq_styles.faq_list}>
-                            <FAQItem question = "What types of projects do you undertake?" answer = {FAQAnswers[0]} />
-                            <FAQItem question = "How much does this cost?" answer = {FAQAnswers[1]} />
-                            <FAQItem question = "What does the project timeline look like?" answer = {FAQAnswers[2]} />
-                            <FAQItem question = "How much involvement is expected from nonprofits?" answer = {FAQAnswers[3]} />
-                            <FAQItem question = "How does long term maintenance work?" answer = {FAQAnswers[4]} />
-                        </div>
-                </div>
+                <button className = {classes.button}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a></button>
             </div>
+            
+            <div className = {classes.timelineSection}>
+                <h2>Application Process</h2>
+                <Timeline/>
+            </div>
+
+            <div className = {classes.FAQSection}>
+                <h1>Frequently Asked Questions</h1>
+                    <div className = {faq_styles.faq_list}>
+                        <FAQItem question = "What types of projects do you undertake?" answer = {FAQAnswers[0]} />
+                        <FAQItem question = "How much does this cost?" answer = {FAQAnswers[1]} />
+                        <FAQItem question = "What does the project timeline look like?" answer = {FAQAnswers[2]} />
+                        <FAQItem question = "How much involvement is expected from nonprofits?" answer = {FAQAnswers[3]} />
+                        <FAQItem question = "How does long term maintenance work?" answer = {FAQAnswers[4]} />
+                    </div>
+            </div>
+            
         </div>
     )
 }

@@ -1,26 +1,24 @@
-.flex-container > div {
+.flexContainer > div {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 5%;
-    padding: 20px;
-    height: 200px;  
-}
-  
-.flex-container {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
     max-width: 30%;
 }
+  
+.flexContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
 
+.timelineSection > h2 {
+    margin-left: 10%;
+}
 .button {
-    position: absolute;
     width: 260px;
     height: 68px;
-    left: 92px;
-    top: 816px;
     background: rgba(60, 122, 186, 1);
     border-radius: 10px;
+    color: white;
 }

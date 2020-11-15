@@ -1,5 +1,5 @@
 import React from 'react';
-import './Timeline.module.css';
+import classes from './Timeline.module.css';
 
 const timelineData = [
     {
@@ -25,20 +25,20 @@ const timelineData = [
 ];
 
 const TimelineItem = ({ data }) => (
-    <div className="timeline-item">
-        <div className="timeline-item-content">
+    <div className={classes.timelineItem}>
+        <div className={classes.timelineItemContent}>
             <p>{data.head}</p>
             <p>{data.timePeriod}</p>
             <p>{data.description}</p>
             
-            <span className="circle" />
+            <span className={classes.circle} />
         </div>
     </div>
 );
 
 const Timeline = () => {
     return (
-        <div className="timeline-container">
+        <div className={classes.timelineContainer}>
             {timelineData.map((data, idx) => (
                 <TimelineItem data={data} key={idx} />
             ))}
