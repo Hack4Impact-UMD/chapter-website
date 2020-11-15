@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import styles from "./memberbox.css"
+import styles from "./memberbox.module.css"
 import style from "../../App.css"
 
 // Format of each member is: [Name, Team + Special position if any, Title (like software engineer, co-founder, etc), link to headshot]
@@ -33,7 +33,7 @@ const allMembers = [
     ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
     ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer; Client Outreach',   'surabir.jpg'],
     ['Sharon Halevi',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    ''],
+    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
     ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
     ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   ''],
     ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    ''],
@@ -60,17 +60,17 @@ class About extends React.Component{
     render() {
 
         return (
-            <section id="about-content" style = {{marginLeft: '4em', marginRight: '4em'}}>
-                <div>
+            <section id={styles.aboutcontent} style = {{marginTop: '3em', marginBottom: '3em', marginLeft: '18em', marginRight: '18em'}}>
+                <div style={{marginBottom: '3em', color: 'white'}}>
                     <h1>What is Hack4Impact-UMD?</h1>
-                    <p style={{marginLeft: '10em', marginRight: '10em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
+                    <p style={{marginLeft: '5em', marginRight: '5em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
                 </div>
-                <div id = "members">
+                <div id = {styles.members}>
                     
-                        <h1>Our Members</h1>
-                        <div class="member-grid">
+                        <h1 style={{marginTop: '0.5em', marginBottom: '0.5em'}}>Our Members</h1>
+                        <div class={styles.membergrid}>
                             {allMembers.map(element => 
-                                <div class="member-grid-item" style={{backgroundImage: `url(${images[element[3]]})`}}>
+                                <div class={styles.membergriditem} style={{backgroundImage: `url(${images[element[3]]})`}}>
                                     <p><b>{element[0]}</b><br/> 
                                     {element[1]}<br/>
                                     {element[2]}</p>
