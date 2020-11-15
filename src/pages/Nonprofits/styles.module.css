@@ -1,7 +1,8 @@
 .flexContainer > div {
     display: flex;
     flex-direction: column; 
-    max-width: 30%;
+    max-width: 35%;
+    text-align: center;
 }
   
 .flexContainer {
@@ -13,7 +14,7 @@
 }
 
 .timelineSection > h2 {
-    margin-left: 10%;
+    margin-left: 30%;
 }
 
 .FAQSection > h2 {

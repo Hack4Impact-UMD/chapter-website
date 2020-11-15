@@ -9,7 +9,7 @@
     background-color:  rgba(23, 42, 58, 1);
     content: '';
     position: absolute;
-    left: calc(10% - 2px);
+    left: calc(30% - 2px);
     width: 4px;
     height: 100%;
 }
@@ -17,7 +17,7 @@
 .timelineItem {
     display: absolute;
     justify-content: flex-start;
-    left: calc(10% + 40px);
+    left: calc(30% + 40px);
     padding-right: 30px;
     position: relative;
     margin: 10px 0;

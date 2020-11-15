@@ -50,6 +50,7 @@ const Nonprofits = () => {
                     software solutions.</p>
                 </div>
                 <button className = {classes.button}><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a></button>
+                <br></br>
             </div>
             
             <div className = {classes.timelineSection}>
@@ -59,13 +60,14 @@ const Nonprofits = () => {
 
             <div className = {classes.FAQSection}>
                 <h2>Frequently Asked Questions</h2>
-                    <div className = {faq_styles.faq_list}>
-                        <FAQItem question = "What types of projects do you undertake?" answer = {FAQAnswers[0]} />
-                        <FAQItem question = "How much does this cost?" answer = {FAQAnswers[1]} />
-                        <FAQItem question = "What does the project timeline look like?" answer = {FAQAnswers[2]} />
-                        <FAQItem question = "How much involvement is expected from nonprofits?" answer = {FAQAnswers[3]} />
-                        <FAQItem question = "How does long term maintenance work?" answer = {FAQAnswers[4]} />
-                    </div>
+                <div className = {faq_styles.faq_list}>
+                    <FAQItem question = "What types of projects do you undertake?" answer = {FAQAnswers[0]} />
+                    <FAQItem question = "How much does this cost?" answer = {FAQAnswers[1]} />
+                    <FAQItem question = "What does the project timeline look like?" answer = {FAQAnswers[2]} />
+                    <FAQItem question = "How much involvement is expected from nonprofits?" answer = {FAQAnswers[3]} />
+                    <FAQItem question = "How does long term maintenance work?" answer = {FAQAnswers[4]} />
+                </div>
+                <br></br>
             </div>
             
         </div>
