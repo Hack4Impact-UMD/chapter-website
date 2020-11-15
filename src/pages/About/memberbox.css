@@ -1,0 +1,33 @@
+#members{
+    background-color: white;
+    border: 0.1em solid white;
+    border-radius: 12px;
+}
+
+#about-content{
+    text-align: center;
+}
+
+.member-grid{
+    display:inline-grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: auto auto auto auto;
+}
+
+.member-grid-item{
+    padding-top: 14em;
+    text-align: left;
+    border-radius: 8px;
+    font-size: 0.8em;
+    background-position: center;
+    background-size: 22em;
+    background-repeat:no-repeat;
+    color: white;
+    text-shadow: 1px 1px 4px purple;
+    width: 22em;
+}
+
+.member-grid-item p{
+    padding-left: 5px;
+}
