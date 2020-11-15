@@ -21,12 +21,14 @@ class ContactUs extends React.Component{
             <div>
                 <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Contact Us</h1>
-                    <div style={{margin: '20px'}} >
+                    <div style={{margin: '10px'}} >
                         <Container>
-                            <Row style={{ display: "flex", justifyContent: "center", alignItems: "center", color: 'gray'}} >
+                            <Row style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
                                 <Col sm= {12} md={8} lg={6} xl={6}>
                                     If you have any questions about how to get involved or what we do, 
-                                    send us a message below or connect with us!
+                                    send us a message below. You can also connect with us via email at umd@hack4impact.org,
+                                     <a href="https://www.facebook.com/hack4impactumd" target="_blank" rel="noopener noreferrer" >Facebook!</a>, or 
+                                     <a href="https://www.instagram.com/hack4impactumd" target="_blank" rel="noopener noreferrer"> Instagram</a>
                                 </Col>
                             </Row>
                         </Container>
@@ -61,7 +63,7 @@ class ContactUs extends React.Component{
                     </Row>
                 </div>
 
-                <div style={{margin: '40px'}} />
+                
             </div>
         )
     }
