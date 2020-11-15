@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from "react-bootstrap";
 import styles from "./projectDetails.module.css";
-import {FaGithub} from "react-icons/fa";
+import {FaGithub, FaInfoCircle} from "react-icons/fa";
 
 class ProjectCard extends React.Component {
     constructor(props) {
@@ -28,6 +28,23 @@ class ProjectCard extends React.Component {
         </a>;
     }
 
+    let techStack = <></>;
+    if(this.props.techstack !== undefined) {
+        techStack = 
+        <Card.Text style={{marginBottom: '.3rem'}}>
+        <b>Tech Stack: </b>
+        {this.props.techstack}
+    </Card.Text>;
+    }
+
+    let infoIcon = <></>;
+    if (this.props.nonprofit !== undefined && this.props.linktitle !== undefined) {
+        infoIcon = 
+        <a style={{marginRight: '10px'}} href={this.props.nonprofit} target={'_blank'} title={this.props.linktitle}>
+        <FaInfoCircle  style={{width: '30px', height: '30px', color: 'black'}} />
+        </a>;
+    }
+
     return (
         <div className={styles.card}>
             <Card style={{overflow: 'auto', marginBottom: '30px', width: '100%', height: '100%'}} >
@@ -41,13 +58,18 @@ class ProjectCard extends React.Component {
                     <Card.Text style={{marginBottom: '.3rem'}}>
                         {this.props.description}
                     </Card.Text>
-
-                    {members}                    
+                    
+                    {techStack}
+                    {members} 
 
                     <div style={{margin: '10px'}}/>
                     <div style={{alignContent: 'center', alignItems: 'center', textAlign: 'center'}}> 
-                       {githubIcon}
+                        {githubIcon}
+                        {infoIcon}
                     </div>
+                                  
+
+                    
                     
                 </Card.Body>
             </Card>

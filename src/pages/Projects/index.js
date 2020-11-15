@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 import styles from "../../components/projectDetails.module.css";
 import ProjectCard from '../../components/Project.js';
+import {useMediaQuery} from 'react-responsive';
 
 const projectCardInfo = [
     {
@@ -12,10 +13,13 @@ const projectCardInfo = [
         The website gives residents access to jobs/opportunities, \
         surveys/focus groups, and tools such as Healthy Home & \
         Energy Efficiency Tool to help community members support \
-        each other.', 
+        each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
+        techstack: 'MongoDB, Express.js, React, Node, AWS',
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
-        github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads' 
+        github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
+        nonprofit: 'http://ecodistricthamptonroads.org/', 
+        linktitle: 'Hampton Roads, VA Ecodistrict Website'
     }, 
 
     {
@@ -23,13 +27,17 @@ const projectCardInfo = [
         image: './women.png',
         description: 'This project team is working to create a website \
         home for the Women in Science, Engineering, and the Environment \
-        (WISE-E) program. This initiative aims to connect women interested \
+        (WISE-E) program. The initiative aims to connect women interested \
         in science to resources and larger networks and promote their \
-        participation in these fields.', 
+        participation in these fields. This was made in partnership with the Center for Sustainable Communities-Atlanta.\
+        and IEEE', 
+        techstack: 'MongoDB, React, Node, Material-UI, AWS',
         members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
         Daneil Nguyen',
-        github: 'https://github.com/Hack4Impact-UMD/WISE-E'
+        github: 'https://github.com/Hack4Impact-UMD/WISE-E',
+        nonprofit: 'https://csc-atl.org/wise-e/', 
+        linktitle: 'WISE-E Website'
     }
 ]
 
@@ -40,8 +48,8 @@ class Projects extends React.Component{
 
     renderCards() {
         let projectCards = projectCardInfo.map((info) => {
-            return <ProjectCard name={info.name} description={info.description} 
-            members={info.members} github={info.github} image={info.image}/>
+            return <ProjectCard name={info.name} description={info.description} techstack={info.techstack}
+            members={info.members} github={info.github} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
         });
 
         let rowGroups = [];
