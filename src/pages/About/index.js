@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import styles from "./memberbox.css"
+import styles from "./memberbox.module.css"
 import style from "../../App.css"
 
 // Format of each member is: [Name, Team + Special position if any, Title (like software engineer, co-founder, etc), link to headshot]
@@ -10,36 +10,36 @@ import style from "../../App.css"
 // Also, this is connected to a map function that provides everyone who does not yet have their pic uploaded with a placeholder image
 const allMembers = [
     ['Abbie Tran',          'UMD Website Team (PM)',            'UMD Chapter Co-Founder',               'abbietran.jpg'],
-    ['Lydia Hu',            'WISEE Team (PM)',                  'UMD Chapter Co-Founder',               'lydiahu.png'],
+    ['Lydia Hu',            'WISE-E Team (PM)',                  'UMD Chapter Co-Founder',               'lydiahu.png'],
     ['Simin Li',            'ECODistricts Team (PM)',           'UMD Chapter Co-Founder',               'siminli.PNG'],
-    ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      ''],
-    ['Jason Maa',           'WISEE Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
-    ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    ''],
+    ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      'alishavarma.png'],
+    ['Jason Maa',           'WISE-E Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
+    ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    'rajashowparajuli.PNG'],
     
-    ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
-    ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Sharon Halevi',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   ''],
-    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    ''],
+    
 
-    ['Daneil Nguyen',       'WISEE Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
-    ['Shivanee Arun',       'WISEE Team',                       'Software Engineer',                    'arunshivanee.jpg'],
-    ['Nate Mekonnen',       'WISEE Team',                       'Software Engineer',                    'natnaelmekonnen.jpg'],
-    ['Maria Mao',           'WISEE Team',                       'Software Engineer; UI/UX Designer',    ''],
-    ['Elizabeth Chen',      'WISEE Team',                       'UI/UX Designer',                       'elizabethchen.png'],
+    ['Daneil Nguyen',       'WISE-E Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
+    ['Shivanee Arun',       'WISE-E Team',                       'Software Engineer',                    'arunshivanee.jpg'],
+    ['Nate Mekonnen',       'WISE-E Team',                       'Software Engineer',                    'natnaelmekonnen.jpg'],
+    ['Elizabeth Chen',      'WISE-E Team',                       'UI/UX Designer',                       'elizabethchen.png'],
 
     ['Sammy Munta',         'ECODistricts Team',                'UI/UX Designer',                       ''],
-    ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    ''],
+    ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    'jessicale.jpg'],
     ['Shania Kamara',       'ECODistricts Team',                'Software Engineer',                    ''],
-    ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    ''],
-    ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       '']
+    ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    'yashas.jpeg'],
+    ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg'],
+    ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
+    ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
+    ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
+    ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer; Client Outreach',   'surabir.jpg'],
+    ['Sharon Halevi',       'UMD Website Team',                 'Software Engineer',                    ''],
+    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
+    ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
+    ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   ''],
+    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    ''],
+    ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
+    ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
+    ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
 ].map(element => element[3] == '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
@@ -60,17 +60,17 @@ class About extends React.Component{
     render() {
 
         return (
-            <section id="about-content" style = {{marginLeft: '4em', marginRight: '4em'}}>
-                <div>
+            <section id={styles.aboutcontent} style = {{marginTop: '3em', marginBottom: '3em', marginLeft: '18em', marginRight: '18em'}}>
+                <div style={{marginBottom: '3em', color: 'white'}}>
                     <h1>What is Hack4Impact-UMD?</h1>
-                    <p style={{marginLeft: '10em', marginRight: '10em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
+                    <p style={{marginLeft: '5em', marginRight: '5em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
                 </div>
-                <div id = "members">
+                <div id = {styles.members}>
                     
-                        <h1>Our Members</h1>
-                        <div class="member-grid">
+                        <h1 style={{marginTop: '0.5em', marginBottom: '0.5em'}}>Our Members</h1>
+                        <div class={styles.membergrid}>
                             {allMembers.map(element => 
-                                <div class="member-grid-item" style={{backgroundImage: `url(${images[element[3]]})`}}>
+                                <div class={styles.membergriditem} style={{backgroundImage: `url(${images[element[3]]})`}}>
                                     <p><b>{element[0]}</b><br/> 
                                     {element[1]}<br/>
                                     {element[2]}</p>
