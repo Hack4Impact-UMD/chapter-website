@@ -6,11 +6,11 @@ import Timeline from './Timeline';
 
 
 const FAQAnswers = [
-    "Most of the projects we undertake are web applications. Common examples " +
-    "of problems we tackle include volunteer tracking forms, member directories, " +
-    "and data tracking softwares. Check out our " + <a href="/projects">projects page</a> + 
-    " to see some of our previous work, and feel free to contact " +
-    "us with any project ideas!",
+    <p>Most of the projects we undertake are web applications. Common examples
+    of problems we tackle include volunteer tracking forms, member directories,
+    and data tracking softwares. 
+    Check out our <a href="/projects">projects page</a> to see some of our 
+    previous work, and feel free to contact us with any project ideas!</p> ,
 
     "These projects are free or low cost ($5- $15 / month) for the website " +
     "and hosting expenses. We are building software to better help you " +
