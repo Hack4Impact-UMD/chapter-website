@@ -40,7 +40,7 @@ const allMembers = [
     ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
     ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
-].map(element => element[3] == '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
+].map(element => element[3] === '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
 // https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
