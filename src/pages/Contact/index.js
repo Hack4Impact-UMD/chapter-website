@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col, Form, Button, Card} from "react-bootstrap"
 import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.css';
+import { SocialIcon } from 'react-social-icons';
 
 class ContactUs extends React.Component{
     sendEmail(e) {  
@@ -26,9 +27,12 @@ class ContactUs extends React.Component{
                             <Row style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
                                 <Col sm= {12} md={8} lg={6} xl={6}>
                                     If you have any questions about how to get involved or what we do, 
-                                    send us a message below. You can also connect with us via email at umd@hack4impact.org,
-                                     <a href="https://www.facebook.com/hack4impactumd" target="_blank" rel="noopener noreferrer" >Facebook</a>, or 
-                                     <a href="https://www.instagram.com/hack4impactumd" target="_blank" rel="noopener noreferrer"> Instagram!</a>
+                                    send us a message below. You can also connect with us via email at umd@hack4impact.org or on these platforms below: <br></br>
+                                    <div style={{margin: '10px'}} > </div>
+                                    
+                                     <SocialIcon target="_blank" style={{marginLeft:10, marginRight: 10}} url="https://github.com/Hack4Impact-UMD" />
+                                    <SocialIcon target="_blank" style={{margin: 4}} url="https://www.facebook.com/hack4impactumd" />
+                                    <SocialIcon target="_blank" style={{marginLeft: 10}} url="https://www.instagram.com/hack4impactumd" />
                                 </Col>
                             </Row>
                         </Container>
