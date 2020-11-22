@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../../components/Project.js';
-import {Container, Card, Button, Row, Col} from "react-bootstrap";
+import {Container, Card, Button, Row, Col, CardDeck} from "react-bootstrap";
 import styles from "../../components/projectDetails.module.css";
 
 /**
@@ -23,6 +23,33 @@ const projs = [
         /*members: ['Lydia Hu (PM)', 'Jason Maa (Tech Lead)', 'Shivanee Arun', 'Elizabeth Chen', 'Nate Mekonnen', 'Daneil Nguyen']*/
     }
 ]
+
+const opporStudentsText = "I have to figure out a text for this. But this is a filler. " +
+    "Code pls work. Lorem ipsum dolor sit amet, consectetur" +
+    " adipiscing elit, sed do eiusmod tempor incididunt ut labore et" +
+    " dolore magna aliqua.Pellentesque massa placerat duis ultricies."
+
+const opporNonProfitText = "I have to figure out a text for this. But this is a filler. " +
+    "Code pls work. Lorem ipsum dolor sit amet, consectetur" +
+    " adipiscing elit, sed do eiusmod tempor incididunt ut labore et" +
+    " dolore magna aliqua.Pellentesque massa placerat duis ultricies."
+
+const OpportunitiesCards = (props) => (
+    <section style={{zIndex:1}}>
+        <Card className={styles.card}>
+                <Card.Body>
+                <img className ={styles.card_img} src={props.imgUrl} alt={props.imgAlt}/>
+            </Card.Body>
+            <div className = {styles.cardText}>
+                <Card.Title><h3>{props.title}</h3></Card.Title>
+                <br/>
+                <Card.Text>
+                    {props.text}
+                </Card.Text>
+            </div>
+        </Card>
+    </section>
+);
 
 /**
  * Home page
@@ -64,7 +91,34 @@ const Home = () => {
               </Card.Body>
         </Card>
         
-        </Container>
+        {/* Opportunities */}
+        <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'aliceblue' }}>
+            <Card.Body>
+            <Container>
+                <Row>
+                    <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <h3 style={{ marginBottom:'1em' }}>Opportunities</h3>
+                    </Col>
+                </Row>
+            </Container>
+                <Row>
+                <Container className = {styles.mosaic}>
+                
+                <section>
+                    <br/>
+                    <CardDeck className= {styles.card_deck}>
+                        <OpportunitiesCards title="Students" imgUrl = {'./students_imge.jpg'} imgAlt = "We ran out of students" imgClassName = "card-img" text = {opporStudentsText} />
+                        <OpportunitiesCards title="Nonprofits" imgUrl = {'./nonprofit_imae.jpg'} imgAlt = "We making profit" imgClassName = "card-img" text = {opporNonProfitText} />
+                    </CardDeck>
+                    <br/>
+                </section>             
+           
+            </Container>
+                </Row>                
+                </Card.Body>        
+        </Card> 
+        
+        </Container> // top container
     );
 }
 
