@@ -12,7 +12,7 @@ const timelineItems = [
     {
         head: "Written Application",
         timePeriod: "Weeks -2 to 2 of the fall semester and Weeks 1 - 2 of January",
-        description: "We accept written applications at the start of the fall semester and a few weeks before the start of the spring semester.\
+        description: "New members can join during the first OR second semester. We accept written applications at the start of the fall or semester and a few weeks before the start of the spring semester.\
          Written Applications via the 'apply' button below are open from three weeks before the start of the semester to the first two weeks of the semester.\
          If you want to chat with us in person or have any questions, you can come see us at the First or Second Look Fairs or send us an email."
     },
@@ -50,6 +50,8 @@ const FAQQuestions = [
 
     "What stack do you use?"
 ]
+
+const link = <a href="iamthesenate.space">running for senate</a>
 
 const FAQAnswers = [
     "We are currently recruiting for software developers, product managers, and designers on the project teams. We are also looking for people interested in marketing, finance, and nonprofit sourcing.",
