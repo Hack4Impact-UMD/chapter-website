@@ -1,7 +1,7 @@
 .container {
   position: relative;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(45, 45, 45);
 }
 
 .centered {
@@ -23,5 +23,9 @@
 .card {
   margin: auto;
   width: 70%;
-  padding: 10px;
+  padding: 3%;
+}
+
+img {
+  opacity: 0.4;
 }
