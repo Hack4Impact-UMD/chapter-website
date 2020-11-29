@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from '../../components/Project.js';
 import {Container, Card, Button, Row, Col, CardDeck} from "react-bootstrap";
 import styles from "../../components/projectDetails.module.css";
+import {FaGithub, FaInfoCircle} from "react-icons/fa";
 
 /**
  * Array of project objects
@@ -24,32 +25,23 @@ const projs = [
     }
 ]
 
-const opporStudentsText = "I have to figure out a text for this. But this is a filler. " +
-    "Code pls work. Lorem ipsum dolor sit amet, consectetur" +
-    " adipiscing elit, sed do eiusmod tempor incididunt ut labore et" +
-    " dolore magna aliqua.Pellentesque massa placerat duis ultricies."
+const opportunities = [
+    {
+        name: 'Students', 
+        image: './students_image.jpg',
+        description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
+        link: '../Students', 
+        linktitle: 'I\'m A Students'
+    }, 
 
-const opporNonProfitText = "I have to figure out a text for this. But this is a filler. " +
-    "Code pls work. Lorem ipsum dolor sit amet, consectetur" +
-    " adipiscing elit, sed do eiusmod tempor incididunt ut labore et" +
-    " dolore magna aliqua.Pellentesque massa placerat duis ultricies."
-
-const OpportunitiesCards = (props) => (
-    <section style={{zIndex:1}}>
-        <Card className={styles.card}>
-                <Card.Body>
-                <img className ={styles.card_img} src={props.imgUrl} alt={props.imgAlt}/>
-            </Card.Body>
-            <div className = {styles.cardText}>
-                <Card.Title><h3>{props.title}</h3></Card.Title>
-                <br/>
-                <Card.Text>
-                    {props.text}
-                </Card.Text>
-            </div>
-        </Card>
-    </section>
-);
+    {
+        name: 'Nonprofits', 
+        image: './nonprofit_image.jpg',
+        description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
+        link: '../Nonprofits', 
+        linktitle: 'I\'m A Nonprofits'
+    }
+]
 
 /**
  * Home page
@@ -90,8 +82,8 @@ const Home = () => {
                 
               </Card.Body>
         </Card>
-        
-        {/* Opportunities */}
+            
+        {/* Opportunities - Implemented previous code to make it easier to maintain in the future */}
         <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'aliceblue' }}>
             <Card.Body>
             <Container>
@@ -100,23 +92,30 @@ const Home = () => {
                       <h3 style={{ marginBottom:'1em' }}>Opportunities</h3>
                     </Col>
                 </Row>
-            </Container>
+              </Container>
                 <Row>
                 <Container className = {styles.mosaic}>
-                
-                <section>
-                    <br/>
-                    <CardDeck className= {styles.card_deck}>
-                        <OpportunitiesCards title="Students" imgUrl = {'./students_imge.jpg'} imgAlt = "We ran out of students" imgClassName = "card-img" text = {opporStudentsText} />
-                        <OpportunitiesCards title="Nonprofits" imgUrl = {'./nonprofit_imae.jpg'} imgAlt = "We making profit" imgClassName = "card-img" text = {opporNonProfitText} />
-                    </CardDeck>
-                    <br/>
-                </section>             
            
+
+            {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
+            {opportunities.map(opportunities => {
+               return (
+                   <ProjectCard
+                        name = {opportunities.name}
+                       description = {opportunities.description}
+                       nonprofit = {opportunities.link}
+                       linktitle = {opportunities.linktitle}
+                       image = {opportunities.image}                       
+                   />
+               )
+            })}  
             </Container>
-                </Row>                
-                </Card.Body>        
-        </Card> 
+            </Row>
+                
+              </Card.Body>
+        </Card>
+            
+
         
         </Container> // top container
     );
