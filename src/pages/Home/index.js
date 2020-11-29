@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Button, Row, Col, Card, CardDeck} from "react-bootstrap";
+import styles from "./styles.module.css";
 
 
 
@@ -31,45 +32,52 @@ const projs = [
  */
 const Home = () => {
     return (
-        <Container style = {{alignContent: 'center', textAlign: 'center', width: '70%', marginBottom: '4em'}}>
-        <h1>Hack4Impact UMD</h1>
-        <p style={{color: 'white', alignSelf: 'center', fontSize: '1.05em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of Hack4Impact, a national 501(c)3 organization.</p>
-        
-        {/* Project Cards*/}
-        <Container style={{ marginTop: '4em',marginBottom: '2em',alignItems: 'center',textAlign: 'center' }}>
-            
-            <Container>
-                <Row>
-                    <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <h3 style={{ marginBottom:'1em' }}>Our Projects</h3>
-                    </Col>
-                </Row>
-              </Container>
-            
-
-                <CardDeck>
-            
-
-                    {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
-                    {projs.map(proj => {
-                        return (
-                            <Card border = "lsecondary">
-                                <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={proj.image} alt="" />
-                                <Card.Title>{proj.name}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
-                                <Card.Text style={{marginBottom: '.3rem'}}>
-                                    {proj.description}
-                                </Card.Text>
-                               
-                            </Card>
-                        )
-                    })}  
-                </CardDeck>
+        <Container style = {{alignContent: 'center', textAlign: 'center',  marginBottom: '4em', alignItems: 'center'}}>
             
             
+            {/* Top Picture */}
+            <Container style = {{alignContent: 'center'}}>
+                <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
                 
-              
-        </Container>
+                <Button variant="danger" href="../About" className = {styles.buttonCenter} >Learn More</Button>    
+            </Container>
+
+
+            {/* Project Cards*/}
+            <Container style={{ marginTop: '1em', marginBottom: '2em'}}>
+                
+                <Container>
+                    <Row>
+                        <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <h3 style={{ marginBottom:'1em' }}>Our Projects</h3>
+                        </Col>
+                    </Row>
+                </Container>
+                
+
+                    <CardDeck>
+                
+
+                        {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
+                        {projs.map(proj => {
+                            return (
+                                <Card border = "secondary">
+                                    <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={proj.image} alt="" />
+                                    <Card.Title>{proj.name}</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
+                                    <Card.Text style={{marginBottom: '.3rem'}}>
+                                        {proj.description}
+                                    </Card.Text>
+                                
+                                </Card>
+                            )
+                        })}  
+                    </CardDeck>
+                
+                
+                    
+                
+            </Container>
             <Button variant="dark" href="../Projects" >Learn More</Button>     
         </Container>
     );
