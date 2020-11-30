@@ -49,15 +49,17 @@ const Nonprofits = () => {
                     contacting us! Our goal is to help your organization by providing 
                     software solutions.</p>
                 </div>
-                <a className={classes.button} href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a>
-                <br></br>
             </div>
             
             <div className = {classes.timelineSection}>
                 <h2>Application Process</h2>
                 <Timeline/>
             </div>
-
+            
+            <div className = {classes.buttonSection}>
+                <a className={classes.button} href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a>
+            </div>
+                        
             <div className = {classes.FAQSection}>
                 <h2>Frequently Asked Questions</h2>
                 <div className = {faq_styles.faq_list}>

@@ -6,10 +6,10 @@
 }
 
 .timelineContainer::after {
-    background-color:  rgba(23, 42, 58, 1);
+    background-color: rgba(0, 0, 0, 1);
     content: '';
     position: absolute;
-    left: calc(30% - 2px);
+    left: calc(25% - 2px);
     width: 4px;
     height: 100%;
 }
@@ -17,11 +17,11 @@
 .timelineItem {
     display: absolute;
     justify-content: flex-start;
-    left: calc(30% + 40px);
+    left: calc(25% + 40px);
     padding-right: 30px;
     position: relative;
     margin: 10px 0;
-    width: 50%;
+    width: 60%;
 
 }
 
@@ -31,15 +31,14 @@
     align-items: flex-start;
     padding: 15px;
     position: relative;
-    width: 700px;
-    max-width: 70%;
+    max-width: 80%;
     text-align: left;
     
 }
 
 .timelineItemContent .circle {
-    background-color: rgba(23, 42, 58, 1);
-    border: 3px solid rgba(23, 42, 58, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 10px);
