@@ -2,6 +2,7 @@
     background-color: white;
     border: 0.1em solid white;
     border-radius: 12px;
+    padding-bottom: 15em;
 }
 
 #aboutcontent{
@@ -10,24 +11,31 @@
 
 .membergrid{
     display:inline-grid;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+
+    --numCols: 4;
+    grid-template-columns: repeat(var(--numCols), auto);
 }
 
 .membergriditem{
     padding-top: 14em;
     text-align: left;
     border-radius: 8px;
-    font-size: 0.8em;
     background-position: center;
-    background-size: 22em;
+    background-size: cover;
     background-repeat:no-repeat;
     color: white;
     text-shadow: 1px 1px 4px purple;
-    width: 22em;
+}
+
+@media only screen and (max-width: 768px){
+    .membergrid{
+        --numCols: 1;
+        grid-row-gap: 0.1%;
+    }
 }
 
 .membergriditem p{
-    padding-left: 5px;
+    padding-left: 1%;
 }

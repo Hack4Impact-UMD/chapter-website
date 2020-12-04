@@ -1,10 +1,6 @@
 import React from 'react';
-import ProjectCard from '../../components/Project.js';
-import {Container, Card, Button, Row, Col, CardDeck} from "react-bootstrap";
-import styles from "../../components/projectDetails.module.css";
-import { FaGithub, FaInfoCircle } from "react-icons/fa";
-import OpportunitiesCard from '../../components/Opportunities.js';
-
+import {Container, Button, Row, Col, Card, CardDeck} from "react-bootstrap";
+import styles from "./styles.module.css";
 
 /**
  * Array of project objects
@@ -12,8 +8,8 @@ import OpportunitiesCard from '../../components/Opportunities.js';
 const projs = [
     {
         name: 'Hampton Roads ECO District', 
-        image: './ecod.PNG',
-        description: 'A website for the EcoDistrict in the Hampton Roads,Virginia community that gives residents access to jobs/opportunities, surveys/focus groups, and tools such as Healthy Home & Energy Efficiency Tool to help community members support each other.', 
+        image: './ECODistrictPic.PNG',
+        description: 'A website for the EcoDistrict in the Hampton Roads,Virginia community that gives residents access to resources that help community members support each other.', 
         date: 'Fall 2020'
         /*members: ['Simin Li (PM)', 'Rajashow Parajuli (Tech Lead)', 'Shania Kamara', 'Jessica Le', 'Yashas Lokesh', 'Sammy Munta']*/
     }, 
@@ -21,7 +17,9 @@ const projs = [
     {
         name: 'Women in Science, Engineering, and the Environment (WISE-E)', 
         image: './women.PNG',
-        description: 'A website home for the Women in Science, Engineering, and the Environment (WISE-E) program. This initiative aims to connect women interested in science to resources and larger networks and promote their participation in these fields.', 
+        description: 'A website home for WISE-E, an initiative that aims to connect women interested \
+        in science to resources and promote their \
+        participation in these fields.', 
         date: 'Fall 2020'
         /*members: ['Lydia Hu (PM)', 'Jason Maa (Tech Lead)', 'Shivanee Arun', 'Elizabeth Chen', 'Nate Mekonnen', 'Daneil Nguyen']*/
     }
@@ -54,76 +52,82 @@ const opportunities = [
  */
 const Home = () => {
     return (
-        <Container style = {{alignContent: 'center', textAlign: 'center'}}>
-        <h1>Hack4Impact UMD</h1>
-        <p>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
-        {/* Project Cards*/}
-        <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'aliceblue' }}>
-            <Card.Body>
-            <Container>
-                <Row>
-                    <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <h3 style={{ marginBottom:'1em' }}>Our Projects</h3>
-                    </Col>
-                </Row>
-              </Container>
-                <Row>
-                <Container className = {styles.mosaic}>
-           
-
-           {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
-           {projs.map(proj => {
-               return (
-                   <ProjectCard
-                        name = {proj.name}
-                       image = {proj.image}
-                       description = {proj.description}
-                       date = {proj.date}
-                   />
-               )
-           })}  
-       </Container>
-                </Row>
-                <Button style={{marginTop: '1em'}} variant="solid" href="../Projects">Learn More</Button>
-                
-              </Card.Body>
-        </Card>
+        <Container style = {{alignContent: 'center', textAlign: 'center',  marginBottom: '4em', alignItems: 'center'}}>
             
-        {/* Opportunities - Implemented previous code to make it easier to maintain in the future */}
-        <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'transparent' }}>
-            <Card.Body>
-            <Container>
-                <Row>
-                    <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <h4 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h4>
-                    </Col>
-                </Row>
-              </Container>
-                <Row>
-                <Container className = {styles.mosaic}>
-           
-
-            {opportunities.map(opportunities => {
-               return (
-                   <OpportunitiesCard
-                        name = {opportunities.name}
-                       description = {opportunities.description}
-                       nonprofit = {opportunities.link}
-                       linktitle = {opportunities.linktitle}
-                       image={opportunities.image}
-                       
-                   />
-               )
-            })}  
+            
+            {/* Top Picture */}
+            <Container style = {{alignContent: 'center'}}>
+                <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
+                
+                <Button variant="danger" href="../About" className = {styles.buttonCenter} >Learn More</Button>    
             </Container>
-            </Row>
-                
-              </Card.Body>
-        </Card>
-            
 
-        
-        </Container> // top container
+
+            {/* Project Cards*/}
+            <Container style={{ marginTop: '1em', marginBottom: '2em'}}>
+                
+                <Container>
+                    <Row>
+                        <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <h3 style={{ marginBottom:'1em' }}>Our Projects</h3>
+                        </Col>
+                    </Row>
+                </Container>
+                
+
+                    <CardDeck>                
+
+                        {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
+                        {projs.map(proj => {
+                            return (
+                                <Card border = "secondary">
+                                    <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={proj.image} alt="" />
+                                    <Card.Title>{proj.name}</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
+                                    <Card.Text style={{marginBottom: '.3rem'}}>
+                                        {proj.description}
+                                    </Card.Text>
+                                
+                                </Card>
+                            )
+                        })}  
+                    </CardDeck>
+                
+                
+                    
+                
+            </Container>
+            <Button variant="dark" href="../Projects" >Learn More</Button>     
+
+            
+            {/* Opportunities Cards */}
+            <Container style={{ marginTop: '1em', marginBottom: '2em'}}>
+                    <Container>
+                        <Row>
+                            <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                            <h4 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h4>
+                            </Col>
+                        </Row>
+                    </Container>		
+                        
+                    <CardDeck>         
+                        {opportunities.map(proj => {
+                            return (//                                
+                                <Card border = "secondary">
+                                    <img style={{width: '100%', height: '15rem', objectFit: 'cover'}} src={proj.image} alt="" />
+                                    <Card.Title>{proj.name}</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
+                                    <Card.Text style={{marginBottom: '.3rem'}}>
+                                        {proj.description}
+                                    </Card.Text>
+                                
+                                </Card> 
+                            )
+                        })}
+                    </CardDeck>
+            </Container>
+
+        </Container>
     );
 }
 
