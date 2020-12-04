@@ -2,7 +2,9 @@ import React from 'react';
 import ProjectCard from '../../components/Project.js';
 import {Container, Card, Button, Row, Col, CardDeck} from "react-bootstrap";
 import styles from "../../components/projectDetails.module.css";
-import {FaGithub, FaInfoCircle} from "react-icons/fa";
+import { FaGithub, FaInfoCircle } from "react-icons/fa";
+import OpportunitiesCard from '../../components/Opportunities.js';
+
 
 /**
  * Array of project objects
@@ -28,18 +30,22 @@ const projs = [
 const opportunities = [
     {
         name: 'Students', 
-        image: './students_image.jpg',
-        description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
+        image: './students-photo.png',
+        description: 'Are you passionate about software and social impact?' +
+            ' Are you looking to joina unique and close-knit commuinity? Join Us!' +
+            ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
+            ' and interact with nonprofit clients all while applyingyour skills to impact' +
+            ' real lives.', 
         link: '../Students', 
-        linktitle: 'I\'m A Students'
+        linktitle: 'I\'m A Student'
     }, 
 
     {
         name: 'Nonprofits', 
-        image: './nonprofit_image.jpg',
+        image: './opportunities-photo.png',
         description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
         link: '../Nonprofits', 
-        linktitle: 'I\'m A Nonprofits'
+        linktitle: 'I\'m A Nonprofit'
     }
 ]
 
@@ -84,12 +90,12 @@ const Home = () => {
         </Card>
             
         {/* Opportunities - Implemented previous code to make it easier to maintain in the future */}
-        <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'aliceblue' }}>
+        <Card style={{ marginTop: '4em',marginBottom: '4em',alignItems: 'center',textAlign: 'center', background: 'transparent' }}>
             <Card.Body>
             <Container>
                 <Row>
                     <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                      <h3 style={{ marginBottom:'1em' }}>Opportunities</h3>
+                      <h4 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h4>
                     </Col>
                 </Row>
               </Container>
@@ -97,15 +103,15 @@ const Home = () => {
                 <Container className = {styles.mosaic}>
            
 
-            {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
             {opportunities.map(opportunities => {
                return (
-                   <ProjectCard
+                   <OpportunitiesCard
                         name = {opportunities.name}
                        description = {opportunities.description}
                        nonprofit = {opportunities.link}
                        linktitle = {opportunities.linktitle}
-                       image = {opportunities.image}                       
+                       image={opportunities.image}
+                       
                    />
                )
             })}  
