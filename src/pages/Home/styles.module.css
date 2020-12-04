@@ -16,5 +16,12 @@
   /*filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));*/
 }
 
- 
- 
+.buttonLeft{
+  position: sticky;
+  float: left;
+}
+
+.buttonRight{
+  position: sticky;
+  float: right;
+}

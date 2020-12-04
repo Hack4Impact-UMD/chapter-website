@@ -32,18 +32,18 @@ const opportunities = [
         description: 'Are you passionate about software and social impact?' +
             ' Are you looking to joina unique and close-knit commuinity? Join Us!' +
             ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
-            ' and interact with nonprofit clients all while applyingyour skills to impact' +
+            ' and interact with nonprofit clients all while applying your skills to impact' +
             ' real lives.', 
-        link: '../Students', 
-        linktitle: 'I\'m A Student'
+        link_path: '../Students', 
+        link_title: 'I Am A Student'
     }, 
 
     {
         name: 'Nonprofits', 
         image: './opportunities-photo.png',
         description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
-        link: '../Nonprofits', 
-        linktitle: 'I\'m A Nonprofit'
+        link_path: '../Nonprofits', 
+        link_title: 'I Am A Nonprofit'
     }
 ]
 
@@ -114,17 +114,24 @@ const Home = () => {
                         {opportunities.map(proj => {
                             return (//                                
                                 <Card border = "secondary">
-                                    <img style={{width: '100%', height: '15rem', objectFit: 'cover'}} src={proj.image} alt="" />
+                                    <img style={{ width: '100%', height: '15rem', objectFit: 'cover' }} src={proj.image} alt="" />
                                     <Card.Title>{proj.name}</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
                                     <Card.Text style={{marginBottom: '.3rem'}}>
                                         {proj.description}
                                     </Card.Text>
+
                                 
                                 </Card> 
                             )
                         })}
+                    
+
+
                     </CardDeck>
+                    <Row></Row>
+                <Button variant="dark" href="../Students" className={styles.buttonLeft}>I Am A Student</Button>    
+                <Button variant="dark" href="../Nonprofits" className = {styles.buttonRight}>I Am A Non-Profit</Button>    
+
             </Container>
 
         </Container>
