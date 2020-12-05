@@ -19,7 +19,8 @@ const projectCardInfo = [
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
         github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
         nonprofit: 'http://ecodistricthamptonroads.org/', 
-        linktitle: 'Hampton Roads, VA Ecodistrict Website'
+        linktitle: 'Hampton Roads, VA Ecodistrict Website',
+        date: "Fall 2020"
     }, 
 
     {
@@ -37,7 +38,8 @@ const projectCardInfo = [
         Daneil Nguyen',
         github: 'https://github.com/Hack4Impact-UMD/WISE-E',
         nonprofit: 'https://csc-atl.org/wise-e/', 
-        linktitle: 'WISE-E Website'
+        linktitle: 'WISE-E Website',
+        date: "Fall 2020"
     }
 ]
 
@@ -49,7 +51,7 @@ class Projects extends React.Component{
     renderCards() {
         let projectCards = projectCardInfo.map((info) => {
             return <ProjectCard name={info.name} description={info.description} techstack={info.techstack}
-            members={info.members} github={info.github} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
+            members={info.members} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
         });
 
         let rowGroups = [];
@@ -59,10 +61,10 @@ class Projects extends React.Component{
         let rows = rowGroups.map((cardRowArray) => {
           return(
             <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Col sm={11} md={6} lg={5} xl={5}>
+                <Col >
                 {cardRowArray[0]}
                 </Col>
-                <Col sm={11} md={6} lg={5} xl={5}>
+                <Col >
                 {cardRowArray[1]}
                 </Col>
             </Row>
@@ -70,7 +72,7 @@ class Projects extends React.Component{
         })
 
         return (
-            <Container className = {styles.mosaic}>
+            <Container>
                 {rows}
             </Container>
         );
