@@ -2,16 +2,34 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 40px 0;
 }
 
-.timelineContainer::after {
+.timelineItem .line {
     background-color: rgba(0, 0, 0, 1);
     content: '';
     position: absolute;
-    left: calc(25% - 2px);
+    left: calc(0% - 42px);
     width: 4px;
+    height: 120%;
+}
+
+.timelineItem:first-child .line {
+    background-color: rgba(0, 0, 0, 1);
+    content: '';
+    position: absolute;
+    left: calc(0% - 42px);
+    width: 4px;
+    top: calc(50% - 10px);
     height: 100%;
+}
+
+.timelineItem:last-child .line {
+    background-color: rgba(0, 0, 0, 1);
+    content: '';
+    position: absolute;
+    left: calc(0% - 42px);
+    width: 4px;
+    height: calc(50% - 10px);
 }
 
 .timelineItem {
