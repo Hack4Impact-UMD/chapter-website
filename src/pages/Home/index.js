@@ -33,17 +33,22 @@ const opportunities = [
             ' Are you looking to join a unique and close-knit commuinity? Join Us!' +
             ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
             ' and interact with nonprofit clients all while applying your skills to impact' +
-            ' real lives.', 
+            ' real lives. We have 30 members and counting, and we would love to have you join us.', 
         link_path: '../Students', 
-        link_title: 'I Am A Student'
+        link_title: "I'm a Student"
     }, 
 
     {
         name: 'Nonprofits', 
         image: './opportunities-photo.png',
-        description: 'Filler text', 
+        
+        description: "Does your nonprofit have a software-related issue you'd like to solve? " +
+        "We can help you design your website, improve your database, create data visualizations"+
+        " , and more! Although we prefer to work with nonprofits " + 
+        " in the Washington D.C. - Baltimore Metro Area, we have worked with nonprofits across the country." + 
+        " Please reach out if you are interested.",
         link_path: '../Nonprofits', 
-        link_title: 'I Am A Nonprofit'
+        link_title: "I'm a Nonprofit"
     }
 ]
 
@@ -56,15 +61,16 @@ const Home = () => {
             
             
             {/* Top Picture */}
-            <Container style = {{alignContent: 'center'}}>
+            <Container style = {{alignContent: 'center', marginBottom: '5em'}}>
                 <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
                 
-                <Button variant="danger" href="../About" className = {styles.buttonCenter} >Learn More</Button>    
+                <Button variant="danger" href="../About" >Learn More</Button>   
             </Container>
+            
 
 
             {/* Project Cards*/}
-            <Container style={{ marginTop: '1em', marginBottom: '2em'}}>
+            <Container style={{ marginTop: '1em', marginBottom: '5em'}}>
                 
                 <Container>
                     <Row>
@@ -75,7 +81,7 @@ const Home = () => {
                 </Container>
                 
 
-                    <CardDeck>                
+                    <CardDeck style={{marginBottom: '2em'}}>                
 
                         {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
                         {projs.map(proj => {
@@ -95,9 +101,9 @@ const Home = () => {
                 
                 
                     
-                
+                    <Button variant="dark" href="../Projects" >Learn More</Button>   
             </Container>
-            <Button variant="dark" href="../Projects" >Learn More</Button>     
+              
 
             
             {/* Opportunities Cards */}
