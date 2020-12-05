@@ -2,8 +2,6 @@ import React from 'react';
 import {Container, Button, Row, Col, Card, CardDeck} from "react-bootstrap";
 import styles from "./styles.module.css";
 
-
-
 /**
  * Array of project objects
  */
@@ -24,6 +22,28 @@ const projs = [
         participation in these fields.', 
         date: 'Fall 2020'
         /*members: ['Lydia Hu (PM)', 'Jason Maa (Tech Lead)', 'Shivanee Arun', 'Elizabeth Chen', 'Nate Mekonnen', 'Daneil Nguyen']*/
+    }
+]
+
+const opportunities = [
+    {
+        name: 'Students', 
+        image: './students-photo.png',
+        description: 'Are you passionate about software and social impact?' +
+            ' Are you looking to join a unique and close-knit commuinity? Join Us!' +
+            ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
+            ' and interact with nonprofit clients all while applying your skills to impact' +
+            ' real lives.', 
+        link_path: '../Students', 
+        link_title: 'I Am A Student'
+    }, 
+
+    {
+        name: 'Nonprofits', 
+        image: './opportunities-photo.png',
+        description: 'Filler text', 
+        link_path: '../Nonprofits', 
+        link_title: 'I Am A Nonprofit'
     }
 ]
 
@@ -55,13 +75,12 @@ const Home = () => {
                 </Container>
                 
 
-                    <CardDeck>
-                
+                    <CardDeck>                
 
                         {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
                         {projs.map(proj => {
                             return (
-                                <Card border = "secondary">
+                                <Card className = {styles.cardStyle}>
                                     <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={proj.image} alt="" />
                                     <Card.Title>{proj.name}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
@@ -79,6 +98,43 @@ const Home = () => {
                 
             </Container>
             <Button variant="dark" href="../Projects" >Learn More</Button>     
+
+            
+            {/* Opportunities Cards */}
+            <Container style={{ marginTop: '1em', marginBottom: '2em'}}>
+                    <Container>
+                        <Row>
+                            <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                            <h3 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h3>
+                            </Col>
+                        </Row>
+                    </Container>		
+                        
+                    <CardDeck>         
+                        {opportunities.map(proj => {
+                            return (//                                
+                                <Card className = {styles.cardStyle}>
+                                    <Card.Body>
+                                    <img style={{ width: '100%', height: '15rem', objectFit: 'cover' }} src={proj.image} alt="" />
+                                    <Card.Title>{proj.name}</Card.Title>
+                                    <Card.Text style={{marginBottom: '1rem'}}>
+                                        {proj.description}
+                                    </Card.Text>
+
+                                    <Button variant = "dark" href={proj.link_path}>{proj.link_title}</Button>
+                                    </Card.Body>
+                                </Card> 
+                            )
+                        })}
+                    
+
+
+                    </CardDeck>
+                    
+                 
+
+            </Container>
+
         </Container>
     );
 }
