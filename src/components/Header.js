@@ -5,7 +5,7 @@ import {Nav, Navbar} from "react-bootstrap";
 class Header extends React.Component {
     render() {
       return (
-        <Navbar bg="light" expand="md" fixed="top" onSelect="test()">
+        <Navbar bg="light" expand="md"  onSelect="test()">
           <Navbar.Brand href="/">
             <img
               src="favicon.PNG"
