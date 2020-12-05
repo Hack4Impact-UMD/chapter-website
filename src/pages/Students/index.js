@@ -101,8 +101,8 @@ class Students extends React.Component{
 
             <div>
                 <section style={{zIndex:2, paddingBottom:"3em"}}>
-                    <br/>
-                    <Events/>
+                    {/*<br/>
+                    <Events/>*/}
                     <br/>
                     <h1>Frequently Asked Questions</h1>
                     <div className = {faq_styles.faq_list}>

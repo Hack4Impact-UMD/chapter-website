@@ -102,7 +102,7 @@ TODO -- Add bottom ring
     content: "";
     position: absolute;
     margin-top: 1%;
-    left: 18.25%;
+    left: 18.7%;
     width: 0px;
     height: 68%;
     border: 1px solid black;
@@ -110,6 +110,7 @@ TODO -- Add bottom ring
 }
 
 .timelineItem::before{
+    /*
     content: "";
     display: inline-block;
     position: absolute;
@@ -118,6 +119,32 @@ TODO -- Add bottom ring
     border: 5px solid #000000;
     border-radius: 5px;
     z-index: 10;
+    */
+    /*
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);    
+    height: 2em;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    left: 18%;
+    width: 2em;
+    z-index: 10;
+    */
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 18%;
+    z-index: 10;
+
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 12.5px;
+    box-sizing: border-box;
 }
 .timelineHead{
     color: black;
