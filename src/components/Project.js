@@ -49,9 +49,11 @@ class ProjectCard extends React.Component {
         <div className={styles.card}>
             <Card style={{overflow: 'auto', marginBottom: '30px', width: '100%', height: '100%'}} >
                 <div className={styles.container} >
+                    <Card.Title style={{marginTop: '.5rem', marginBottom: '.5rem'}}>{this.props.name}</Card.Title>
                     <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={this.props.image} alt="" />
-                    <div className={styles.centered}>{this.props.name}</div>
                 </div>
+
+                
 
                 <Card.Body>
                     <Card.Subtitle className="mb-2 text-muted">{this.props.date}</Card.Subtitle>

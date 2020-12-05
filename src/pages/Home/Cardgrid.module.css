@@ -1,6 +1,0 @@
-.mosaic {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 15px;
-  }
- 
