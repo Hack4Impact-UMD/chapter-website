@@ -9,12 +9,6 @@
 }
 
 
-.buttonCenter{
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  /*filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));*/
-}
 
 .cardStyle{
   margin-top: '4em';
