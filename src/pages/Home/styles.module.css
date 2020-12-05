@@ -16,12 +16,9 @@
   /*filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));*/
 }
 
-.buttonLeft{
-  position: sticky;
-  float: left;
-}
-
-.buttonRight{
-  position: sticky;
-  float: right;
+.cardStyle{
+  margin-top: '4em';
+  margin-bottom: '4em';
+  align-items: 'center';
+  text-align: 'center';
 }

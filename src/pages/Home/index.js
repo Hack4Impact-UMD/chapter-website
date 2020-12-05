@@ -30,7 +30,7 @@ const opportunities = [
         name: 'Students', 
         image: './students-photo.png',
         description: 'Are you passionate about software and social impact?' +
-            ' Are you looking to joina unique and close-knit commuinity? Join Us!' +
+            ' Are you looking to join a unique and close-knit commuinity? Join Us!' +
             ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
             ' and interact with nonprofit clients all while applying your skills to impact' +
             ' real lives.', 
@@ -41,7 +41,7 @@ const opportunities = [
     {
         name: 'Nonprofits', 
         image: './opportunities-photo.png',
-        description: 'I have to figure out a text for this. But this is a filler. Code pls work.', 
+        description: 'Filler text', 
         link_path: '../Nonprofits', 
         link_title: 'I Am A Nonprofit'
     }
@@ -80,7 +80,7 @@ const Home = () => {
                         {/* maps through the projects and returns a Project element to display, passing in attributes of the project */}
                         {projs.map(proj => {
                             return (
-                                <Card border = "secondary">
+                                <Card className = {styles.cardStyle}>
                                     <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={proj.image} alt="" />
                                     <Card.Title>{proj.name}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{proj.date}</Card.Subtitle>
@@ -105,7 +105,7 @@ const Home = () => {
                     <Container>
                         <Row>
                             <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <h4 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h4>
+                            <h3 style={{ marginBottom:'1em', color:'black' }}>Opportunities</h3>
                             </Col>
                         </Row>
                     </Container>		
@@ -113,14 +113,16 @@ const Home = () => {
                     <CardDeck>         
                         {opportunities.map(proj => {
                             return (//                                
-                                <Card border = "secondary">
+                                <Card className = {styles.cardStyle}>
+                                    <Card.Body>
                                     <img style={{ width: '100%', height: '15rem', objectFit: 'cover' }} src={proj.image} alt="" />
                                     <Card.Title>{proj.name}</Card.Title>
-                                    <Card.Text style={{marginBottom: '.3rem'}}>
+                                    <Card.Text style={{marginBottom: '1rem'}}>
                                         {proj.description}
                                     </Card.Text>
 
-                                
+                                    <Button variant = "dark" href={proj.link_path}>{proj.link_title}</Button>
+                                    </Card.Body>
                                 </Card> 
                             )
                         })}
@@ -128,9 +130,8 @@ const Home = () => {
 
 
                     </CardDeck>
-                    <Row></Row>
-                <Button variant="dark" href="../Students" className={styles.buttonLeft}>I Am A Student</Button>    
-                <Button variant="dark" href="../Nonprofits" className = {styles.buttonRight}>I Am A Non-Profit</Button>    
+                    
+                 
 
             </Container>
 
