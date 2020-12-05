@@ -7,7 +7,7 @@ import {useMediaQuery} from 'react-responsive';
 const projectCardInfo = [
     {
         name: 'Hampton Roads ECO District', 
-        image: './ecod.png',
+        image: './ECODistrictPic.png',
         description: 'This project team is developing a \
         website for the ECO District community in Hampton Roads, Virginia. \
         The website gives residents access to jobs/opportunities, \
@@ -78,12 +78,12 @@ class Projects extends React.Component{
 
     render() {
         return (
-            <div class = 'card'>
+            <div>
                 <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Our Work</h1>
                     <div style={{margin: '30px'}}/>
                     <Container >
-                        <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" , color: "white"}}>
                             <Col sm={12} md={8} lg={6} xl={6}>
                             Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we are working on this semester.
                             </Col>

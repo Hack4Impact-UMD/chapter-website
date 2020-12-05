@@ -44,6 +44,8 @@ const Nonprofits = () => {
                     <p>At Hack4Impact, we understand that nonprofit organizations 
                     are a valuable asset to our community. We want to use our software 
                     and web development skills to help nonprofits.</p>
+                    <p> "This work is super critical. Community building and organization is so important...we can’t do it without having a credible website so this is ultra important.  
+        There are issues like air pollution, traffic, noise, waste within hundreds of feet of the community we have to organize and mobilize and this website is going to be a tremendous part of that." - Garry Harris, Founder of Center for Sustainable Communities - Atlanta </p>
                     <p>If you are interested in any technology development for your 
                     organization, please let us know by filling out the application or
                     contacting us! Our goal is to help your organization by providing 
