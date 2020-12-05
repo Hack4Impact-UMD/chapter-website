@@ -25,7 +25,7 @@ class ContactUs extends React.Component{
                     <div style={{margin: '30px'}} >
                         <Container>
                             <Row style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
-                                <Col sm= {12} md={8} lg={6} xl={6}>
+                                <Col sm= {12} md={8} lg={6} xl={6} style={{color: 'white'}}>
                                     If you have any questions about how to get involved or what we do, 
                                     send us a message below. You can also connect with us via email at umd@hack4impact.org or on these platforms below: <br></br>
                                     <div style={{margin: '10px'}} > </div>
