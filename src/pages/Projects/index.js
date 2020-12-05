@@ -7,7 +7,7 @@ import {useMediaQuery} from 'react-responsive';
 const projectCardInfo = [
     {
         name: 'Hampton Roads ECO District', 
-        image: './ecod.png',
+        image: './ECODistrictPic.png',
         description: 'This project team is developing a \
         website for the ECO District community in Hampton Roads, Virginia. \
         The website gives residents access to jobs/opportunities, \
