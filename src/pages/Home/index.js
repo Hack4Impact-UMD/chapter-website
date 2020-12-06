@@ -64,7 +64,7 @@ const Home = () => {
             <Container style = {{alignContent: 'center', marginBottom: '5em'}}>
                 <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
                 
-                <Button variant="danger" href="../About" >Learn More</Button>   
+                <Button variant="dark" href="../About" >Meet the Team</Button>   
             </Container>
             
 
