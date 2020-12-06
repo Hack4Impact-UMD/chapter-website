@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap"
+import { SocialIcon } from 'react-social-icons'
 import { NavLink } from 'react-router-dom';
 import Logo from '../hack4impactLogo.png';
 
@@ -27,7 +28,12 @@ const Footer = () => {
                     <img src= {Logo} alt="Hack4Impact Logo" height="40" width="auto" style={{marginBottom: 30}}/> 
                 </div>
                 <div className="text-label" style={{marginBottom: 15, fontFamily: 'Avenir'}}>
-                    If you have any questions, please contact UMD@hack4impact.org.
+                    <SocialIcon target="_blank" style={{marginLeft:10, marginRight: 15}} url="https://github.com/Hack4Impact-UMD" />
+                    <SocialIcon target="_blank" style={{margin: 4}} url="https://www.facebook.com/hack4impactumd" />
+                    <SocialIcon target="_blank" style={{marginLeft: 15}} url="https://www.instagram.com/hack4impactumd" />
+                </div>
+                <div className="text-label" style={{marginBottom: 15, fontFamily: 'Avenir'}}>
+                    If you have any questions, please contact <a className="footer-link" href="mailto:umd@hack4impact.org" style={mStyle}>UMD@hack4impact.org.</a>
                 </div>
             </Col>
             
@@ -57,21 +63,6 @@ const Footer = () => {
                    <NavLink exact to="/Nonprofits" style={mStyle} >Nonprofits</NavLink>
                   </div> 
              </div>
-            
-
-            <div className="col-md-2" style={{marginTop: 30}}>
-                <div className="footer-label" style={hStyle}>Find us On</div>
-                <div>
-                    <a className="footer-link" href="mailto:umd@hack4impact.org" style={mStyle}>Email</a>
-                </div>
-                <div>
-                    <a className="footer-link" href="https://www.facebook.com/hack4impactumd" target="_blank" style={mStyle}>Facebook</a>
-                </div>
-                <div>
-                <a className="footer-link" href="https://github.com/Hack4Impact-UMD" target="_blank" style={mStyle}>Github</a>
-                </div>
-                
-            </div>
 
 
             <div>
