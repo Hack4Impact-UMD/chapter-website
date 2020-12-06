@@ -16,24 +16,30 @@ const newMemberApplicationHyperlink = str.link("https://forms.gle/1FrM2JdU1boC4K
 
 const timelineItems = [
     {
-        head: "Initial Contact",
-        timePeriod: "Early June and Early December",
-        description: "Reach out to our team to get started in our application process! " +
-        "We are interested in hearing about your organization and potential projects you may have in mind."
+        head: "Written Application",
+        timePeriod: "August 20 - September 10; January 1 - 10",
+        description: "New members can join in the beginning of both semesters. We accept written applications at " +
+        "the start of the fall or semester and a few weeks before the start of the spring semester. Written Applications " +
+        "via the 'apply' button below are open from three weeks before the start of the semester to the first two weeks of " +
+        "the semester. If you want to chat with us in person or have any questions, you can come see us at the First or Second " +
+        "Look Fairs or send us an email."
     },
     {
-        head: "Informational Interview",
-        timePeriod: "Late July to Early August; Early to Mid January",
-        description: "We will reach out to you to schedule an interview to discuss your project idea. We want " +
-        "to learn more about the problem, potential users, and additional factors that relate to your product."
+        head: "Interview",
+        timePeriod: "August 30 - September 14; January 11 - 20",
+        description: "We will reach out to schedule an interview if your time availability, " +
+        "interests and skills match what we are looking for. Don't stress about your interview! " +
+        "We want to get to know you and why you're passionate about joining H4I and our mission. " +
+        "If you are applying for a developer position, we may ask technical questions, but we encourage " +
+        "everyone to apply regardless of experience level."
     },
     {
-        head: "Mid August and Mid January",
-        timePeriod: "Weeks 2 to 3 of the Fall Semester and Weeks 3 - 4 of January",
-        description: "The Hack4Impact board of directors will consider the feasibility of your " +
-        "project and how well it suits our teams and timeline. We want to ensure we are the right " +
-        "people to tackle your problem. We will let you know if we have chosen to take on your project. " +
-        "If we are at capacity, another Hack4Impact chapter may take on your project"
+        head: "Notified of Decision",
+        timePeriod: "September 15 - 20; January 21 - 25",
+        description: "We will email you when we have reached a decision on your application. " +
+        "Unfortunately, we are not able to accept every student who applies. The number of students " +
+        "in our club is determined by the number of nonprofit projects we take on for the year. " +
+        "However, we are taking on more and more projects and growing the number of students and positions every year."
     }
 ];
 
