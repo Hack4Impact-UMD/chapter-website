@@ -98,18 +98,21 @@ TODO -- Add bottom ring
     z-index: 10;
 }
 
-.timelineContainer::before{
+.timelineContainer:before{
     content: "";
-    position: absolute;
-    margin-top: 1%;
-    left: 18.7%;
-    width: 0px;
-    height: 68%;
+    position: relative;
+    /*margin-top: 1%;*/
+    left: -31.2%;
+    /*width: 1px;*/
+    width: 30%;
+    top: 230px;
     border: 1px solid black;
+    transform: rotate(90deg);
     z-index: 5;
+    
 }
 
-.timelineItem::before{
+.timelineItem:before{
     /*
     content: "";
     display: inline-block;

@@ -1,9 +1,15 @@
 import React from 'react';
 import TimelineItem from './TimelineItem';
 import Events from "./Events.js";
+import eventStyles from './Events.module.css';
+import { Card, CardDeck } from 'react-bootstrap';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import classes from './styles.module.css';
+import cardImgOne from './eventImages/EducationalCardImg.jpg'
+import cardImgTwo from './eventImages/GivingBackCardImg.jpg'
+import cardImgThree from './eventImages/SocialCardImg.jpg'
+
 
 const str = "a Google Form";
 const newMemberApplicationHyperlink = str.link("https://forms.gle/1FrM2JdU1boC4KMz7");
@@ -71,6 +77,55 @@ const FAQAnswers = [
      "We mainly develop new projects on the MERN (MongoDB, Express.js, React, and Node.js) stack. However, we will also help out " +
      "nonprofit organizations that have existing websites on other stacks, such as Django, Flask, or Ruby on Rails."
 ]
+
+const EventCards = [
+    {
+        title : "Educational",
+
+        text : "We start each year off with a bootcamp, which is your " +
+        "chance to learn what Hack4Impact UMD is all about! During " +
+        "bootcamp, our members attend workshops and get familiar " +
+        "with the tools they will use on their project team. Throughout " +
+        "the year we also host tech talks and speaker events with professors " +
+        "and other professionals.",
+
+        imgUrl : cardImgOne,
+
+        imgAlt : 'Hack4Impact UMD educating!',
+
+    },
+
+    {
+        title : "Giving Back",
+
+        text : "We try to learn about our nonprofit partners' missions and work beyond " +
+        "our technical projects as well! We volunteer with every nonprofit we " +
+        "partner with for the year so that each member learns about their work, " +
+        "regardless of their project team.",
+
+        imgUrl : cardImgTwo,
+
+        imgAlt : 'Hack4Impact UMD giving back!',
+
+    },
+
+    {
+        title : "Social",
+
+        text : "We love our work because of our amazing members! We host " +
+        "social events so that all of our members can get to know " +
+        "each other and take a break from their school work. We would like to  " +
+        "host game nights, events with other clubs, hikes, " +
+        "and a banquet every " +
+        "year to celebrate everyone's hard work.",
+
+        imgUrl : cardImgThree,
+
+        imgAlt : 'Hack4Impact UMD socializing!',
+
+    }
+]
+
 class Students extends React.Component{
 
     constructor(props) {
@@ -101,9 +156,20 @@ class Students extends React.Component{
 
             <div>
                 <section style={{zIndex:2, paddingBottom:"3em"}}>
-                    {/*<br/>
-                    <Events/>*/}
+                <section>
                     <br/>
+                    <h1>Events</h1>
+                    <br/>
+                    <CardDeck className= {eventStyles.card_deck}>
+                        {EventCards.map((item) => {
+                            return (
+                                <Events title={item.title} imgUrl={item.imgUrl} imgAlt={item.imgAlt} text={item.text} />
+                            );
+                        })                            
+                        }
+                    </CardDeck>
+                    <br/>
+                </section>
                     <h1>Frequently Asked Questions</h1>
                     <div className = {faq_styles.faq_list}>
                     {FAQQuestions.map((item, i) => {
