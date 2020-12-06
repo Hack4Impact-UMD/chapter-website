@@ -8,6 +8,6 @@
     color: aliceblue;
 }
 .navShadow{
-    box-shadow: 6px 3px 3px 0ppx rgba(119, 111, 111, 0.877);
+    filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));
 }
 
