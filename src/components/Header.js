@@ -11,7 +11,7 @@ class Header extends React.Component {
     const location = this.props.history.location;
     
     return (
-      <Navbar bg="light" expand="md" fixed="top" onSelect="test()" variant="light"className={classes.navShadow}>
+      <Navbar bg="light" expand="md" fixed="top" onSelect="test()" variant="light" className={classes.navShadow}>
         <Navbar.Brand href="/">
           <img
             src="favicon.PNG"
