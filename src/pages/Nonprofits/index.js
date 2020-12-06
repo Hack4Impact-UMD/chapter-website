@@ -3,14 +3,15 @@ import classes from './styles.module.css';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import Timeline from './Timeline';
+import {Button} from "react-bootstrap";
 
 
 const FAQAnswers = [
-    "Most of the projects we undertake are web applications. Common examples " +
-    "of problems we tackle include volunteer tracking forms, member directories, " +
-    "and data tracking softwares. Check out our " + <a href="/projects">projects page</a> + 
-    " to see some of our previous work, and feel free to contact " +
-    "us with any project ideas!",
+    <p>Most of the projects we undertake are web applications. Common examples
+    of problems we tackle include volunteer tracking forms, member directories,
+    and data tracking softwares. 
+    Check out our <a href="/projects">projects page</a> to see some of our 
+    previous work, and feel free to contact us with any project ideas!</p> ,
 
     "These projects are free or low cost ($5- $15 / month) for the website " +
     "and hosting expenses. We are building software to better help you " +
@@ -44,22 +45,36 @@ const Nonprofits = () => {
                     <p>At Hack4Impact, we understand that nonprofit organizations 
                     are a valuable asset to our community. We want to use our software 
                     and web development skills to help nonprofits.</p>
-                    <p> "This work is super critical. Community building and organization is so important...we can’t do it without having a credible website so this is ultra important.  
-        There are issues like air pollution, traffic, noise, waste within hundreds of feet of the community we have to organize and mobilize and this website is going to be a tremendous part of that." - Garry Harris, Founder of Center for Sustainable Communities - Atlanta </p>
+      
+                    <br></br>
+
+                    <div className = {classes.quoteSection}>
+                        <p><i>"This work is super critical. Community building and organization is so important...
+                        we can’t do it without having a credible website so this is ultra important.  
+                        There are issues like air pollution, traffic, noise, waste within hundreds of feet of the 
+                        community we have to organize and mobilize and this website is going to be a tremendous part 
+                        of that."</i></p>
+                        <p><strong>— Garry Harris,</strong> Founder of Center for Sustainable Communities - Atlanta</p> 
+                    </div>
+
+                    <br></br>
+
                     <p>If you are interested in any technology development for your 
                     organization, please let us know by filling out the application or
                     contacting us! Our goal is to help your organization by providing 
                     software solutions.</p>
                 </div>
-                <a className={classes.button} href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a>
-                <br></br>
             </div>
             
             <div className = {classes.timelineSection}>
                 <h2>Application Process</h2>
                 <Timeline/>
             </div>
-
+            
+            <div className = {classes.buttonSection}>
+                <Button variant = "dark" href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</Button>
+            </div>
+                        
             <div className = {classes.FAQSection}>
                 <h2>Frequently Asked Questions</h2>
                 <div className = {faq_styles.faq_list}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import styles from "./memberbox.module.css"
+import styles from "./memberbox.css"
 import style from "../../App.css"
 
 // Format of each member is: [Name, Team + Special position if any, Title (like software engineer, co-founder, etc), link to headshot]
@@ -33,14 +33,14 @@ const allMembers = [
     ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
     ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer; Client Outreach',   'surabir.jpg'],
     ['Sharon Halevi',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
+    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    ''],
     ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
     ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   ''],
     ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    ''],
     ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
     ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
-].map(element => element[3] === '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
+].map(element => element[3] == '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
 // https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack
@@ -60,16 +60,17 @@ class About extends React.Component{
     render() {
 
         return (
-            <section id={styles.aboutcontent} style = {{marginTop: '6em', marginBottom: '5%', marginLeft: '15%', marginRight: '15%'}}>
-                <div style={{marginBottom: '3em', color: 'white'}}>
-                    <h1 style = {{color: 'black'}}>What is Hack4Impact-UMD?</h1>
-                    <p style={{marginLeft: '5em', marginRight: '5em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
+            <section id="about-content" style = {{marginLeft: '4em', marginRight: '4em'}}>
+                <div>
+                    <h1>What is Hack4Impact-UMD?</h1>
+                    <p style={{marginLeft: '10em', marginRight: '10em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>
                 </div>
-                <div id = {styles.members}>
-                        <h1 style={{marginTop: '0.5em', marginBottom: '0.5em'}}>Our Members</h1>
-                        <div className={styles.membergrid}>
+                <div id = "members">
+                    
+                        <h1>Our Members</h1>
+                        <div class="member-grid">
                             {allMembers.map(element => 
-                                <div className={styles.membergriditem} style={{backgroundImage: `url(${images[element[3]]})`}}>
+                                <div class="member-grid-item" style={{backgroundImage: `url(${images[element[3]]})`}}>
                                     <p><b>{element[0]}</b><br/> 
                                     {element[1]}<br/>
                                     {element[2]}</p>

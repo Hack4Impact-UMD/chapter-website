@@ -11,17 +11,14 @@
 
 .card {
     background-color: white;
+    font-family: inherit;
     width: 20em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 30em;
 }
 
 .cardText {
     background-color: white;
+    font-family: Roboto, sans-serif;
     width: 20em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: .75em;
-}
-
-h3 {
-    font-family: inherit;
 }

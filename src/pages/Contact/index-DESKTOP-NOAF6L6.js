@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row, Col, Form, Button, Card} from "react-bootstrap"
 import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.css';
-import { SocialIcon } from 'react-social-icons';
 
 class ContactUs extends React.Component{
     sendEmail(e) {  
@@ -20,25 +19,20 @@ class ContactUs extends React.Component{
     render() {
         return(
             <div>
-                <div style={{marginTop: '7em', alignContent: 'center', textAlign: 'center', color: 'black'}} >
+                <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Contact Us</h1>
-                    <div style={{margin: '30px'}} >
+                    <div style={{margin: '20px'}} >
                         <Container>
-                            <Row style={{ display: "flex", justifyContent: "center", alignItems: "center"}} >
-                                <Col sm= {12} md={8} lg={6} xl={6} style={{color: 'white'}}>
+                            <Row style={{ display: "flex", justifyContent: "center", alignItems: "center", color: 'gray'}} >
+                                <Col sm= {12} md={8} lg={6} xl={6}>
                                     If you have any questions about how to get involved or what we do, 
-                                    send us a message below. You can also connect with us via email at umd@hack4impact.org or on these platforms below: <br></br>
-                                    <div style={{margin: '10px'}} > </div>
-                                    
-                                     <SocialIcon target="_blank" style={{marginLeft:10, marginRight: 10}} url="https://github.com/Hack4Impact-UMD" />
-                                    <SocialIcon target="_blank" style={{margin: 4}} url="https://www.facebook.com/hack4impactumd" />
-                                    <SocialIcon target="_blank" style={{marginLeft: 10}} url="https://www.instagram.com/hack4impactumd" />
+                                    send us a message below or connect with us!
                                 </Col>
                             </Row>
                         </Container>
                     </div>  
                     
-                    <Row style={{display: "flex", justifyContent: "center", alignItems: "center", margin: 10}}>
+                    <Row style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <Col sm={11} md={8} lg={8} xl={7}>
                             <Card>
                                 <Card.Body>
@@ -67,7 +61,7 @@ class ContactUs extends React.Component{
                     </Row>
                 </div>
 
-                
+                <div style={{margin: '40px'}} />
             </div>
         )
     }
