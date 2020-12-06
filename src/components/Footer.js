@@ -6,12 +6,10 @@ import Logo from '../hack4impactLogo.png';
 
 
 const mStyle = {
-    color: 'black', 
-    fontFamily: 'Avenir'
+    color: 'black'
 }
 
 const hStyle = {
-    fontFamily: 'Avenir',
     color: 'black',
     paddingBottom: 5,
     fontSize: 24
@@ -27,12 +25,12 @@ const Footer = () => {
                 <div>
                     <img src= {Logo} alt="Hack4Impact Logo" height="40" width="auto" style={{marginBottom: 30}}/> 
                 </div>
-                <div className="text-label" style={{marginBottom: 15, fontFamily: 'Avenir'}}>
+                <div className="text-label" style={{marginBottom: 15}}>
                     <SocialIcon target="_blank" style={{marginLeft:10, marginRight: 15}} url="https://github.com/Hack4Impact-UMD" />
                     <SocialIcon target="_blank" style={{margin: 4}} url="https://www.facebook.com/hack4impactumd" />
                     <SocialIcon target="_blank" style={{marginLeft: 15}} url="https://www.instagram.com/hack4impactumd" />
                 </div>
-                <div className="text-label" style={{marginBottom: 15, fontFamily: 'Avenir'}}>
+                <div className="text-label" style={{marginBottom: 15}}>
                     If you have any questions, please contact <a className="footer-link" href="mailto:umd@hack4impact.org" style={mStyle}>UMD@hack4impact.org.</a>
                 </div>
             </Col>
