@@ -3,6 +3,7 @@ import classes from './styles.module.css';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import Timeline from './Timeline';
+import {Button} from "react-bootstrap";
 
 
 const FAQAnswers = [
@@ -69,7 +70,7 @@ const Nonprofits = () => {
             </div>
             
             <div className = {classes.buttonSection}>
-                <a className={classes.button} href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a>
+                <Button variant = "dark" href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</Button>
             </div>
                         
             <div className = {classes.FAQSection}>
