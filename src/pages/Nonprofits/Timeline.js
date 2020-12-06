@@ -28,6 +28,7 @@ const TimelineItem = ({ data }) => (
             
             <span className={classes.circle} />
             <span className={classes.line} />
+
         </div>
     </div>
 );

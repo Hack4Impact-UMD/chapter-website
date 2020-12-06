@@ -63,7 +63,6 @@ const Home = () => {
             {/* Top Picture */}
             <Container style = {{alignContent: 'center', marginBottom: '5em'}}>
                 <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
-                
                 <Button variant="dark" href="../About" >Meet the Team</Button>   
             </Container>
             

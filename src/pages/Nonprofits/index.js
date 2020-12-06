@@ -45,6 +45,7 @@ const Nonprofits = () => {
                     <p>At Hack4Impact, we understand that nonprofit organizations 
                     are a valuable asset to our community. We want to use our software 
                     and web development skills to help nonprofits.</p>
+      
                     <br></br>
 
                     <div className = {classes.quoteSection}>
@@ -57,6 +58,7 @@ const Nonprofits = () => {
                     </div>
 
                     <br></br>
+
                     <p>If you are interested in any technology development for your 
                     organization, please let us know by filling out the application or
                     contacting us! Our goal is to help your organization by providing 
