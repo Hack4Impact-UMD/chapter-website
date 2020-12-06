@@ -43,7 +43,7 @@ const Footer = () => {
                     <NavLink exact to="/About" style={mStyle}>About Us</NavLink>
                 </div>
                 <div>
-                <   NavLink exact to="/Projects" style={mStyle}>Projects</NavLink>
+                    <NavLink exact to="/Projects" style={mStyle}>Projects</NavLink>
                 </div>
                 <div>
                     <NavLink exact to="/Contact" style={mStyle}>Contact Us</NavLink>
