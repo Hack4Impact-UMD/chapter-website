@@ -5,7 +5,8 @@ const TimelineItem = props => {
 return (
     <div div className={classes.timelineItem}>
         <span className={classes.head3}>{props.head}</span>
-        <span className={classes.timePeriod}>{props.timePeriod}</span>
+        {/*<span className={classes.timePeriod}>{props.timePeriod}</span>*/}
+        <p className={classes.timePeriod}>{props.timePeriod}</p>
         <p>{props.description}</p>
     </div>
 );
