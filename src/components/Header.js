@@ -1,45 +1,33 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import classes from './header.module.css';
+import {Nav, Navbar} from "react-bootstrap";
 
-const navItems = [
-    {
-        name: "About Us",
-        to: "/About"
-    },
-    {
-        name: "Projects",
-        to: "/Projects"
-    },
-    {
-        name: "Students",
-        to: "/Students"
-    },
-    {
-        name: "Nonprofits",
-        to: "/Nonprofits"
-    },
-    {
-        name: "Contact Us",
-        to: "/Contact"
+
+class Header extends React.Component {
+    render() {
+      return (
+        <Navbar bg="light" expand="md"  onSelect="test()">
+          <Navbar.Brand href="/">
+            <img
+              src="favicon.PNG"
+              height="27"
+              alt="Hack4Impact Logo"
+            />{' '}
+            <span>hack4impact UMD</span>
+          </Navbar.Brand>
+  
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/About" >About Us</Nav.Link>
+              <Nav.Link href="/Projects" >Projects</Nav.Link>
+              <Nav.Link href="/Students" >Students</Nav.Link>
+              <Nav.Link href="/Nonprofits" >Nonprofits</Nav.Link>
+              <Nav.Link href="/Contact" >Contact Us</Nav.Link>
+             
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      )
     }
-]
-
-const Header = () => (
-        <div className={classes.container}>
-            <div className={classes.logoContainer}>
-                <NavLink to="/" className={classes.logoLink}>
-                <img className={classes.logoImg} src="../../favicon.PNG" alt="Hack4Impact Logo" />
-                    <span className={classes.logoMainText}>Hack4Impact</span>
-                umd</NavLink>
-            </div>
-            <nav className={classes.navContainer}>
-                <ul className={classes.navLinks}>
-                    {/* navItem.name , used as key, expected to be unique */}
-                    {navItems.map( navItem => (<li key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected}>{navItem.name}</NavLink></li>))}
-                </ul>
-            </nav>
-        </div>
-    )
-
+  }
 export default Header;

@@ -2,20 +2,25 @@ import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 import styles from "../../components/projectDetails.module.css";
 import ProjectCard from '../../components/Project.js';
+import {useMediaQuery} from 'react-responsive';
 
 const projectCardInfo = [
     {
-        name: 'Hampton Roads Ecodistrict', 
-        image: './ecod.png',
+        name: 'Hampton Roads ECO District', 
+        image: './ECODistrictPic.png',
         description: 'This project team is developing a \
-        website for the EcoDistrict community in Hampton Roads, Virginia. \
+        website for the ECO District community in Hampton Roads, Virginia. \
         The website gives residents access to jobs/opportunities, \
         surveys/focus groups, and tools such as Healthy Home & \
         Energy Efficiency Tool to help community members support \
-        each other.', 
+        each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
+        techstack: 'MongoDB, Express.js, React, Node, AWS',
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
-        github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads' 
+        github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
+        nonprofit: 'http://ecodistricthamptonroads.org/', 
+        linktitle: 'Hampton Roads, VA Ecodistrict Website',
+        date: "Fall 2020"
     }, 
 
     {
@@ -23,13 +28,18 @@ const projectCardInfo = [
         image: './women.png',
         description: 'This project team is working to create a website \
         home for the Women in Science, Engineering, and the Environment \
-        (WISE-E) program. This initiative aims to connect women interested \
+        (WISE-E) program. The initiative aims to connect women interested \
         in science to resources and larger networks and promote their \
-        participation in these fields.', 
+        participation in these fields. This was made in partnership with the Center for Sustainable Communities-Atlanta\
+        and IEEE.', 
+        techstack: 'MongoDB, React, Node, Material-UI, AWS',
         members: 'Lydia Hu (PM), Jason Maa (Tech Lead), \
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
         Daneil Nguyen',
-        github: 'https://github.com/Hack4Impact-UMD/WISE-E'
+        github: 'https://github.com/Hack4Impact-UMD/WISE-E',
+        nonprofit: 'https://csc-atl.org/wise-e/', 
+        linktitle: 'WISE-E Website',
+        date: "Fall 2020"
     }
 ]
 
@@ -40,8 +50,8 @@ class Projects extends React.Component{
 
     renderCards() {
         let projectCards = projectCardInfo.map((info) => {
-            return <ProjectCard name={info.name} description={info.description} 
-            members={info.members} github={info.github} image={info.image}/>
+            return <ProjectCard name={info.name} description={info.description} techstack={info.techstack}
+            members={info.members} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
         });
 
         let rowGroups = [];
@@ -51,10 +61,10 @@ class Projects extends React.Component{
         let rows = rowGroups.map((cardRowArray) => {
           return(
             <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <Col sm={11} md={6} lg={5} xl={5}>
+                <Col >
                 {cardRowArray[0]}
                 </Col>
-                <Col sm={11} md={6} lg={5} xl={5}>
+                <Col >
                 {cardRowArray[1]}
                 </Col>
             </Row>
@@ -62,7 +72,7 @@ class Projects extends React.Component{
         })
 
         return (
-            <Container className = {styles.mosaic}>
+            <Container>
                 {rows}
             </Container>
         );
@@ -70,12 +80,12 @@ class Projects extends React.Component{
 
     render() {
         return (
-            <div class = 'card'>
+            <div>
                 <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Our Work</h1>
                     <div style={{margin: '30px'}}/>
                     <Container >
-                        <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" , color: "white"}}>
                             <Col sm={12} md={8} lg={6} xl={6}>
                             Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we are working on this semester.
                             </Col>
