@@ -1,65 +1,13 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    background-color: aliceblue;
-    display: flex;
-    height: 8vh;
-    width: 100%;
-    padding: 10px 25px 10px 15px;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    bottom: 100%;
-    z-index: 500;
-}
-
-.logoContainer{
-    height: 100%;
-    position: relative;
-    bottom: 0.4px;
-}
-.logoLink{
-    color: #333333;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-decoration: none;
-}
-.logoImg{
-    height: 100%;
-}
 .logoMainText{
     font-weight: 500;
     text-shadow: 1px 1px #222222;
-}
-
-.navContainer{
-    width: 40%;
-}
-.navLinks{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 16px;
-    font-weight: 300;
-}
-.navLink{
-    color: #333333;
-    text-decoration: none;
-    padding: 6px 4px;
-}
-.navLink:hover{
-    background-color: rgb(184, 221, 253);
-    transition: all ease 0.1s;
+    margin-right: 0.25em;
 }
 .navLinkSelected{
     background-color: red;
     color: aliceblue;
 }
+.navShadow{
+    box-shadow: 6px 3px 3px 0ppx rgba(119, 111, 111, 0.877);
+}
+
