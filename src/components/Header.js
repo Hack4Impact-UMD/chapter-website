@@ -9,6 +9,7 @@ class Header extends React.Component {
   }
   render() {
     const location = this.props.history.location;
+    
     return (
       <Navbar bg="light" expand="md" fixed="top" onSelect="test()" variant="light"className={classes.navShadow}>
         <Navbar.Brand href="/">
