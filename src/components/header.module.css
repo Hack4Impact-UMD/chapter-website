@@ -3,10 +3,7 @@
     text-shadow: 1px 1px #222222;
     margin-right: 0.25em;
 }
-.navLinkSelected{
-    background-color: red;
-    color: aliceblue;
-}
+
 .navShadow{
     filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));
 }
