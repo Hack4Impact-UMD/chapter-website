@@ -20,7 +20,7 @@ class ContactUs extends React.Component{
     render() {
         return(
             <div>
-                <div style={{marginTop: '50px', alignContent: 'center', textAlign: 'center', color: 'black'}} >
+                <div style={{marginTop: '7em', alignContent: 'center', textAlign: 'center', color: 'black'}} >
                     <h1 style={{color: 'black', alignSelf: 'center'}}>Contact Us</h1>
                     <div style={{margin: '30px'}} >
                         <Container>
