@@ -49,14 +49,15 @@ class ProjectCard extends React.Component {
         <div className={styles.card}>
             <Card style={{overflow: 'auto', marginBottom: '30px', width: '100%', height: '100%'}} >
                 <div className={styles.container} >
-                    <Card.Title style={{marginTop: '.5rem', marginBottom: '.5rem'}}>{this.props.name}</Card.Title>
+                    
                     <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={this.props.image} alt="" />
+                    <Card.Title style={{marginTop: '.5rem', marginBottom: '.5rem'}}>{this.props.name}</Card.Title>
                 </div>
 
                 
 
-                <Card.Body>
-                    <Card.Subtitle className="mb-2 text-muted">{this.props.date}</Card.Subtitle>
+                <Card.Body >
+                    <Card.Subtitle className="mb-2 text-muted" style = {{alignContent: 'center', alignItems: 'center', textAlign: 'center'}}>{this.props.date}</Card.Subtitle>
                     <Card.Text style={{marginBottom: '.3rem'}}>
                         {this.props.description}
                     </Card.Text>
