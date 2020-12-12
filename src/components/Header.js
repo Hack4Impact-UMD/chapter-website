@@ -1,7 +1,7 @@
 import React from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import classes from './header.module.css';
-import { withRouter } from "react-router-dom";
+import { withRouter} from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props){
@@ -25,7 +25,7 @@ class Header extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav activeKey={location.pathname} className="ml-auto" >
-            <Nav.Link href="/About" >About Us</Nav.Link>
+            <Nav.Link href ="/About" >About Us</Nav.Link>
             <Nav.Link href="/Projects" >Projects</Nav.Link>
             <Nav.Link href="/Students" >Students</Nav.Link>
             <Nav.Link href="/Nonprofits" >Nonprofits</Nav.Link>
