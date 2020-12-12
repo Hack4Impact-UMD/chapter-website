@@ -72,7 +72,7 @@ const Nonprofits = () => {
             </div>
             
             <div className = {classes.buttonSection}>
-                <Button variant = "dark" href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</Button>
+                <Button variant = "dark" href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform" target = "_blank">Apply Now</Button>
             </div>
                         
             <div className = {classes.FAQSection}>

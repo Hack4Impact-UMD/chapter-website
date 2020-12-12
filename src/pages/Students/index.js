@@ -1,7 +1,5 @@
 import React from 'react';
 import Timeline from './Timeline';
-import Events from "./Events.js";
-import eventStyles from './Events.module.css';
 import { Card, CardDeck, Button } from 'react-bootstrap';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
