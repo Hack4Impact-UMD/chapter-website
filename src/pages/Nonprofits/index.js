@@ -3,6 +3,7 @@ import classes from './styles.module.css';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import Timeline from './Timeline';
+import {Button} from "react-bootstrap";
 
 
 const FAQAnswers = [
@@ -44,6 +45,7 @@ const Nonprofits = () => {
                     <p>At Hack4Impact, we understand that nonprofit organizations 
                     are a valuable asset to our community. We want to use our software 
                     and web development skills to help nonprofits.</p>
+      
                     <br></br>
 
                     <div className = {classes.quoteSection}>
@@ -56,6 +58,7 @@ const Nonprofits = () => {
                     </div>
 
                     <br></br>
+
                     <p>If you are interested in any technology development for your 
                     organization, please let us know by filling out the application or
                     contacting us! Our goal is to help your organization by providing 
@@ -69,7 +72,7 @@ const Nonprofits = () => {
             </div>
             
             <div className = {classes.buttonSection}>
-                <a className={classes.button} href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform">Apply Now</a>
+                <Button variant = "dark" href = "https://docs.google.com/forms/d/e/1FAIpQLSfaeqcwOGt3QR0h4Lmo-fwW4mA108jpeb0p06upiivwxpDArw/viewform" target = "_blank">Apply Now</Button>
             </div>
                         
             <div className = {classes.FAQSection}>

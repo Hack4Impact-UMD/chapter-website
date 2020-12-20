@@ -1,90 +1,77 @@
 import React from 'react';
+import { Container, Row, Col } from "react-bootstrap"
 import { SocialIcon } from 'react-social-icons'
 import { NavLink } from 'react-router-dom';
-import classes from './header.module.css';
-
-const abtItem = [
-    {
-        name: "About",
-        to: "/About"
-    }
-]
-
-const sdtItem = [
-    {
-        name: "Students",
-        to: "/Students"
-    }
-]
-
-const pjtItem = [
-    {
-        name: "Projects",
-        to: "/Projects"
-    }
-]
-
-const nptItem = [
-    {
-        name: "Nonprofits",
-        to: "/Nonprofits"
-    }
-]
+import Logo from '../hack4impactLogo.png';
 
 
-const ctItem = [
-    {
-        name: "Contact",
-        to: "/Contact"
-    }
-]
+const mStyle = {
+    color: 'black'
+}
+
+const hStyle = {
+    color: 'black',
+    paddingBottom: 5,
+    fontSize: 24
+}
+
 
 const Footer = () => {
     return (
-      <div className="Footer" style={{backgroundColor:"#64ab8a", minHeight:250, paddingTop:40}}>
-        <div className={classes.logoContainer} >
-            <div style={{marginBottom: 15}}>
-            <NavLink to="/" className={classes.logoLink} style={{fontWeight: 'bold'}}>
+      <footer style={{backgroundColor:"#FFFFFF", minHeight: 250, paddingTop:40, paddingBottom: 20, marginTop:10}}>
+        <Container>
+           <Row>
+             <Col md="4">
+                <div>
+                    <img src= {Logo} alt="Hack4Impact Logo" height="40" width="auto" style={{marginBottom: 30}}/> 
+                </div>
+                <div className="text-label" style={{marginBottom: 15}}>
+                    <SocialIcon target="_blank" style={{marginLeft:10, marginRight: 15}} url="https://github.com/Hack4Impact-UMD" />
+                    <SocialIcon target="_blank" style={{margin: 4}} url="https://www.facebook.com/hack4impactumd" />
+                    <SocialIcon target="_blank" style={{marginLeft: 15}} url="https://www.instagram.com/hack4impactumd" />
+                </div>
+                <div className="text-label" style={{marginBottom: 15}}>
+                    If you have any questions, please contact <a className="footer-link" href="mailto:umd@hack4impact.org" style={mStyle}>UMD@hack4impact.org.</a>
+                </div>
+            </Col>
             
-                <span className={classes.logoMainText} style={{color: 'white', fontWeight: 'bold', marginLeft: 40}}>Hack4Impact</span>umd
-                <span className={classes.logoMainText} style={{color: 'white', fontWeight: 'bold', marginLeft: 85, fontFamily: 'Courier New'}}> Quick Links</span>
-                <span className={classes.logoMainText} style={{color: 'white', fontWeight: 'bold', marginLeft: 85, fontFamily: 'Courier New'}}> Apply </span>
-                <span className={classes.logoMainText} style={{color: 'white', fontWeight: 'bold', marginLeft: 85, fontFamily: 'Courier New'}}> Support </span>
 
-            </NavLink>
+            <div className="col-md-1" style={{paddingTop:50}}/>
+            <div className="col-md-2" style={{marginTop:30, marginRight:15}}>
+               <div className="footer-label" style={hStyle}>Quick Links</div>
+               <div>
+                    <NavLink exact to="/About" style={mStyle}>About Us</NavLink>
+                </div>
+                <div>
+                    <NavLink exact to="/Projects" style={mStyle}>Projects</NavLink>
+                </div>
+                <div>
+                    <NavLink exact to="/Contact" style={mStyle}>Contact Us</NavLink>
+                </div>
+              
             </div>
-            
 
-            <nav className={classes.navContainer}>
-                <ul className={classes.navLinks}>
-                    {abtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
-                    {sdtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 200}}>{navItem.name}</NavLink></div>))}
-                    <a className="footer-link" href="https://www.facebook.com/hack4impactumd" style={{color: 'black', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 100}}>Facebook</a>
-                </ul>
-            </nav>
-
-            <nav className={classes.navContainer} style={{marginTop: 15}}>
-                <ul className={classes.navLinks}>
-                    {pjtItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
-                    {nptItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 173}}>{navItem.name}</NavLink></div>))}
-
-                </ul>
-            </nav>
-
-            <nav className={classes.navContainer} style={{marginTop: 15, marginBottom: 10}}>
-                <ul className={classes.navLinks}>
-                    {ctItem.map( navItem => (<div key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected} style={{color: 'white', fontWeight: 'bold', fontFamily: 'Courier New', marginLeft: 350}}>{navItem.name}</NavLink></div>))}
-                </ul>
-            </nav>
+           
+            <div className="col-md-2" style={{marginTop:30}}>
+                <div className="footer-label" style={hStyle}>Apply</div>
+                  <div>
+                    <NavLink exact to="/Students" style={mStyle}>Students</NavLink>
+                  </div>
+                  <div>
+                   <NavLink exact to="/Nonprofits" style={mStyle} >Nonprofits</NavLink>
+                  </div> 
+             </div>
 
 
             <div>
                
             </div>
-            
-        </div>
+
+            </Row>
+           
+        </Container>
         
-    </div>
+    </footer>
         
     )
 }

@@ -1,10 +1,10 @@
 .flexContainer > div {
     display: flex;
     flex-direction: column; 
-    width: 700px;
+    
     max-width: 75%;
     text-align: center;
-    margin-top: 6%;
+    margin-top: 6em;
     margin-bottom: 5%;
 }
   

@@ -28,14 +28,14 @@ const allMembers = [
     ['Shania Kamara',       'ECODistricts Team',                'Software Engineer',                    ''],
     ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    'yashas.jpeg'],
     ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg'],
+    
     ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
     ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
     ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
     ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer; Client Outreach',   'surabir.jpg'],
-    ['Sharon Halevi',       'UMD Website Team',                 'Software Engineer',                    ''],
     ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
     ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
-    ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   ''],
+    ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   'Amanda_Liu.jpg'],
     ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    ''],
     ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
@@ -60,7 +60,7 @@ class About extends React.Component{
     render() {
 
         return (
-            <section id={styles.aboutcontent} style = {{marginTop: '5%', marginBottom: '5%', marginLeft: '15%', marginRight: '15%'}}>
+            <section id={styles.aboutcontent} style = {{marginTop: '6em', marginBottom: '5%', marginLeft: '15%', marginRight: '15%'}}>
                 <div style={{marginBottom: '3em', color: 'white'}}>
                     <h1 style = {{color: 'black'}}>What is Hack4Impact-UMD?</h1>
                     <p style={{marginLeft: '5em', marginRight: '5em'}}>Hack4Impact-UMD is a group of University of Maryland students who work with local and national non-profits to create software that improves the world around us. We also dicuss ethical technology, have talks about using technology for social good, and have fun! This club was founded in 2020 and is a chapter of the Hack4Impact, a national 501(c)3 organization.</p>

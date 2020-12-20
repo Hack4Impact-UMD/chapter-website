@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 const projs = [
     {
         name: 'Hampton Roads ECO District', 
-        image: './ECODistrictPic.PNG',
+        image: './ECODistrictPic.png',
         description: 'A website for the EcoDistrict in the Hampton Roads,Virginia community that gives residents access to resources that help community members support each other.', 
         date: 'Fall 2020'
         /*members: ['Simin Li (PM)', 'Rajashow Parajuli (Tech Lead)', 'Shania Kamara', 'Jessica Le', 'Yashas Lokesh', 'Sammy Munta']*/
@@ -16,7 +16,7 @@ const projs = [
 
     {
         name: 'Women in Science, Engineering, and the Environment (WISE-E)', 
-        image: './women.PNG',
+        image: './women.png',
         description: 'A website home for WISE-E, an initiative that aims to connect women interested \
         in science to resources and promote their \
         participation in these fields.', 
@@ -34,7 +34,7 @@ const opportunities = [
             ' Hack4Impact-UMD provides a distinct experience to develop technical skills' +
             ' and interact with nonprofit clients all while applying your skills to impact' +
             ' real lives. We have 30 members and counting, and we would love to have you join us.', 
-        link_path: '../Students', 
+        link_path: '/students', 
         link_title: "I'm a Student"
     }, 
 
@@ -47,7 +47,7 @@ const opportunities = [
         " , and more! Although we prefer to work with nonprofits " + 
         " in the Washington D.C. - Baltimore Metro Area, we have worked with nonprofits across the country." + 
         " Please reach out if you are interested.",
-        link_path: '../Nonprofits', 
+        link_path: '/nonprofits', 
         link_title: "I'm a Nonprofit"
     }
 ]
@@ -62,9 +62,8 @@ const Home = () => {
             
             {/* Top Picture */}
             <Container style = {{alignContent: 'center', marginBottom: '5em'}}>
-                <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"}/>
-                
-                <Button variant="danger" href="../About" >Learn More</Button>   
+                <img className = {styles.containerIMG} src={"./groupPictureWISE-E.PNG"} alt = {"group picture"}/>
+                <Button variant="dark" href = "/about" >Meet the Team</Button>   
             </Container>
             
 
@@ -101,7 +100,7 @@ const Home = () => {
                 
                 
                     
-                    <Button variant="dark" href="../Projects" >Learn More</Button>   
+                    <Button variant="dark" href="/projects" >Learn More</Button>   
             </Container>
               
 

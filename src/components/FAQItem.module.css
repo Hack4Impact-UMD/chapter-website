@@ -11,7 +11,11 @@
     transition-duration: "1s";
  */}
 
-.faq-question:hover {
+.faq_question {
+    font-size: 100%;
+}
+
+.faq_question:hover {
     cursor: pointer;
 }
 
@@ -26,5 +30,8 @@
 }
 
 .faq_item {
-    padding: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .1em;
 }

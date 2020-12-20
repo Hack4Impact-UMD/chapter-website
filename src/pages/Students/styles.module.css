@@ -15,18 +15,27 @@ p{
     color: #ffffff;
 }
 .head1{
+    color: black;
     font-size: 2.5em;
 }
 .head2{
     font-size: 2em;
 }
 .head3{
+    color: black;
     font-size: 1.25em;
 }
+.cardStyle{
+    margin-top: '4em';
+    margin-bottom: '4em';
+    align-items: 'center';
+    text-align: 'center';
+  }
 
 /*
 .studentContainer{
     background: linear-gradient(180deg, #EB5050 2.68%, #DDAE52 87.27%);
+    background-size: cover;
 }
 
 .topBigCircle{
@@ -70,17 +79,20 @@ TODO -- Add bottom ring
     max-width: 30%;/* ----TODO---- increase to about 60%-80% in smaller devices */
 }
 
+
+/*
 .timelineContainer::before{
-    content: "";
-    /* display: inline-block; */
     position: absolute;
-    margin-top: 15px;
+    margin-top: 15%;
     left: 18.35%;
     width: 0px;
     height: 66%;
     border: 1px solid black;
     z-index: 5;
 }
+
+*/
+
 .timelineContainer{
     width: 100%;
     color: #ffffff;
@@ -89,56 +101,79 @@ TODO -- Add bottom ring
     position: relative;
     align-items: center;
     text-align: left;
-    z-index: 10;
+   
 }
-.timelineItem::before{
+
+.timelineContainer:before{
+    content: "";
+    position: relative;
+    /*margin-top: 1%;*/
+    left: -31.2%;
+    /*width: 1px;*/
+    width: 30%;
+    top: 230px;
+    border: 1px solid black;
+    transform: rotate(90deg);
+    
+    
+}
+
+.timelineItem:before{
+    /*
     content: "";
     display: inline-block;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 1%;
     left: 18%;
-    width: 0px;
-    height:0px;
     border: 5px solid #000000;
     border-radius: 5px;
     z-index: 10;
+    */
+    /*
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);    
+    height: 2em;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    left: 18%;
+    width: 2em;
+    z-index: 10;
+    */
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 18%;
+    z-index: 10;
+
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 12.5px;
+    box-sizing: border-box;
 }
 .timelineHead{
+    color: black;
     position: relative;
     align-self: stretch;
     margin-left: 18%;
-    z-index: 10;
+    
 }
 .timelineItem{
+    color: white;
     max-width: 60%;
     margin-left: 1.25em;
     margin-bottom: 6em;
 }
 .timePeriod{
     /* display: inline; */
-    margin-left: 1.75em;
+    color: black;
 }
 
 .cta{
     display: flex;
     justify-content: center;
-}
-.ctaButton{
-    position: relative;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0em 0.1em #252525;
-    font-size: 16px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    z-index: 10;
-}
-.ctaButton:hover{
-    background-color: #ffffff;
-    color: #000000;
 }

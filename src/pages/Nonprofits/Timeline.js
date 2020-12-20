@@ -15,7 +15,7 @@ const timelineData = [
     {
         head: "Notified of Decision",
         timePeriod: "Mid August and Mid January",
-        description: "The Hack4Impact board of directors will consider the feasibility of your project and how well it suits our teams and timeline. We want to ensure we are the right people to tackle your problem. We will let you know if we have chosen to take on your project. If we are at capacity, another Hack4Impact chapter may take on your project"
+        description: "The Hack4Impact board of directors will consider the feasibility of your project and how well it suits our teams and timeline. We want to ensure we are the right people to tackle your problem. We will let you know if we have chosen to take on your project. If we are at capacity, another Hack4Impact chapter may take on your project."
     }
 ];
 
@@ -28,6 +28,7 @@ const TimelineItem = ({ data }) => (
             
             <span className={classes.circle} />
             <span className={classes.line} />
+
         </div>
     </div>
 );
