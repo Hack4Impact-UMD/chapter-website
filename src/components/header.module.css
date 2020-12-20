@@ -1,13 +1,10 @@
 .logoMainText{
     font-weight: 500;
-    text-shadow: 1px 1px #222222;
+    text-shadow: .5px .5px #222222;
     margin-right: 0.25em;
 }
-.navLinkSelected{
-    background-color: red;
-    color: aliceblue;
-}
+
 .navShadow{
-    box-shadow: 6px 3px 3px 0ppx rgba(119, 111, 111, 0.877);
+    filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));
 }
 

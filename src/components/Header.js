@@ -1,7 +1,7 @@
 import React from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import classes from './header.module.css';
-import { withRouter, NavLink} from "react-router-dom";
+import { withRouter} from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props){
@@ -11,7 +11,7 @@ class Header extends React.Component {
     const location = this.props.history.location;
     
     return (
-      <Navbar bg="light" expand="md" fixed="top" variant="light" className={classes.navShadow}>
+      <Navbar bg="light" expand="md" fixed="top" onSelect="test()" variant="light" className={classes.navShadow}>
         <Navbar.Brand href="/">
           <img
             src="favicon.PNG"
@@ -35,6 +35,6 @@ class Header extends React.Component {
         </Navbar.Collapse>
       </Navbar>
     )
-  }
-  }
+    }
+}
 export default withRouter(Header);

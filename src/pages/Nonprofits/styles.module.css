@@ -4,6 +4,8 @@
     width: 700px;
     max-width: 75%;
     text-align: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
 }
   
 .flexContainer {
@@ -14,18 +16,61 @@
     max-width: 100%;
 }
 
-.timelineSection > h2 {
-    margin-left: 30%;
+.introSection > p {
+    color: white;
+}
+
+.quoteSection {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteSection > p {
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+}
+
+h1, h2, h3, h4, h5 {
+    color: black
 }
 
 .FAQSection > h2 {
-    margin-left: 25%
+    margin-left: 27%;
+}
+
+.timelineSection > h2 {
+    margin-left: 28%;
+}
+
+.FAQSection {
+    margin-bottom: 6%;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 6%;
+}
+
+.buttonSection > div {
+    display: flex;
+    flex-direction: column; 
+    width: 700px;
+    max-width: 75%;
+    text-align: center;
 }
 
 .button {
-    width: 260px;
-    height: 68px;
-    background: rgba(60, 122, 186, 1);
+    width: 130px;
+    height: 50px;
+    background: rgba(0, 0, 0, 1);
     border-radius: 10px;
     color: white;
     display: flex;
@@ -34,7 +79,7 @@
 }
 
 .button:hover {
-    background: rgba(6, 87, 152, 1);
+    background: rgba(224, 86, 86, 1);
     color: white;
-
+    text-decoration: none;
 }
