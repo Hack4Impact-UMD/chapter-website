@@ -95,7 +95,7 @@ TODO -- Add bottom ring
     position: relative;
     align-items: center;
     text-align: left;
-    z-index: 10;
+   
 }
 
 .timelineContainer:before{
@@ -108,7 +108,7 @@ TODO -- Add bottom ring
     top: 230px;
     border: 1px solid black;
     transform: rotate(90deg);
-    z-index: 5;
+    
     
 }
 
@@ -154,7 +154,7 @@ TODO -- Add bottom ring
     position: relative;
     align-self: stretch;
     margin-left: 18%;
-    z-index: 10;
+    
 }
 .timelineItem{
     color: white;
@@ -170,23 +170,4 @@ TODO -- Add bottom ring
 .cta{
     display: flex;
     justify-content: center;
-}
-.ctaButton{
-    position: relative;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0em 0.1em #252525;
-    font-size: 16px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    z-index: 10;
-}
-.ctaButton:hover{
-    background-color: #ffffff;
-    color: #000000;
 }

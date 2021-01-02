@@ -16,7 +16,7 @@
 .mosaic {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 15px;
+  gap: 10px;
   margin: auto;
 }
 

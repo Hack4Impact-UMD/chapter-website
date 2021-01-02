@@ -2,7 +2,7 @@ import React from 'react';
 import TimelineItem from './TimelineItem';
 import Events from "./Events.js";
 import eventStyles from './Events.module.css';
-import { Card, CardDeck } from 'react-bootstrap';
+import { Card, CardDeck, Button } from 'react-bootstrap';
 import FAQItem from "../../components/FAQItem.js";
 import faq_styles from "../../components/FAQItem.module.css";
 import classes from './styles.module.css';
@@ -140,7 +140,7 @@ class Students extends React.Component{
     }
     render() {
         return (
-            <div className={classes.studentContainer}>
+            <div style = {{marginTop: '1em'}}>
                 <div className={classes.centerContainer}>
                 <div className={classes.centerContainerText}>
                     <p className={classes.head1}>Students</p>
@@ -156,13 +156,13 @@ class Students extends React.Component{
                         }
                     )}
                 </div>
-                <div className={classes.topBigCircle}></div>
+                
                 <div className={classes.cta}>
-                    <a className={classes.ctaButton} href = "https://forms.gle/1FrM2JdU1boC4KMz7" target="_blank">Apply Now</a>
+                    <Button variant = "dark" href = "https://forms.gle/1FrM2JdU1boC4KMz7" target="_blank">Apply Now</Button>
                 </div>
 
             <div>
-                <section style={{zIndex:2, paddingBottom:"3em"}}>
+                <section style={{paddingBottom:"3em"}}>
                 <section>
                     <br/>
                     <h1>Events</h1>
