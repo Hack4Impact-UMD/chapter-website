@@ -66,8 +66,6 @@ const FAQQuestions = [
     "What stack do you use?"
 ]
 
-const link = <a href="iamthesenate.space">running for senate</a>
-
 const FAQAnswers = [
     "We are currently recruiting for software developers, product managers, and designers on the project teams. We are also looking for people interested in marketing, finance, and nonprofit sourcing.",
 
