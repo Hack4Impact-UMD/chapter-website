@@ -36,7 +36,7 @@ const allMembers = [
     ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
     ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
     ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   'Amanda_Liu.jpg'],
-    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    'mohini.jpg'],
+    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    'mohini.png'],
     ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
     ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
