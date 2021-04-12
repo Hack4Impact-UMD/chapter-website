@@ -15,13 +15,13 @@ const allMembers = [
     ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      'alishavarma.png'],
     ['Jason Maa',           'WISE-E Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
     ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    'rajashowparajuli.PNG'],
-    ['Anna Feng',           'CaDC Water Rebates Team (Tech Lead)','Software Engineer',                   'AnnaFeng.png']
+    ['Anna Feng',           'CaDC Water Rebates Team (Tech Lead)','Software Engineer',                   'AnnaFeng.png'],
 
-    ['Hana Zherka',         'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png']
-    ['Miranda Song',        'Arcadia Team',                     'Software Engineer',                    'MirandaSong.png']
+    ['Hana Zherka',         'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png'],
+    ['Miranda Song',        'Arcadia Team',                     'Software Engineer',                    'MirandaSong.png'],
     
-    ['Alexis Johnson',      'CaDC Data Parser Team',            'UI/UX Designer',                        'AlexisJohnson.jpg']
-    ['Rachel Wu',           'CaDC Data Parser Team',            'Software Engineer',                    'RachelWu.jpg']
+    ['Alexis Johnson',      'CaDC Data Parser Team',            'UI/UX Designer',                        'AlexisJohnson.jpg'],
+    ['Rachel Wu',           'CaDC Data Parser Team',            'Software Engineer',                    'RachelWu.jpg'],
 
     ['Daneil Nguyen',       'WISE-E Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
     ['Shivanee Arun',       'WISE-E Team',                       'Software Engineer',                    'arunshivanee.jpg'],
@@ -34,13 +34,13 @@ const allMembers = [
     ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    'yashas.jpeg'],
     ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg'],
 
-    ['Daniel Wei',          'Inspire and Empower Team',         'Software Engineer',                    'DanielWei.jpg']
+    ['Daniel Wei',          'Inspire and Empower Team',         'Software Engineer',                    'DanielWei.jpg'],
     
-    ['Ananya Nadig',        'UMD Website Team',                 'Sofware Engineer',                     'AnanyaNadig.jpg']
-    ['Aryan Das',           'UMD Website Team',                 'Software Engineer',                    'AryanDas.png']
-    ['Esha Kapoor',         'UMD Website Team',                 'Software Engineer',                    'EshaKapoor.jpg']
-    ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.JPG']
-    ['Nikhil Ghate',        'UMD Website Team',                 'Software Engineer',                    'NikhilGhate.jpg']
+    ['Ananya Nadig',        'UMD Website Team',                 'Sofware Engineer',                     'AnanyaNadig.jpg'],
+    ['Aryan Das',           'UMD Website Team',                 'Software Engineer',                    'AryanDas.png'],
+    ['Esha Kapoor',         'UMD Website Team',                 'Software Engineer',                    'EshaKapoor.jpg'],
+    ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.JPG'],
+    ['Nikhil Ghate',        'UMD Website Team',                 'Software Engineer',                    'NikhilGhate.jpg'],
     ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
     ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
     ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
