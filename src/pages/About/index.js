@@ -15,8 +15,13 @@ const allMembers = [
     ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      'alishavarma.png'],
     ['Jason Maa',           'WISE-E Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
     ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    'rajashowparajuli.PNG'],
+    ['Anna Feng',           'CaDC Water Rebates Team (Tech Lead)','Software Engineer',                   'AnnaFeng.png']
+
+    ['Hana Zherka',         'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png']
+    //['Miranda Song',        'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png']
     
-    
+    ['Alexis Johnson',      'CaDC Data Parser Team',            'UI/UX Designer',                        'AlexisJohnson.jpg']
+    ['Rachel Wu',           'CaDC Data Parser Team',            'Software Engineer',                    'RachelWu.jpg']
 
     ['Daneil Nguyen',       'WISE-E Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
     ['Shivanee Arun',       'WISE-E Team',                       'Software Engineer',                    'arunshivanee.jpg'],
@@ -28,7 +33,14 @@ const allMembers = [
     ['Shania Kamara',       'ECODistricts Team',                'Software Engineer',                    ''],
     ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    'yashas.jpeg'],
     ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg'],
+
+    ['Daniel Wei',          'Inspire and Empower Team',         'Software Engineer',                    'DanielWei.jpg']
     
+    ['Ananya Nadig',        'UMD Website Team',                 'Sofware Engineer',                     'AnanyaNadig.jpg']
+    ['Aryan Das',           'UMD Website Team',                 'Software Engineer',                    'AryanDas.png']
+    ['Esha Kapoor',         'UMD Website Team',                 'Software Engineer',                    'EshaKapoor.jpg']
+    ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.JPG']
+    ['Nikhil Ghate',        'UMD Website Team',                 'Software Engineer',                    'NikhilGhate.jpg']
     ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
     ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
     ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
@@ -36,10 +48,11 @@ const allMembers = [
     ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
     ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
     ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   'Amanda_Liu.jpg'],
-    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    'mohini.png'],
-    ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
+    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    'MohiniDutta.jpg'],
+    ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'KatherineWang.jpg'],
     ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
     ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
+    
 ].map(element => element[3] === '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
