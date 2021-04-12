@@ -16,7 +16,7 @@ const projectCardInfo = [
         each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
         techstack: 'MongoDB, Express.js, React, Node, AWS',
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
-        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
+        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang, Joseph Davies',
         github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
         nonprofit: 'http://ecodistricthamptonroads.org/', 
         linktitle: 'Hampton Roads, VA Ecodistrict Website',
@@ -40,7 +40,34 @@ const projectCardInfo = [
         nonprofit: 'https://csc-atl.org/wise-e/', 
         linktitle: 'WISE-E Website',
         date: "Fall 2020"
+    },
+    {
+       name: 'Inspire and Empower',
+       image: './InspireAndEmpower.png',
+       description: 'This project team is developing a \
+       website for Inspire and Empower, which aims to give women interested \
+       in STEM greater resources. The team is building a website for the \
+       organization to convey information and will allow women to \
+       connect to others.',
+       techstack: 'MongoDB, Express.js, React, Node, Strapi',
+       members: 'Ferzam Mohammad (PM), Vrundal Shah (Tech Lead), Eileen Wang, Katherine Wang, Julie Yang, Vibhu Agrawal, Shivanee Arun, Rudy Fuentes, Daniel Wei',
+       nonprofit,
+       linktitle,
+       github: 'https://github.com/Hack4Impact-UMD/inspire-and-empower',
+       date: "Spring 2021"
+    },
+    {
+        name: 'Arcadia',
+        image: './Arcadia.png',
+        description: 'The Arcadia project team is working on a website that uses a script that automates the generation of individualized pdf reports in bulk from Google Sheets for the Arcadia Center for Sustainable Food and Agriculture’s customers. The Arcadia Center for Sustainable Food and Agriculture is a nonprofit organization dedicated to creating a more equitable and sustainable local food system in the Washington, DC area. They provide workforce training in agriculture on the farm in Alexandria, distribute fresh, affordable food to underserved DC-area neighborhoods via their Mobile Market and connect schools with health, local food for school meals and farm education.',
+        techstack: 'Python, Flask, Pandas, Matplotlib, PyFPDF',
+        members: 'Sadena Rishindran (PM), Abbie Tran (Tech Lead), Steven Berit, Sravya Kommuri, Miranda Song, Hana Zherka, Sean Ha',
+        github: 'https://github.com/Hack4Impact-UMD/Arcadia',
+        nonprofit,
+        linktitle,
+        date: "Spring 2021"
     }
+ 
 ]
 
 class Projects extends React.Component{
