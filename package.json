@@ -1,5 +1,5 @@
 {
-  "homepage": "http://.",
+  "homepage": ".",
   "name": "chapter-website-1",
   "version": "0.1.0",
   "private": true,
@@ -44,16 +44,5 @@
   },
   "devDependencies": {
     "fslightbox-react": "^1.5.0"
-  },
-  "description": "This is the home page for hack4impact - UMD\r You can visit the site at umd.hack4impact.org\r This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hack4Impact-UMD/chapter-website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hack4Impact-UMD/chapter-website/issues"
   }
 }
