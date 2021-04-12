@@ -39,7 +39,7 @@ const allMembers = [
     ['Ananya Nadig',        'UMD Website Team',                 'Sofware Engineer',                     'AnanyaNadig.jpg'],
     ['Aryan Das',           'UMD Website Team',                 'Software Engineer',                    'AryanDas.png'],
     ['Esha Kapoor',         'UMD Website Team',                 'Software Engineer',                    'EshaKapoor.jpg'],
-    ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.JPG'],
+    ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.jpg'],
     ['Nikhil Ghate',        'UMD Website Team',                 'Software Engineer',                    'NikhilGhate.jpg'],
     ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
     ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
@@ -63,7 +63,7 @@ function importAll(r) {
     return images;
 }
 
-const images = importAll(require.context('./memberpics', false, /\.(png|PNG|jpe?g|svg)$/));  
+const images = importAll(require.context('./memberpics', false, /\.(png|PNG|JPG|jpe?g|svg)$/));  
 
 class About extends React.Component{
     constructor(props) {
