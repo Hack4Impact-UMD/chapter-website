@@ -36,7 +36,7 @@ const allMembers = [
 
     ['Daniel Wei',          'Inspire and Empower Team',         'Software Engineer',                    'DanielWei.jpg'],
     
-    ['Ananya Nadig',        'UMD Website Team',                 'Sofware Engineer',                     'AnanyaNadig.jpg'],
+    ['Ananya Nadig',        'UMD Website Team',                 'Software Engineer',                     'AnanyaNadig.jpg'],
     ['Aryan Das',           'UMD Website Team',                 'Software Engineer',                    'AryanDas.png'],
     ['Esha Kapoor',         'UMD Website Team',                 'Software Engineer',                    'EshaKapoor.jpg'],
     ['Harleen Kaur',        'UMD Website Team',                 'Software Engineer',                    'HarleenKaur.jpg'],
