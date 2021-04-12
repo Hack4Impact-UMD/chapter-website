@@ -10,36 +10,36 @@ import style from "../../App.css"
 // Also, this is connected to a map function that provides everyone who does not yet have their pic uploaded with a placeholder image
 const allMembers = [
     ['Abbie Tran',          'UMD Website Team (PM)',            'UMD Chapter Co-Founder',               'abbietran.jpg'],
-    ['Lydia Hu',            'WISE-E Team (PM)',                  'UMD Chapter Co-Founder',               'lydiahu.png'],
+    ['Lydia Hu',            'WISE-E Team (PM)',                 'UMD Chapter Co-Founder',               'lydiahu.png'],
     ['Simin Li',            'ECODistricts Team (PM)',           'UMD Chapter Co-Founder',               'siminli.PNG'],
-    ['Alisha Varma',        'UMD Website Team (Tech Lead)',     'Client Outreach',                      'alishavarma.png'],
-    ['Jason Maa',           'WISE-E Team (Tech Lead)',           'Software Engineer',                    'jasonmaa.jpg'],
-    ['Rajashow Parajuli',   'ECODistricts Team (Tech Lead)',    'Software Engineer',                    'rajashowparajuli.PNG'],
-    
-    
+    ['Ferzam Mohammad',     'Inspire and Empower Team (PM)',    'Software Engineer',                    'MohammadFerzam.jpeg'],
+    ['Sadena Rishindran',   'Arcadia Team (PM)',                'Software Engineer',                    'SadenaRishindran.jpg'],
+    ['Mohini Dutta',        'CaDC Data Parser Team (PM)',       'Software Engineer',                    'mohini.png'],
+    ['Alisha Varma',        'CaDC Data Parser Team (PM)',       'UI/UX Designer',                       'alishavarma.png'],
+    ['Daneil Nguyen',       'CaDC Water Rebates Team (PM)',     'Software Engineer',                    'daneilnguyen.jpg'],
+    ['Vrundal Shah',        'Inspire and Empower (Tech Lead)',  'Software Engineer',                    'VrundalShah.jpg'],  
+    ['Stanley Thomas',      'CaDC Data Parser Team (Tech Lead)','Software Engineer',                    'Stanley.jpg'], 
 
-    ['Daneil Nguyen',       'WISE-E Team',                       'Software Engineer',                    'daneilnguyen.jpg'],
-    ['Shivanee Arun',       'WISE-E Team',                       'Software Engineer',                    'arunshivanee.jpg'],
-    ['Nate Mekonnen',       'WISE-E Team',                       'Software Engineer',                    'natnaelmekonnen.jpg'],
-    ['Elizabeth Chen',      'WISE-E Team',                       'UI/UX Designer',                       'elizabethchen.png'],
+    ['Steven Berit',        'Arcadia Team',                    'Software Engineer; Sourcing',           'StevenBerit.jpg'],
+    ['Sravya Kommuri',      'Arcadia Team',                    'Software Engineer',                     'SravyaKommuri.jpg'],
 
-    ['Sammy Munta',         'ECODistricts Team',                'UI/UX Designer',                       ''],
-    ['Jessica Le',          'ECODistricts Team',                'Software Engineer',                    'jessicale.jpg'],
-    ['Shania Kamara',       'ECODistricts Team',                'Software Engineer',                    ''],
-    ['Yashas Lokesh',       'ECODistricts Team',                'Software Engineer',                    'yashas.jpeg'],
-    ['Eileen Wang',         'ECODistricts Team',                'UI/UX Designer',                       'eileenwang.jpg'],
-    
-    ['Andy Qu',             'UMD Website Team',                 'Software Engineer',                    'andyqu.png'],
-    ['Tahmid Hannan',       'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Christy Yau',         'UMD Website Team',                 'Software Engineer',                    'Christy_Yau.jpg'],
-    ['Surabi Ramamurthy',   'UMD Website Team',                 'Software Engineer; Client Outreach',   'surabir.jpg'],
-    ['Joseph Davies',       'UMD Website Team',                 'Software Engineer',                    'josephdavies.jpg'],
-    ['Ferzam Mohammad',     'UMD Website Team',                 'Software Engineer',                    'MohammadFerzam.jpeg'],
-    ['Amanda Liu',          'UMD Website Team',                 'Software Engineer; Client Outreach',   'Amanda_Liu.jpg'],
-    ['Mohini Dutta',        'UMD Website Team',                 'Software Engineer',                    'mohini.png'],
-    ['Katherine Wang',      'UMD Website Team',                 'Software Engineer',                    'katherinewang.jpeg'],
-    ['Mohammed Kabir',      'UMD Website Team',                 'Software Engineer',                    ''],
-    ['Vrundal Shah',        'UMD Website Team',                 'Software Engineer',                    'VrundalShah.jpg']
+    ['Andy Qu',             'CaDC Data Parser Team',            'Software Engineer',                    'andyqu.png'],
+    ['Samara Wondimu',      'CaDC Data Parser Team',            'Software Engineer',                    'SamaraWondimu.jpeg'],
+
+    ['Nate Mekonnen',      'CaDC Water Rebates Team',           'Software Engineer',                    'natnaelmekonnen.jpg'],
+    ['Thomas Pallan',      'CaDC Water Rebates Team',           'UI/UX Designer',                       'ThomasPallan.jpg'],
+    ['Surabi Ramamurthy',  'CaDC Water Rebates Team',           'Software Engineer',                    'SurabiRamamurthy.jpg'],
+
+    ['Joseph Davies',       'ECODistricts Team',                 'Software Engineer',                   'josephdavies.jpg'],
+
+    ['Vibhu Agrawal',      'Inspire and Empower Team',          'Software Engineer',                    'VibhuAgrawal.jpg'],
+    ['Shivanee Arun',      'Inspire and Empower Team',          'Software Engineer',                    'ShivaneeArun.jpeg'],
+    ['Eileen Wang',        'Inspire and Empower Team',          'UI/UX Designer',                       'eileenwang.jpg'],
+    ['Katherine Wang',     'Inspire and Empower Team',          'Software Engineer',                    'katherinewang.jpeg'],
+
+    ['Russell Benjamin',    'UMD Website Team',                 'UI/UX Designer',                       'RussellBenjamin.png'],
+    ['Sean Mohs',           'UMD Website Team',                 'Sourcing',                             'SeanMohs.jpg'],
+    ['Sho Takeshita',       'UMD Website Team',                 'Software Engineer',                    'ShoTakeshita.jpg'],
 ].map(element => element[3] === '' ? [element[0], element[1], element[2], 'unknown.png'] : element);
 
 // The function importAll and the call to it are ripped straight from StackOverflow:
