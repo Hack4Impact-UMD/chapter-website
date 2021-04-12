@@ -18,7 +18,7 @@ const allMembers = [
     ['Anna Feng',           'CaDC Water Rebates Team (Tech Lead)','Software Engineer',                   'AnnaFeng.png']
 
     ['Hana Zherka',         'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png']
-    //['Miranda Song',        'Arcadia Team',                     'Software Engineer',                    'HanaZherka.png']
+    ['Miranda Song',        'Arcadia Team',                     'Software Engineer',                    'MirandaSong.png']
     
     ['Alexis Johnson',      'CaDC Data Parser Team',            'UI/UX Designer',                        'AlexisJohnson.jpg']
     ['Rachel Wu',           'CaDC Data Parser Team',            'Software Engineer',                    'RachelWu.jpg']
