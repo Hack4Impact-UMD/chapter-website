@@ -21,7 +21,7 @@ const allMembers = [
     ['Rachel Wu',           'CaDC Data Parser Team',            'Software Engineer',                    'RachelWu.jpg'],
     ['Ferzam Mohammad',     'Inspire and Empower Team (PM)',    'Software Engineer',                    'MohammadFerzam.jpeg'],
     ['Sadena Rishindran',   'Arcadia Team (PM)',                'Software Engineer',                    'SadenaRishindran.jpg'],
-    ['Mohini Dutta',        'CaDC Data Parser Team (PM)',       'Software Engineer',                    'mohini.png'],
+    ['Mohini Dutta',        'CaDC Data Parser Team (PM)',       'Software Engineer',                    'MohiniDutta.jpg'],
     ['Alisha Varma',        'CaDC Data Parser Team (PM)',       'UI/UX Designer',                       'alishavarma.png'],
     ['Daneil Nguyen',       'CaDC Water Rebates Team (PM)',     'Software Engineer',                    'daneilnguyen.jpg'],
     ['Vrundal Shah',        'Inspire and Empower (Tech Lead)',  'Software Engineer',                    'VrundalShah.jpg'],  
@@ -52,7 +52,7 @@ const allMembers = [
     ['Vibhu Agrawal',      'Inspire and Empower Team',          'Software Engineer',                    'VibhuAgrawal.jpg'],
     ['Shivanee Arun',      'Inspire and Empower Team',          'Software Engineer',                    'ShivaneeArun.jpeg'],
     ['Eileen Wang',        'Inspire and Empower Team',          'UI/UX Designer',                       'eileenwang.jpg'],
-    ['Katherine Wang',     'Inspire and Empower Team',          'Software Engineer',                    'KatherineWang.jpeg'],
+    ['Katherine Wang',     'Inspire and Empower Team',          'Software Engineer',                    'KatherineWang.jpg'],
 
     ['Russell Benjamin',    'UMD Website Team',                 'UI/UX Designer',                       'RussellBenjamin.png'],
     ['Sean Mohs',           'UMD Website Team',                 'Sourcing',                             'SeanMohs.jpg'],
