@@ -51,8 +51,8 @@ const projectCardInfo = [
        connect to others.',
        techstack: 'MongoDB, Express.js, React, Node, Strapi',
        members: 'Ferzam Mohammad (PM), Vrundal Shah (Tech Lead), Eileen Wang, Katherine Wang, Julie Yang, Vibhu Agrawal, Shivanee Arun, Rudy Fuentes, Daniel Wei',
-       nonprofit,
-       linktitle,
+       nonprofit: '',
+       linktitle: '',
        github: 'https://github.com/Hack4Impact-UMD/inspire-and-empower',
        date: "Spring 2021"
     },
@@ -68,8 +68,8 @@ const projectCardInfo = [
         techstack: 'Python, Flask, Pandas, Matplotlib, PyFPDF',
         members: 'Sadena Rishindran (PM), Abbie Tran (Tech Lead), Steven Berit, Sravya Kommuri, Miranda Song, Hana Zherka, Sean Ha',
         github: 'https://github.com/Hack4Impact-UMD/Arcadia',
-        nonprofit,
-        linktitle,
+        nonprofit: '',
+        linktitle: '',
         date: "Spring 2021"
     }
  
