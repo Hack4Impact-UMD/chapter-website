@@ -59,13 +59,12 @@ const projectCardInfo = [
     {
         name: 'Arcadia',
         image: './Arcadia.png',
-        description: 'The Arcadia project team is working on a website that \
-        uses a script that automates the generation of individualized pdf reports \
-        in bulk from Google Sheets for the Arcadia Center for Sustainable Food and \
-        Agriculture’s customers. The Arcadia Center for Sustainable Food and Agriculture \
-        is a nonprofit organization dedicated to creating a more equitable and sustainable \
-        local food system in the Washington, DC area.',
-        techstack: 'Python, Flask, Pandas, Matplotlib, PyFPDF',
+        description: 'This project team created a desktop application \
+        for the Arcadia Center for Sustainable Food and \
+        Agriculture, a nonprofit organization dedicated to creating a more equitable and sustainable \
+        local food system in the Washington, DC area. The application automates the generation of individualized pdf reports \
+        for the organization\'s customers.',
+        techstack: 'Python, PyFPDF, Pandas, Matplotlib',
         members: 'Sadena Rishindran (PM), Abbie Tran (Tech Lead), Steven Berit, Sravya Kommuri, Miranda Song, Hana Zherka, Sean Ha',
         github: 'https://github.com/Hack4Impact-UMD/Arcadia',
         nonprofit: '',
