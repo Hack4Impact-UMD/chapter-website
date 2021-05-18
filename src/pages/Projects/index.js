@@ -70,6 +70,19 @@ const projectCardInfo = [
         nonprofit: '',
         linktitle: '',
         date: "Spring 2021"
+    },
+    {
+        name: 'CaDC Water Rebate',
+        image: './water.jpg',
+        description: 'This project team chelp the California Data Collaborative (CaDC) update the user interface of their web application. \
+        They added small features  help users of this web application have an easier time with navigation including reorganization of buttons and adding  toggles to hide tables when unneeded\
+        They also also implemented ranking charts to help users gauge water saving performance in different cities for a specified rebate program.',
+        techstack: 'Python, Flask, Postgres, AWS',
+        members: 'Daneil Nguyen (PM), Anna Feng (Tech Lead), Anthony Squillacioti, Thomas Pallan, Kevin Chen, Nate Mekonnen, Surabi Ramamurthy, Eric Yi',
+        github: '',
+        nonprofit: '',
+        linktitle: '',
+        date: "Spring 2021"
     }
  
 ]
@@ -118,7 +131,7 @@ class Projects extends React.Component{
                     <Container >
                         <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" , color: "white"}}>
                             <Col sm={12} md={8} lg={6} xl={6}>
-                            Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we are working on this semester.
+                            Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we have worked on in the past and are currently working on.
                             </Col>
                         </Row>
                     </Container>
