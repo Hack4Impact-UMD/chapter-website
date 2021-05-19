@@ -73,12 +73,25 @@ const projectCardInfo = [
     },
     {
         name: 'CaDC Water Rebate',
-        image: './water.jpg',
-        description: 'This project team chelp the California Data Collaborative (CaDC) update the user interface of their web application. \
-        They added small features  help users of this web application have an easier time with navigation including reorganization of buttons and adding  toggles to hide tables when unneeded\
-        They also also implemented ranking charts to help users gauge water saving performance in different cities for a specified rebate program.',
+        image: './cadc.png',
+        description: 'This project team helped the California Data Collaborative (CaDC) update the user interface of their web application. \
+        They added small features to help the web application\'s users more easily navigate it, including reorganizing the buttons and adding toggles to hide tables when unneeded.\
+        They also implemented ranking charts to help users gauge water saving performance in different cities for a specified rebate program.',
         techstack: 'Python, Flask, Postgres, AWS',
         members: 'Daneil Nguyen (PM), Anna Feng (Tech Lead), Anthony Squillacioti, Thomas Pallan, Kevin Chen, Nate Mekonnen, Surabi Ramamurthy, Eric Yi',
+        github: '',
+        nonprofit: '',
+        linktitle: '',
+        date: "Spring 2021"
+    },
+    {
+        name: 'CaDC Data Parser',
+        image: './water.jpg',
+        description: 'This project team cleaned, aggregated, and displayed the data given ' + 
+        'by CaDC customers by checking the validity and correctness of the data prior to transporting it into an Amazon S3 bucket. \
+        The California Data Collaborative (CaDC) is a network of water professionals collaborating to create tools and applied research supporting planning and analysis.',
+        techstack: 'Python, Flask, Postgres, AWS',
+        members: 'Mohini Dutta (PM), Alisha Varma (PM), Stanley Thomas (Tech Lead), Alexis Johnson, Angela Liu, Vidit Makwana, Andy Qu, Samara Wondimu, Rachel Wu',
         github: '',
         nonprofit: '',
         linktitle: '',
