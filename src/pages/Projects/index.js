@@ -19,7 +19,7 @@ const projectCardInfo = [
         Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang, Joseph Davies',
         github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
         nonprofit: 'http://ecodistricthamptonroads.org/', 
-        linktitle: 'Hampton Roads, VA Ecodistrict Website',
+        linktitle: 'http://ecodistricthamptonroads.org/',
         date: "Fall 2020"
     }, 
 
@@ -38,7 +38,7 @@ const projectCardInfo = [
         Daneil Nguyen',
         github: 'https://github.com/Hack4Impact-UMD/WISE-E',
         nonprofit: 'https://csc-atl.org/wise-e/', 
-        linktitle: 'WISE-E Website',
+        linktitle: 'https://csc-atl.org/wise-e/',
         date: "Fall 2020"
     },
     {
@@ -68,7 +68,8 @@ const projectCardInfo = [
         members: 'Sadena Rishindran (PM), Abbie Tran (Tech Lead), Steven Berit, Sravya Kommuri, Miranda Song, Hana Zherka, Sean Ha',
         github: 'https://github.com/Hack4Impact-UMD/Arcadia',
         nonprofit: '',
-        linktitle: '',
+        photoslide: ['/arcadia_app.png', 'arcadia_report.png'],
+        linktitle: 'http://arcadiafood.org/',
         date: "Spring 2021"
     },
     {
@@ -81,7 +82,7 @@ const projectCardInfo = [
         members: 'Daneil Nguyen (PM), Anna Feng (Tech Lead), Anthony Squillacioti, Thomas Pallan, Kevin Chen, Nate Mekonnen, Surabi Ramamurthy, Eric Yi',
         github: '',
         nonprofit: '',
-        linktitle: '',
+        linktitle: 'https://californiadatacollaborative.org/',
         date: "Spring 2021"
     },
     {
@@ -94,7 +95,7 @@ const projectCardInfo = [
         members: 'Mohini Dutta (PM), Alisha Varma (PM), Stanley Thomas (Tech Lead), Alexis Johnson, Angela Liu, Vidit Makwana, Andy Qu, Samara Wondimu, Rachel Wu',
         github: '',
         nonprofit: '',
-        linktitle: '',
+        linktitle: 'https://californiadatacollaborative.org/',
         date: "Spring 2021"
     }
  
@@ -107,8 +108,8 @@ class Projects extends React.Component{
 
     renderCards() {
         let projectCards = projectCardInfo.map((info) => {
-            return <ProjectCard name={info.name} description={info.description} techstack={info.techstack}
-            members={info.members} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
+            return <ProjectCard name={info.name} linktitle = {info.linktitle} description={info.description} techstack={info.techstack}
+            members={info.members} photoslide={info.photoslide} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
         });
 
         let rowGroups = [];

@@ -1,11 +1,15 @@
 import React from 'react';
 import {Card} from "react-bootstrap";
 import styles from "./projectDetails.module.css";
-import {FaGithub, FaInfoCircle} from "react-icons/fa";
+import {FaGithub, FaInfoCircle, FaImages} from "react-icons/fa";
+import FsLightbox from 'fslightbox-react';
 
 class ProjectCard extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            isVisible: false
+        }
     }
     
   render() {
@@ -18,6 +22,7 @@ class ProjectCard extends React.Component {
         {this.props.members}
     </Card.Text>;
     }
+    
 
     // GitHub Icon only appears on the projects page
     let githubIcon = <></>;
@@ -27,6 +32,8 @@ class ProjectCard extends React.Component {
             <FaGithub  style={{width: '30px', height: '30px', color: 'black'}} />
         </a>;
     }
+    
+    
 
     let techStack = <></>;
     if(this.props.techstack !== undefined) {
@@ -45,12 +52,27 @@ class ProjectCard extends React.Component {
         </a>;
     }
 
+    // Photoslide instead of info
+    let lightbox = <></>;
+    if (this.props.photoslide !== undefined) {
+        lightbox = <FsLightbox
+            toggler={this.state.isVisible}
+            sources={this.props.photoslide}
+        />
+        infoIcon = <a><FaImages style={{width: '30px', height: '30px', marginLeft: '5px',}} onClick={() => {
+            this.setState({ isVisible: !this.state.isVisible })
+          }}/></a>
+    }
+
     return (
         <div className={styles.card}>
+            
+
+            {lightbox}
             <Card style={{overflow: 'auto', marginBottom: '30px', width: '100%', height: '100%'}} >
                 <div className={styles.container} >
                     
-                    <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={this.props.image} alt="" />
+                    <a href={this.props.linktitle} target={'_blank'}> <img style={{width: '100%', height: '7rem', objectFit: 'cover'}} src={this.props.image} alt="" href="www.google.com" target={'_blank'}/></a>
                     <Card.Title style={{marginTop: '.5rem', marginBottom: '.5rem'}}>{this.props.name}</Card.Title>
                 </div>
 
