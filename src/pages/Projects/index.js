@@ -37,7 +37,7 @@ const projectCardInfo = [
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
         Daneil Nguyen',
         github: 'https://github.com/Hack4Impact-UMD/WISE-E',
-        nonprofit: 'https://csc-atl.org/wise-e/', 
+        nonprofit: 'https://wise-e.org', 
         linktitle: 'https://csc-atl.org/wise-e/',
         date: "Fall 2020"
     },
@@ -51,8 +51,8 @@ const projectCardInfo = [
        connect to others.',
        techstack: 'MongoDB, Express.js, React, Node, Strapi',
        members: 'Ferzam Mohammad (PM), Vrundal Shah (Tech Lead), Eileen Wang, Katherine Wang, Julie Yang, Vibhu Agrawal, Shivanee Arun, Rudy Fuentes, Daniel Wei',
-       nonprofit: '',
-       linktitle: '',
+       nonprofit: 'https://www.inspireandempower.org/',
+       linktitle: 'https://www.inspireandempower.org/',
        github: 'https://github.com/Hack4Impact-UMD/inspire-and-empower',
        date: "Spring 2021"
     },
