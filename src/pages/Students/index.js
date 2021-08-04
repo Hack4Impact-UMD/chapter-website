@@ -37,7 +37,6 @@ const FAQQuestions = [
     "What stack do you use?"
 ]
 
-
 const FAQAnswers = [
     "We are currently recruiting for software developers, product managers, and designers on the project teams. "+
     "You will be placed on project teams with nonprofit OR bootcamp team, depending on experience"+
@@ -124,7 +123,7 @@ class Students extends React.Component{
                 <Timeline/>
                 
                 <div className={classes.cta}>
-                    <Button variant = "dark" href = "https://forms.gle/1FrM2JdU1boC4KMz7" target="_blank">Apply Now</Button>
+                    <Button variant = "dark" href = "https://forms.gle/qR5d88tLWD6LTBv1A" target="_blank">Apply Now</Button>
                 </div>
 
             <div>
