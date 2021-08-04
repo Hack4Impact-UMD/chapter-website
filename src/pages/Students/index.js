@@ -158,7 +158,7 @@ class Students extends React.Component{
                 </div>
                 
                 <div className={classes.cta}>
-                    <Button variant = "dark" href = "https://forms.gle/1FrM2JdU1boC4KMz7" target="_blank">Apply Now</Button>
+                    <Button variant = "dark" href = "https://forms.gle/qR5d88tLWD6LTBv1A" target="_blank">Apply Now</Button>
                 </div>
 
             <div>
