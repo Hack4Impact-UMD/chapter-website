@@ -1,3 +1,5 @@
+This is the home page for hack4impact - UMD
+You can visit the site at umd.hack4impact.org
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -16,10 +16,10 @@ const projectCardInfo = [
         each other. This was made in partnership with the Center for Sustainable Communities-Atlanta.', 
         techstack: 'MongoDB, Express.js, React, Node, AWS',
         members: 'Simin Li (PM), Rajashow Parajuli (Tech Lead), \
-        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang',
+        Shania Kamara, Jessica Le, Yashas Lokesh, Sammy Munta, Eileen Wang, Joseph Davies',
         github: 'https://github.com/ecodistricthamptonroads/EcoDistricts-Hampton-Roads',
         nonprofit: 'http://ecodistricthamptonroads.org/', 
-        linktitle: 'Hampton Roads, VA Ecodistrict Website',
+        linktitle: 'http://ecodistricthamptonroads.org/',
         date: "Fall 2020"
     }, 
 
@@ -37,10 +37,68 @@ const projectCardInfo = [
         Shivanee Arun, Elizabeth Chen, Nate Mekonnen, \
         Daneil Nguyen',
         github: 'https://github.com/Hack4Impact-UMD/WISE-E',
-        nonprofit: 'https://csc-atl.org/wise-e/', 
-        linktitle: 'WISE-E Website',
+        nonprofit: 'https://wise-e.org', 
+        linktitle: 'https://csc-atl.org/wise-e/',
         date: "Fall 2020"
+    },
+    {
+       name: 'Inspire and Empower',
+       image: './InspireAndEmpower.png',
+       description: 'This project team is developing a \
+       website for Inspire and Empower, which aims to give women interested \
+       in STEM greater resources. The team is building a website for the \
+       organization to convey information and will allow women to \
+       connect to others.',
+       techstack: 'MongoDB, Express.js, React, Node, Strapi',
+       members: 'Ferzam Mohammad (PM), Vrundal Shah (Tech Lead), Eileen Wang, Katherine Wang, Julie Yang, Vibhu Agrawal, Shivanee Arun, Rudy Fuentes, Daniel Wei',
+       nonprofit: 'https://www.inspireandempower.org/',
+       linktitle: 'https://www.inspireandempower.org/',
+       github: 'https://github.com/Hack4Impact-UMD/inspire-and-empower',
+       date: "Spring 2021"
+    },
+    {
+        name: 'Arcadia',
+        image: './Arcadia.png',
+        description: 'This project team created a desktop application \
+        for the Arcadia Center for Sustainable Food and \
+        Agriculture, a nonprofit organization dedicated to creating a more equitable and sustainable \
+        local food system in the Washington, DC area. The application automates the generation of individualized pdf reports \
+        for the organization\'s customers.',
+        techstack: 'Python, PyFPDF, Pandas, Matplotlib',
+        members: 'Sadena Rishindran (PM), Abbie Tran (Tech Lead), Steven Berit, Sravya Kommuri, Miranda Song, Hana Zherka, Sean Ha',
+        github: 'https://github.com/Hack4Impact-UMD/Arcadia',
+        nonprofit: '',
+        photoslide: ['/arcadia_app.png', 'arcadia_report.png'],
+        linktitle: 'http://arcadiafood.org/',
+        date: "Spring 2021"
+    },
+    {
+        name: 'CaDC Water Rebate',
+        image: './cadc.png',
+        description: 'This project team helped the California Data Collaborative (CaDC) update the user interface of their web application. \
+        They added small features to help the web application\'s users more easily navigate it, including reorganizing the buttons and adding toggles to hide tables when unneeded.\
+        They also implemented ranking charts to help users gauge water saving performance in different cities for a specified rebate program.',
+        techstack: 'Python, Flask, Postgres, AWS',
+        members: 'Daneil Nguyen (PM), Anna Feng (Tech Lead), Anthony Squillacioti, Thomas Pallan, Kevin Chen, Nate Mekonnen, Surabi Ramamurthy, Eric Yi',
+        github: '',
+        nonprofit: '',
+        linktitle: 'https://californiadatacollaborative.org/',
+        date: "Spring 2021"
+    },
+    {
+        name: 'CaDC Data Parser',
+        image: './water.jpg',
+        description: 'This project team cleaned, aggregated, and displayed the data given ' + 
+        'by CaDC customers by checking the validity and correctness of the data prior to transporting it into an Amazon S3 bucket. \
+        The California Data Collaborative (CaDC) is a network of water professionals collaborating to create tools and applied research supporting planning and analysis.',
+        techstack: 'Python, Flask, Postgres, AWS',
+        members: 'Mohini Dutta (PM), Alisha Varma (PM), Stanley Thomas (Tech Lead), Alexis Johnson, Angela Liu, Vidit Makwana, Andy Qu, Samara Wondimu, Rachel Wu',
+        github: '',
+        nonprofit: '',
+        linktitle: 'https://californiadatacollaborative.org/',
+        date: "Spring 2021"
     }
+ 
 ]
 
 class Projects extends React.Component{
@@ -50,8 +108,8 @@ class Projects extends React.Component{
 
     renderCards() {
         let projectCards = projectCardInfo.map((info) => {
-            return <ProjectCard name={info.name} description={info.description} techstack={info.techstack}
-            members={info.members} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
+            return <ProjectCard name={info.name} linktitle = {info.linktitle} description={info.description} techstack={info.techstack}
+            members={info.members} photoslide={info.photoslide} github={info.github} date = {info.date} nonprofit={info.nonprofit} linktitle={info.linktitle} image={info.image}/>
         });
 
         let rowGroups = [];
@@ -87,7 +145,7 @@ class Projects extends React.Component{
                     <Container >
                         <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" , color: "white"}}>
                             <Col sm={12} md={8} lg={6} xl={6}>
-                            Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we are working on this semester.
+                            Each school year, we partner with a few nonprofits to help them better serve their communities. Here are the projects we have worked on in the past and are currently working on.
                             </Col>
                         </Row>
                     </Container>

@@ -1,10 +1,18 @@
 .logoMainText{
     font-weight: 500;
-    text-shadow: 1px 1px #222222;
+    text-shadow: .5px .5px #222222;
     margin-right: 0.25em;
 }
 
 .navShadow{
     filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.4));
+}
+
+.topLink{
+    color: #5c5c5a;
+    margin-right: 1em;
+}
+.topLink:hover{
+    color: black;
 }
 
