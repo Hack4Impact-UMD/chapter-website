@@ -5,7 +5,7 @@ const timelineData = [
     
         {
             head: "Written Application",
-            timePeriod: "August 20 - September 10; January 1 - 25",
+            // timePeriod: "August 20 - September 10; January 1 - 25",
             description: "New members can join in the beginning of both semesters. We accept written applications at " +
             "the start of the fall or semester and a few weeks before the start of the spring semester. Written Applications " +
             "via the 'apply' button below are open from three weeks before the start of the semester to the first two weeks of " +
@@ -14,7 +14,7 @@ const timelineData = [
         },
         {
             head: "Interview",
-            timePeriod: "August 30 - September 14; January 11 - 30",
+            // timePeriod: "August 30 - September 14; January 11 - 30",
             description: "We will reach out to schedule an interview if your time availability, " +
             "interests and skills match what we are looking for. Don't stress about your interview! " +
             "We want to get to know you and why you're passionate about joining H4I and our mission. " +
@@ -23,7 +23,7 @@ const timelineData = [
         },
         {
             head: "Notified of Decision",
-            timePeriod: "September 15 - 20; January 12 - 31",
+            // timePeriod: "September 15 - 20; January 12 - 31",
             description: "We will email you when we have reached a decision on your application. " +
             "Unfortunately, we are not able to accept every student who applies. The number of students " +
             "in our club is determined by the number of nonprofit projects we take on for the year. " +
@@ -36,7 +36,7 @@ const TimelineItem = ({ data }) => (
     <div className={classes.timelineItem}>
         <div className={classes.timelineItemContent}>
             <h4>{data.head}</h4>
-            <h5>{data.timePeriod}</h5>
+            {/* <h5>{data.timePeriod}</h5> */}
             <p>{data.description}</p>
             
             <span className={classes.circle} />
