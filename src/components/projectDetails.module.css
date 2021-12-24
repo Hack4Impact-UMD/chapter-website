@@ -1,7 +1,7 @@
 .container {
   position: relative;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(45, 45, 45);
 }
 
 .centered {
@@ -16,12 +16,13 @@
 .mosaic {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 15px;
+  gap: 10px;
   margin: auto;
 }
 
 .card {
   margin: auto;
   width: 70%;
-  padding: 10px;
+  padding: 3%;
 }
+

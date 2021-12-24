@@ -1,4 +1,5 @@
 {
+  "homepage": "http://.",
   "name": "chapter-website-1",
   "version": "0.1.0",
   "private": true,
@@ -14,10 +15,12 @@
     "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
+    "react-responsive": "^8.1.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
-    "react-social-icons": "^4.1.0"
+    "react-social-icons": "^4.1.0",
+    "surge": "^0.23.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +45,16 @@
   },
   "devDependencies": {
     "fslightbox-react": "^1.5.0"
+  },
+  "description": "This is the home page for hack4impact - UMD\r You can visit the site at umd.hack4impact.org\r This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hack4Impact-UMD/chapter-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hack4Impact-UMD/chapter-website/issues"
   }
 }

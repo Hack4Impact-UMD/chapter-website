@@ -1,45 +1,40 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {Nav, Navbar} from "react-bootstrap";
 import classes from './header.module.css';
+import { withRouter} from "react-router-dom";
 
-const navItems = [
-    {
-        name: "About Us",
-        to: "/About"
-    },
-    {
-        name: "Projects",
-        to: "/Projects"
-    },
-    {
-        name: "Students",
-        to: "/Students"
-    },
-    {
-        name: "Nonprofits",
-        to: "/Nonprofits"
-    },
-    {
-        name: "Contact Us",
-        to: "/Contact"
-    }
-]
+class Header extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render() {
+    const location = this.props.history.location;
+    
+    return (
+      <Navbar bg="light" expand="md" fixed="top" variant="light" className={classes.navShadow}>
+        <Navbar.Brand href="/">
+          <img
+            src="favicon.PNG"
+            height="27"
+            alt="Hack4Impact Logo"
+          />{' '}
+          <span className={classes.logoMainText}>hack4impact</span>
+          UMD
+        </Navbar.Brand>
 
-const Header = () => (
-        <div className={classes.container}>
-            <div className={classes.logoContainer}>
-                <NavLink to="/" className={classes.logoLink}>
-                <img className={classes.logoImg} src="../../favicon.PNG" alt="Hack4Impact Logo" />
-                    <span className={classes.logoMainText}>Hack4Impact</span>
-                umd</NavLink>
-            </div>
-            <nav className={classes.navContainer}>
-                <ul className={classes.navLinks}>
-                    {/* navItem.name , used as key, expected to be unique */}
-                    {navItems.map( navItem => (<li key={navItem.name} className={classes.navLinksItems}><NavLink exact to={navItem.to} className={classes.navLink} activeClassName={classes.navLinkSelected}>{navItem.name}</NavLink></li>))}
-                </ul>
-            </nav>
-        </div>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav activeKey={location.pathname} className="ml-auto" >
+            <Nav.Link href  ="/About" className = {classes.topLink}>About Us</Nav.Link>
+            <Nav.Link href ="/Projects" className = {classes.topLink}>Projects</Nav.Link>
+            <Nav.Link href = "/Students" className = {classes.topLink}>Students</Nav.Link>
+            <Nav.Link href = "/Nonprofits" className = {classes.topLink}>Nonprofits</Nav.Link>
+            <Nav.Link href = "/Contact" className = {classes.topLink}>Contact Us</Nav.Link>
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     )
-
-export default Header;
+    }
+}
+export default withRouter(Header);
